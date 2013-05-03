@@ -1,0 +1,149 @@
+//HOJ 1046 Pipe 直线与线段交
+
+//HOJ 1102 Jack Straws(*) 判断两条线段相交
+
+//HOJ 1143 area (Pick定理 : Area=Inside+Online/2-1)
+
+//HOJ 1182 Polygons（判点凸多边形相交，用点在多边形内和线段相交）(我用)
+
+//HOJ 1188 Orchard Trees (不会Pick在浮点图中的应用 硬枚举过的)
+
+//HOJ 1270 This Takes the Cake (多边形面积)
+
+//HOJ 1308 A Round Peg in a Ground Hole (凸多边形判定、点在多边形内、点到直线距离)
+
+//HOJ 1310 Three Sides Make a Triangle（三点共线、点积判锐钝角）
+
+//HOJ 1346 Treasure Hunt（忘了）
+
+//HOJ 1451 Globetrotter 球面上两点距离
+
+//HOJ 1489 ATDS 大水
+
+//HOJ 1517 Global Roaming
+
+//HOJ 1551 Polylops
+
+HOJ 1556 Chocolate Chip Cookies 圆覆盖
+
+//HOJ 1596 Video Surveillance     半平面交
+
+//HOJ 1605 wall 凸包
+
+HOJ 1613 The Fence Builder
+
+HOJ 1700 I Conduit!
+
+HOJ 1774 Snakes
+
+HOJ 1799 Circle and Points
+
+HOJ 1885 Count the Points Inside
+
+//HOJ 1931 A Star not a Tree //模拟退火 数据太水
+
+HOJ 1935 Triangle
+
+HOJ 1975 Triangle
+
+HOJ 2054 Stacking Cylinders
+
+HOJ 2063 It's Pandaren Brewmaster Time!
+
+HOJ 2068 Triangle Centers
+
+//HOJ 2081 Pick-up sticks 线段交
+
+HOJ 2121 War on Weather
+
+HOJ 2152 Convex area
+
+//HOJ 2183 Extrusion  多边形面积
+
+HOJ 2190 Connect
+
+HOJ 2203 Cover the Square
+
+HOJ 2246 Discs
+
+HOJ 2258 Rotating
+
+HOJ 2485 Myacm Triangles
+
+//HOJ 2505 Kadj Squares
+
+HOJ 2594 Model Rocket Height
+
+HOJ 2617 Walk
+
+HOJ 2627 SVM
+
+HOJ 2639 Billiards
+
+//HOJ 2648 GSM 凸包
+
+//HOJ 2704 Phone Cell
+
+HOJ 2709 Rectangular Polygons
+
+HOJ 2721 Roll-A-Big-Ball
+
+HOJ 2742 The Shape of Donggua
+
+ZJU 1010 area
+
+ZJU 1081 Points Within
+
+ZJU 1450 Minimal Circle
+
+ZJU 1453 Surround the Trees(*)
+
+ZJU 2107 Quoit Design
+
+ZJU 3058 Circle and Ring
+
+
+*******************************************************
+zoj上的计算几何题
+Vol I 
+1010 by pandahyx 
+1032 by javaman 
+1037 by Vegetable Bird 
+1041 by javaman 
+1081 by Vegetable Bird 
+1090 by Vegetable Bird 
+
+Vol II 
+1104 by javaman 
+1123 by javaman 
+1139 by Vegetable Bird 
+1165 by javaman 
+1199 by Vegetable Bird 
+
+Vol V 
+1426 by Vegetable Bird 
+1439 by Vegetable Bird 
+1460 by Vegetable Bird 
+1472 by Vegetable Bird 
+
+Vol VI 
+1597 by Vegetable Bird 
+
+Vol VII 
+1608 by Vegetable Bird 
+1648 by Vegetable Bird 
+
+Vol XII 
+2102 by pandahyx 
+2107 by pandahyx 
+2157 by pandahyx 
+
+Vol XIII 
+2234 by pandahyx 
+
+Vol XIV 
+2318 by ahyangyi 
+2394 by qherlyt 
+
+Vol XV 
+2403 by Vegetable Bird 
