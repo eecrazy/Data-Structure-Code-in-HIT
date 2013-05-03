@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1356856018 source:c:\users\li zhongyang\desktop\桌面文件夹\数据结构\作业\第四章作业\已知正邻接表求逆邻接表\main.cpp
+	<iostream>
+	<stdio.h>
+
