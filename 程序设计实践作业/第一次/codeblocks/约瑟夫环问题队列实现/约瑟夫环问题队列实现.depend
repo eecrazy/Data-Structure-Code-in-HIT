@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1363051007 source:e:\工程\程序设计实践作业\第一次\codeblocks\约瑟夫环问题队列实现\main.cpp
+	<iostream>
+	"Queue.h"
+
+1363001008 e:\工程\程序设计实践作业\第一次\codeblocks\约瑟夫环问题队列实现\queue.h
+	<iostream>
+	<cassert>
+

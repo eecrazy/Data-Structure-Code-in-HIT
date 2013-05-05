@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1363049374 source:e:\工程\程序设计实践作业\第一次\多项式代数运算\main.cpp
+	"Polynominal.h"
+	<iostream>
+
+1363049324 e:\工程\程序设计实践作业\第一次\多项式代数运算\polynominal.h
+	<iostream>
+
