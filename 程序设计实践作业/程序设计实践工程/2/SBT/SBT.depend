@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1364275608 source:c:\users\li zhongyang\desktop\程序设计实践\2\sbt\main.cpp
+	<iostream>
+	<cassert>
+	<stack>
+	<vector>
+	<algorithm>
+	<iterator>
+

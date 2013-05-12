@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1365484133 source:c:\users\li zhongyang\desktop\程序设计实践\3\拓扑排序\main.cpp
+	<iostream>
+	<cstring>
+	<cstdio>
+	<stdlib.h>
+

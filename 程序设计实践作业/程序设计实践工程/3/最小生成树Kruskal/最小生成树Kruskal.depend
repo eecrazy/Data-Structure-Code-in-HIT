@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1365483841 source:c:\users\li zhongyang\desktop\程序设计实践\3\最小生成树kruskal\main.cpp
+	<iostream>
+	<algorithm>
+

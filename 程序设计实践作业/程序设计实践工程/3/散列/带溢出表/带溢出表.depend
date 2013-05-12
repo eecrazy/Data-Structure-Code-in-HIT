@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1368176056 source:c:\users\li zhongyang\desktop\程序设计实践\3\散列\带溢出表\main.cpp
+	<iostream>
+	<stdio.h>
+

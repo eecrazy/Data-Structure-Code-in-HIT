@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1367890840 source:c:\users\li zhongyang\desktop\程序设计实践\3\排序算法\快速排序\main.cpp
+	<cstdio>
+	<iostream>
+

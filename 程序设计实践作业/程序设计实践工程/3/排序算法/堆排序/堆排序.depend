@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1367891183 source:c:\users\li zhongyang\desktop\程序设计实践\3\排序算法\堆排序\main.cpp
+	<iostream>
+	<cstdio>
+	<time.h>
+

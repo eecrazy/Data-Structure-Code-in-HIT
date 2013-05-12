@@ -1,0 +1,6047 @@
+Qt教程及软件 
+Qt Creator系列教程 
+为了使更多的Qt初学者能尽快入门Qt，也为了Qt及Qt Creator的快速普及，我们花费大量
+精力写出了这一系列教程。虽然教程的知识可能很浅显，虽然教程的语言可能不规范，但是
+它却被数十万网友所认可。我们会将这一系列教程一直写下去，它将涉及Qt的方方面面。 
+本系列教程一直在更新… … 
+版权声明：该系列教程全部原创，版权归www.yafeilinux.com所有，您可以自由转载，但必
+须保留该声明，且不能用于商业用途。 
+进入qt帮助教程目录 
+进入开源项目目录 
+进入读者资料整理目录 
+蛋蛋整理 （1466853244），欢迎学习交流，也希望有心人继续整理相关资料附在本文后边，
+并通知本人。 
+文档修订记录： 
+2011-01-09  整理了www.yafeilinux.com的qt creater教程，编制了部分目录 
+        整理人----蛋蛋     qq：1466853244，进一步修订后请联系我，我更新相关记录 
+文档修订记录： 
+网站专题类： 
+专题类： 
+方块游戏系列     Qt串口通信专题    Qt涂鸦板程序图文详细教程 
+连载类： 
+一、Qt Creator的安装和hello world程序的编写 
+二、Qt Creator编写多窗口程序 
+三、Qt Creator登录对话框 
+四、Qt Creator添加菜单图标 
+五、Qt Creator布局管理器的使用 
+六、Qt Creator实现文本编辑 
+七、Qt Creator实现文本查找 
+八、Qt Creator实现状态栏显示 
+九、Qt Creator中鼠标键盘事件的处理实现自定义鼠标指针 
+十、Qt Creator中实现定时器和产生随机数 
+十一、Qt 2D绘图（一）绘制简单图形 
+十二、Qt 2D绘图（二）渐变填充 
+十三、Qt 2D绘图（三）绘制文字 
+十四、Qt 2D绘图（四）绘制路径 
+十五、Qt 2D绘图（五）显示图片 
+十六、Qt 2D绘图（六）坐标系统 
+十七、Qt 2D绘图（七）Qt坐标系统深入 
+十八、Qt 2D绘图（八）涂鸦板 
+十九、Qt 2D绘图（九）双缓冲绘图简介 
+二十、Qt 2D绘图（十）图形视图框架简介 
+二十一、Qt数据库（一）简介 
+二十二、Qt数据库（二）添加MySQL数据库驱动插件 
+二十三、Qt数据库（三）利用QSqlQuery类执行SQL语句（一） 
+二十四、Qt数据库（四）利用QSqlQuery类执行SQL语句（二） 
+二十五、Qt数据库（五）QSqlQueryModel 
+二十六、Qt数据库（六）QSqlTableModel 
+二十七、Qt数据库（七）QSqlRelationalTableModel 
+二十八、Qt数据库（八）XML（一） 
+二十九、Qt数据库（九）XML（二） 
+三十、Qt数据库（十）XML（三）  
+三十一、Qt 4.7.0及Qt Creator 2.0 beta版安装全程图解 
+三十二、第一个Qt Quick程序（QML程序） 
+三十三、体验QML演示程序 
+三十四、Qt Quick Designer介绍 
+三十五、QML组件  
+三十六、QML项目之Image和BorderImage 
+三十七、Flipable、Flickable和状态与动画  
+三十八、QML视图  
+三十九、QtDeclarative模块 
+四十、使用Nokia Qt SDK开发Symbian和Maemo终端软件 
+四十一、Qt网络（一）简介 
+四十二、Qt网络（二）HTTP编程 
+四十三、Qt网络（三）FTP（一） 
+四十四、Qt网络（四）FTP（二） 
+四十五、Qt网络（五）获取本机网络信息 
+四十六、Qt网络（六）UDP 
+四十七、Qt网络（七）TCP(一） 
+四十八、Qt网络（八）TCP(二） 
+目录预留 
+系列教程会在Qt Creator 2.1正式推出后大幅度更新。。。。。（预计2011年1月） 
+ 
+——————————————————————————————————————- 
+Qt系列开源软件 
+为加快初学者的入门和Qt的快速普及，我们在以后会陆续推
+出一系列开源软件。 
+使用Qt Creator，享受编程的快乐，让我们一起行动起来！ 
+第一款软件：  
+多文档编辑器  
+第二款软件：  
+音乐播放器  
+第三款软件：  
+局域网聊天工具 （局域网聊天工具07月17日更新，添加文本智能编辑功能） 
+第四款软件：  
+Wincom串口调试软件（附有Lincom的源码） 
+期待… …  
+这些文章建议有心人整理一下，附在本文后边，我留下了尽可能大的目录空间 
+———————————————————————————————————————- 
+网友的Qt相关文章 
+Hello Qt（在Linux下编写运行Qt程序） 
+———————————————————————————————————————- 
+Qt文章转载 
+免责声明：以下所有文章均转载自网友的博客或各相关网站，其版权归原作者所有。我们在所
+有的文章中都明确加入了原作者的版权声明和原文出处，如果有任何问题请与原作者联系，本
+站不对文章内容付任何责任。如果您不想让您的文章在本站转载，请联系我
+们   www.yafeilinux.com 。 
+1.在线教程-Qt参考文档 
+2.Qt学习之路文章列表 
+3.Qt的graphics View框架 
+4.AT2440EVB_II+WINCE5.0板上跑QT程序 
+5.架设移动开发环境：Qt-wince 平台 
+6.OpenGL贴图问题（转帖） 
+7.OpenGL实现场景漫游(转帖) 
+8.上网本版 MeeGo 1.0 正式发布，核心软件平台支持 N900(转载) 
+9.MeeGo 为 Linux 带来魔法（转载） 
+10.Maemo ，青涩的机会，辽远的未来（转载） 
+11.Qt编写Mplayer前端程序(转载) 
+目录预留 
+一、Qt Creator的安装和hello world程序的编写 
+本文章原创于www.yafeilinux.com 转载请注明出处。 
+我们这里讲述windows下的Qt Creator，在Linux下基本相同。本文先讲述基本的下载、安
+装和最简单程序的编写，然后在附录里又讲解了两种其他的编写程序的方法。 
+1.首先到Qt的官方网站上下载Qt Creator，这里我们下载windows版的。 
+下载地址：http://qt.nokia.com/downloads如下图我们下载：Download Qt SDK for Windows* 
+(178Mb) 
+下载完成后，直接安装即可，安装过程中按默认设置即可。 
+ 
+2.运行Qt Creator，首先弹出的是欢迎界面，这里可以打开其自带的各种演示程序。 
+ 
+3.我们用File->New菜单来新建工程。 
+ 
+4.这里我们选择Qt4 Gui Application。 
+ 
+5.下面输入工程名和要保存到的文件夹路径。我们这里的工程名为hello world。 
+ 
+6.这时软件自动添加基本的头文件，因为这个程序我们不需要其他的功能，所以直接点击Next。 
+ 
+7.我们将base class选为QDialog对话框类。然后点击Next。 
+ 
+8.点击Finish，完成工程的建立。 
+ 
+9.我们可以看见工程中的所有文件都出现在列表中了。我们可以直接按下下面的绿色的run
+按钮或者按下Ctrl+R快捷键运行程序。 
+ 
+10.程序运行会出现空白的对话框，如下图。 
+ 
+11.我们双击文件列表的dialog.ui文件，便出现了下面所示的图形界面编辑界面。 
+ 
+12.我们在右边的器件栏里找到Label标签器件 
+ 
+13.按着鼠标左键将其拖到设计窗口上，如下图。 
+ 
+14.我们双击它，并将其内容改为hello world。 
+ 
+15.我们在右下角的属性栏里将字体大小由9改为15。 
+ 
+16.我们拖动标签一角的蓝点，将全部文字显示出来。 
+ 
+17.再次按下运行按钮，便会出现hello world。 
+ 
+到这里hello world程序便完成了。       
+Qt Creator编译的程序，在其工程文件夹下会有一个debug文件夹，其中有程序的.exe可执
+行文件。但Qt Creator默认是用动态链接的，就是可执行程序在运行时需要相应的.dll文件。
+我们点击生成的.exe文件，首先可能显示“没有找到mingwm10.dll，因此这个应用程序未能
+启动。重新安装应用程序可能会修复此问题。”表示缺少mingwm10.dll文件。 
+            解决这个问题我们可以将相应的.dll文件放到系统中。在Qt 
+Creator的安装目录的qt文件下的bin文件夹下（我安装在了D盘，所以路径是
+D:\Qt\2009.04\qt\bin），可以找到所有的相关.dll文件。 
+方法一：在这里找到mingwm10.dll文件，将其复制到C:\WINDOWS\system文件夹下即可。下
+面再提示缺少什么dll文件，都像这样解决就可以了。 
+方法二：将这些dll文件都与.exe文件放到同一个文件夹下。不过这样每个.exe文件都要放
+一次。 
+方法三：将D:\Qt\2009.04\qt\bin加入系统Path环境变量。右击我的电脑->属性->高级->环境变量->在系统变
+量列表中找到Path,将路径加入其中即可。 
+附1：用纯源码编写。 
+1.新建空的Qt4工程。 
+ 
+2.工程名为hello world，并选择工程保存路径（提示：路径中不能有中文）。 
+ 
+3.在新建好的工程中添加文件。右击工程文件夹，弹出的菜单中选择Add New。 
+ 
+4.选择普通文件。点击Ok。 
+ 
+5.文件名为main.cpp，点击Next进入下一步。 
+ 
+6.这里自动将这个文件添加到了新建的工程中。保持默认设置，点击完成。 
+ 
+7.在main.cpp文件中添加代码。 
+ 
+8.这时点击运行，程序执行了，但看不到效果，因为程序里什么也没做。我们点击信息框右
+上角的红色方块，停止程序运行。 
+ 
+9.我们再更改代码。添加一个对话框对象。 
+ 
+10.运行效果如下。 
+ 
+11.我们更改代码如下，在对话框上添加一个标签对象，并显示hello world。 
+ 
+12.运行效果如下。 
+ 
+附2：利用ui文件。 
+1.建立新的空工程，这里的工程名为hello，建立好工程后，添加新文件。这里添加Qt Designer 
+Form。 
+ 
+2.选择一个对话框做模板。 
+ 
+3.你可以更改文件名，我们这里使用默认设置。 
+ 
+4.在新建好的框口上添加一个标签，并更改文本为hello world。 
+ 
+5.在工程文件夹上点击右键，弹出的菜单中选择第一项编译工程。 
+ 
+6.因为还没有写主函数，所以现在编译文件会出现错误，不过没关系，因为我们只是想编译
+一下ui文件。 
+ 
+7.点击 这个图标，去掉弹出的菜单中第二项前的对勾，显示隐藏的文件。这时你就能看
+到ui文件对应的头文件了。 
+ 
+而如果去掉菜单中的第一项前的对勾，列表中的文件就会分类显示，如图 
+ 
+8.ui文件对应的.h文件默认为ui_dialog.h（例如form.ui对应ui_form.h）。 
+其中是设计器设计的窗口的对应代码。我们这里的.h文件是最简单的，其类名为Ui_Dialog，
+可以看到其中有我们添加的标签对象。 
+ 
+9.在这个类里有一个setupUi函数，我们就是利用这个函数来使用设计好的窗口的。 
+ 
+10.我们添加main.cpp文件，并更改内容如下。 
+其中ui->setupUi(dd);一句就是将设计的窗口应用到新建的窗口对象上。 
+ 
+11.这时运行程序，效果如下。 
+ 
+在这篇文章中我们一共讲述了三种方法写hello world程序，其实也就是两种，一种用设计
+器，一种全部用代码生成，其实他们是等效的。因为我们已经看到，就算是设计器生成，其
+实也是写了一个对应的ui.h文件，只不过这个文件是自动生成的，不用我们自己写而已。 
+分类：Qt系列教程 作者： yafeilinux 日期： 四月 30th, 2010.    14,156 views 
+Tags: creator, qt, yafeilinux, 教程  
+   
+二、Qt Creator编写多窗口程序 
+本文章原创于www.yafeilinux.com 转载请注明出处。 
+实现功能： 
+          程序开始出现一个对话框，按下按钮后便能进入主窗口，如果直接关闭这个对
+话框，便不能进入主窗口，整个程序也将退出。当进入主窗口后，我们按下按钮，会弹出一个
+对话框，无论如何关闭这个对话框，都会回到主窗口。 
+实现原理： 
+       程序里我们先建立一个主工程，作为主界面，然后再建立一个对话框类，将其
+加入工程中，然后在程序中调用自己新建的对话框类来实现多窗口。 
+实现过程： 
+1.首先新建Qt4 Gui Application工程，工程名为nGui，Base class选为QWidget。建立好
+后工程文件列表如下图。 
+ 
+2.新建对话框类，如下图，在新建中，选择Qt Designer Form Class。 
+ 
+3.选择Dialog without Buttons。 
+ 
+4.类名设为myDlg。 
+ 
+5.点击Finish完成。注意这里已经默认将其加入到了我们刚建的工程中了。 
+ 
+6.如下图，在mydlg.ui中拖入一个Push Button，将其上的文本改为“进入主窗口”，在其
+属性窗口中将其objectName改为enterBtn，在下面的Signals and slots editor中进行信
+号和槽的关联，其中，Sender设为enterBtn，Signal设为clicked()，Receive设为myDlg，
+Slot设为accept()。这样就实现了单击这个按钮使这个对话框关闭并发出Accepted信号的功
+能。下面我们将利用这个信号。 
+ 
+7.修改主函数main.cpp，如下： 
+#include <QtGui/QApplication> 
+#include “widget.h” 
+#include “mydlg.h”       //加入头文件 
+int main(int argc, char *argv[]) 
+{ 
+    QApplication a(argc, argv); 
+    Widget w; 
+   myDlg my1;       //建立自己新建的类的对象my1 
+    if(my1.exec()==QDialog::Accepted)    //利用Accepted信号判断enterBtn是
+否被按下 
+    { 
+        w.show();         //如果被按下，显示主窗口 
+        return a.exec();       //程序一直执行，直到主窗口关闭 
+    } 
+    else return 0;     //如果没被按下，则不会进入主窗口，整个程序结束运行 
+} 
+主函数必须这么写，才能完成所要的功能。 
+如果主函数写成下面这样： 
+#include <QtGui/QApplication> 
+#include “widget.h” 
+#include “mydlg.h” 
+int main(int argc, char *argv[]) 
+{ 
+    QApplication a(argc, argv); 
+        myDlg my1; 
+    if(my1.exec()==QDialog::Accepted) 
+    { 
+Widget w; 
+        w.show(); 
+      } 
+   return a.exec(); 
+} 
+这样，因为w是在if语句里定义的，所以当if语句执行完后它就无效了。这样导致的后果就
+是，按下enterBtn后，主界面窗口一闪就没了。如果此时对程序改动了，再次点击运行时，
+就会出现error: collect2: ld returned 1 exit status的错误。这是因为虽然主窗口没有
+显示，但它只是隐藏了，程序并没有结束，而是在后台运行。所以这时改动程序，再运行时便
+会出错。你可以按下调试栏上面的红色Stop停止按钮来停止程序运行。你也可以在windows
+任务管理器的进程中将该进程结束，而后再次运行就没问题了，当然先关闭Qt Creator，而
+后再重新打开，这样也能解决问题。 
+如果把程序改为这样： 
+#include <QtGui/QApplication> 
+#include “widget.h” 
+#include “mydlg.h” 
+int main(int argc, char *argv[]) 
+{ 
+    QApplication a(argc, argv); 
+        myDlg my1; 
+        Widget w; 
+    if(my1.exec()==QDialog::Accepted) 
+    {   
+        w.show(); 
+      } 
+   return a.exec(); 
+} 
+这样虽然解决了上面主窗口一闪而过的问题，但是，如果在my1对话框出现的时候不点
+enterBtn，而是直接关闭对话框，那么此时整个程序应该结束执行，但是事实是这样的吗？如
+果你此时对程序进行了改动，再次按下run按钮，你会发现又出现了error: collect2: ld 
+returned 1 exit status的错误，这说明程序并没有结束，我们可以打开windows任务管理
+器，可以看到我们的程序仍在执行。 
+       因为return a.exec();一句表示只要主窗口界面不退出，那么程序就会一直执
+行。所以只有用第一种方法，将该语句也放到if语句中，而在else语句中用else return 0; ，
+这样如果enterBtn没有被按下，那么程序就会结束执行了。 
+         到这里，我们就实现了一个界面结束执行，然后弹出另一个界面的程序。
+下面我们在主窗口上加一个按钮，按下该按钮，弹出一个对话框，但这个对话框关闭，不会使
+主窗口关闭。 
+8.如下图，在主窗口加入按钮，显示文本为“弹出一个对话框”，在其上点击鼠标右键，在弹
+出的菜单中选择go to slot。 
+ 
+9.我们选择单击事件clicked()。 
+ 
+10.我们在弹出的槽函数中添加一句： 
+     my2.show(); 
+   my2为我们新建对话框类的另一个对象，但是my2我们还没有定义，所以在widget.h文
+件中添加相应代码，如下，先加入头文件，再加入my2的定义语句，这里我们将其放到private
+里，因为一般的函数都放在public里，而变量都放在private里。 
+#ifndef WIDGET_H 
+#define WIDGET_H 
+#include <QtGui/QWidget> 
+#include “mydlg.h”    //包含头文件 
+namespace Ui 
+{ 
+class Widget; 
+} 
+class Widget : public QWidget 
+{ 
+Q_OBJECT 
+public: 
+Widget(QWidget *parent = 0); 
+~Widget(); 
+private: 
+Ui::Widget *ui; 
+myDlg my2;       //对my2进行定义 
+private slots: 
+void on_pushButton_clicked(); 
+}; 
+#endif // WIDGET_H 
+到这里，再运行程序，便能完成我们实验要求的功能了。整个程序里，我们用两种方法实现了
+信号和槽函数的关联，第一个按钮我们直接在设计器中实现其关联；第二个按钮我们自己写了
+槽函数语句，其实图形的设计与直接写代码效果是一样的。 
+       这个程序里我们实现了两类窗口打开的方式，一个是自身消失而后打开另一个
+窗口，一个是打开另一个窗口而自身不消失。可以看到他们实现的方法是不同的。 
+分类：Qt系列教程 作者： yafeilinux 日期： 四月 30th, 2010.    9,872 views 
+Tags: creator, qt, yafeilinux, 教程  
+ 
+   
+三、Qt Creator登录对话框 
+本文章原创于www.yafeilinux.com 转载请注明出处。 
+实现功能： 
+在弹出对话框中填写用户名和密码，按下登录按钮，如果用户名和密码均正确则进入主窗口，
+如果有错则弹出警告对话框。 
+实现原理： 
+通过上节的多窗口原理实现由登录对话框进入主窗口，而用户名和密码可以用if语句进行判
+断。 
+实现过程： 
+1.先新建Qt4 Gui Application工程，工程名为mainWidget，选用QWidget作为Base class，
+这样便建立了主窗口。文件列表如下： 
+ 
+2.然后新建一个Qt Designer Form Class类，类名为loginDlg，选用Dialog without Buttons，
+将其加入上面的工程中。文件列表如下： 
+ 
+3.在logindlg.ui中设计下面的界面：行输入框为Line Edit。其中用户名后面的输入框在属
+性中设置其object Name为usrLineEdit，密码后面的输入框为pwdLineEdit，登录按钮为
+loginBtn，退出按钮为exitBtn。 
+ 
+4.将exitBtn的单击后效果设为退出程序，关联如下： 
+ 
+5.右击登录按钮选择go to slot，再选择clicked(),然后进入其单击事件的槽函数，写入一
+句 
+    void loginDlg::on_loginBtn_clicked() 
+{ 
+    accept(); 
+} 
+6.改写main.cpp： 
+#include <QtGui/QApplication> 
+#include “widget.h” 
+#include “logindlg.h” 
+int main(int argc, char *argv[]) 
+{ 
+    QApplication a(argc, argv); 
+    Widget w; 
+    loginDlg login; 
+    if(login.exec()==QDialog::Accepted) 
+    { 
+        w.show(); 
+        return a.exec(); 
+    } 
+    else return 0; 
+} 
+7.这时执行程序，可实现按下登录按钮进入主窗口，按下退出按钮退出程序。 
+8.添加用户名密码判断功能。将登陆按钮的槽函数改为： 
+void loginDlg::on_loginBtn_clicked() 
+{ 
+if(m_ui->usrLineEdit->text()==tr(“qt”)&&m_ui->pwdLineEdit->text()==tr(“123456
+″)) 
+//判断用户名和密码是否正确 
+accept(); 
+else{ 
+QMessageBox::warning(this,tr(“Warning”),tr(“user name or password 
+error!”),QMessageBox::Yes); 
+//如果不正确，弹出警告对话框 
+} 
+} 
+并在logindlg.cpp中加入#include <QtGui>的头文件。如果不加这个头文件，QMessageBox
+类不可用。 
+（说明：由于版本原因，现在的程序默认生成的ui类对象可能是ui，而不是m_ui,请到
+loginDlg.h中查看。） 
+9.这时再执行程序，输入用户名为qt，密码为123456，按登录按钮便能进入主窗口了，如果
+输入错了，就会弹出警告对话框。 
+ 
+如果输入错误，便会弹出警告提示框： 
+ 
+10.在logindlg.cpp的loginDlg类构造函数里，添上初始化语句，使密码显示为小黑点。 
+loginDlg::loginDlg(QWidget *parent) : 
+QDialog(parent), 
+m_ui(new Ui::loginDlg) 
+{ 
+m_ui->setupUi(this); 
+m_ui->pwdLineEdit->setEchoMode(QLineEdit::Password); 
+} 
+效果如下： 
+ 
+11.如果输入如下图中的用户名，在用户名前不小心加上了一些空格，结果程序按错误的用户
+名对待了。 
+ 
+我们可以更改if判断语句，使这样的输入也算正确。 
+void loginDlg::on_loginBtn_clicked() 
+{ 
+if(m_ui->usrLineEdit->text().trimmed()==tr(“qt”)&&m_ui->pwdLineEdit->text()==tr
+(“123456″)) 
+accept(); 
+else{ 
+QMessageBox::warning(this,tr(“Warning”),tr(“user name or password 
+error!”),QMessageBox::Yes); 
+} 
+} 
+加入的这个函数的作用就是移除字符串开头和结尾的空白字符。 
+12.最后，如果输入错误了，重新回到登录对话框时，我们希望可以使用户名和密码框清空并
+且光标自动跳转到用户名输入框，最终的登录按钮的单击事件的槽函数如下： 
+void loginDlg::on_loginBtn_clicked() 
+{ 
+if(m_ui->usrLineEdit->text().trimmed()==tr(“qt”)&&m_ui->pwdLineEdit->text()==tr
+(“123456″)) 
+//判断用户名和密码是否正确 
+accept(); 
+else{ 
+QMessageBox::warning(this,tr(“Warning”),tr(“user name or password 
+error!”),QMessageBox::Yes); 
+//如果不正确，弹出警告对话框 
+m_ui->usrLineEdit->clear();//清空用户名输入框 
+m_ui->pwdLineEdit->clear();//清空密码输入框 
+m_ui->usrLineEdit->setFocus();//将光标转到用户名输入框 
+} 
+} 
+最终的loginDlg.cpp文件如下图： 
+ 
+分类：Qt系列教程 作者： yafeilinux 日期： 四月 30th, 2010.    7,049 views 
+Tags: creator, qt, yafeilinux, 教程  
+   
+四、Qt Creator添加菜单图标 
+本文章原创于www.yafeilinux.com 转载请注明出处。 
+在下面的几节，我们讲述Qt的MainWindow主窗口部件。这一节只讲述怎样在其上的菜单栏里
+添加菜单和图标。 
+1.新建Qt4 Gui Application工程，将工程命名为MainWindow，其他选项默认即可。 
+生成的窗口界面如下图。其中最上面的为菜单栏。 
+ 
+2.我们在Type Here那里双击，并输入“文件(&F)”，这样便可将其文件菜单的快捷键设为
+Alt+F。（注意括号最好用英文半角输入，这样看着美观） 
+ 
+3.输入完按下Enter键确认即可，然后在子菜单中加入“新建(&N)”，确定后，效果如下图。 
+ 
+4.我们在下面的动作编辑窗口可以看到新加的“新建”菜单。 
+ 
+5.双击这一条，可打开它的编辑对话框。我们看到Icon项，这里可以更改“新建”菜单的图
+标。 
+ 
+6.我们点击后面的…号，进入资源选择器，但现在这里面是空的。所以下面我们需要给该工程
+添加外部资源。 
+ 
+7.添加资源有两种方法。一种是直接添加系统提供的资源文件，然后选择所需图标。另一种是
+自己写资源文件。我们主要介绍第一种。新建Qt Resources file，将它命名为menu。其他默
+认。 
+ 
+8.添加完后如下图。可以看到添加的文件为menu.qrc。 
+ 
+9.我们最好先在工程文件夹里新建一个文件夹，如images，然后将需要的图标文件放到其中。 
+ 
+10.在Qt Creator的menu.qrc文件中，我们点击Add下拉框，选择Add Prefix。我们可以将
+生成的/new/prefix前缀改为其他名字，如/File。 
+ 
+11.然后再选择Add下拉框，选择Add Files。再弹出的对话框中，我们到新建的images文件
+夹下，将里面的图标文件全部添加过来。 
+ 
+12.添加完成后，我们在Qt Creator的File菜单里选择Save All选项，保存所做的更改。（注
+意：一定要先保存刚才的qrc文件，不然在资源管理器中可能看不见自己添加的资源！） 
+ 
+13.这时再打开资源选择器，可以看到我们的图标都在这里了。(注意：如果不显示，可以按一
+下上面的Reload按钮) 
+ 
+14.我们将new.png作为“新建”菜单的图标，然后点击Shortcut，并按下Crtl+N，便能将
+Crtl+N作为“新建”菜单的快捷键。 
+ 
+15.这时打开文件菜单，可以看到“新建”菜单已经有图标了。 
+ 
+运行程序后效果如下。 
+ 
+16.我们在工程文件夹下查看建立的menu.qrc文件，可以用写字板将它打开。 
+ 
+其具体内容如下。 
+ 
+附：第二种添加资源文件的方法。 
+1.首先右击工程文件夹，在弹出的菜单中选择Add New，添加新文件。也可以用File中的添
+加新文件。 
+ 
+2.我们选择文本文件。 
+ 
+3.将文件名设置为menu.qrc。 
+ 
+4.添加好文件后将其内容修改如下。可以看到就是用第一种方法生成的menu.qrc文件的内容。 
+ 
+5.保存文件后，在资源管理器中可以看到添加的图标文件。 
+ 
+ 
+   
+五、Qt Creator布局管理器的使用 
+本文章原创于www.yafeilinux.com 转载请注明出处。 
+上篇讲解了如何在Qt Creator中添加资源文件，并且为菜单添加了图标。这次我们先对那个
+界面进行一些完善，然后讲解一些布局管理器的知识。 
+首先对菜单进行完善。 
+1.我们在上一次的基础上再加入一些常用菜单。 
+“文件”的子菜单如下图。中间的分割线可以点击Add Separator添加。 
+ 
+“编辑”子菜单的内容如下。 
+ 
+“帮助”子菜单的内容如下。 
+ 
+2.我们在动作编辑器中对各个菜单的属性进行设置。 
+如下图。 
+ 
+3.我们拖动“新建”菜单的图标，将其放到工具栏里。 
+拖动“新建”菜单的图标。 
+ 
+将其放到菜单栏下面的工具栏里。 
+ 
+4.我们再添加其他几个图标。使用Append Separator可以添加分割线。 
+ 
+5.最终效果如下。如果需要删除图标，可以在图标上点击右键选择Remove action即可。 
+下面简述一下布局管理器。 
+（这里主要以垂直布局管理器进行讲解，其他类型管理器用法与之相同，其效果可自己验证。） 
+1.在左边的器件栏里拖入三个PushButton和一个Vertical Layout（垂直布局管理器）到中
+心面板。如下图。 
+ 
+2.将这三个按钮放入垂直布局管理器，效果如下。可以看到按钮垂直方向排列，并且宽度可以
+改变，但高度没有改变。 
+ 
+3.我们将布局管理器整体选中，按下上面工具栏的Break Layout按钮，便可取消布局管理器。
+（我们当然也可以先将按钮移出，再按下Delete键将布局管理器删除。） 
+ 
+4.下面我们改用分裂器部件（QSplitter）。 
+先将三个按钮同时选中，再按下上面工具栏的Lay Out Vertically in Splitter（垂直分裂
+器）。 
+ 
+效果如下图。可以看到按钮的大小可以随之改动。这也就是分裂器和布局管理器的分别。 
+ 
+5.其实布局管理器不但能控制器件的布局，还有个很重要的用途是，它能使器件的大小随着窗
+口大小的改变而改变。 
+我们先在主窗口的中心拖入一个文本编辑器Text Edit。 
+ 
+这时直接运行程序，效果如下。可以看到它的大小和位置不会随着窗口改变。 
+ 
+下面我们选中主窗口部件，然后在空白处点击鼠标右键，选择Layout->Lay Out in a Grid，
+使整个主窗口的中心区处于网格布局管理器中。 
+ 
+可以看到，这时文本编辑器已经占据了整个主窗口的中心区。 
+ 
+运行一下程序，可以看到无论怎样拉伸窗口，文本编辑框的大小都会随之改变。 
+ 
+我们在这里一共讲述了三种使用布局管理器的方法，一种是去器件栏添加，一种是用工具栏
+的快捷图标，还有一种是使用鼠标右键的选项。 
+程序中用到的图标是我从Ubuntu中复制的，可以到资源下载页面下载到。 
+分类：Qt系列教程 作者： yafeilinux 日期： 四月 30th, 2010.    5,487 views 
+Tags: creator, qt, yafeilinux, 教程  
+   
+六、Qt Creator实现文本编辑 
+本文章原创于www.yafeilinux.com 转载请注明出处。  
+前面已经将界面做好了，这里我们为其添加代码，实现文本编辑的功能。  
+首先实现新建文件，文件保存，和文件另存为的功能。  
+（我们先将上次的工程文件夹进行备份，然后再对其进行修改。在写较大的程序时，经常对源
+文件进行备份，是个很好的习惯。）  
+在开始正式写程序之前，我们先要考虑一下整个流程。因为我们要写记事本一样的软件，所
+以最好先打开windows中的记事本，进行一些简单的操作，然后考虑怎样去实现这些功能。
+再者，再强大的软件，它的功能也是一个一个加上去的，不要设想一下子写出所有的功能。
+我们这里先实现新建文件，保存文件，和文件另存为三个功能，是因为它们联系很紧，而且
+这三个功能总的代码量也不是很大。 
+   
+因为三个功能之间的关系并不复杂，所以我们这里便不再画流程图，而只是简单描述一下。  
+新建文件，那么如果有正在编辑的文件，是否需要保存呢？  
+如果需要进行保存，那这个文件以前保存过吗？如果没有保存过，就应该先将其另存为。  
+下面开始按这些关系写程序。  
+1.打开Qt Creator，在File菜单中选择Open，然后在工程文件夹中打开MainWindow.pro工
+程文件。  
+先在main.cpp文件中加入以下语句，让程序中可以使用中文。  
+在其中加入#include <QTextCodec> 头文件包含，再在主函数中加入下面一行：  
+QTextCodec::setCodecForTr(QTextCodec::codecForLocale());  
+这样在程序中使用中文，便能在运行时显示出来了。更改后文件如下图。  
+  
+2.在mainwindow.h文件中的private下加入以下语句。  
+bool isSaved; //为true时标志文件已经保存，为false时标志文件尚未保存  
+QString curFile; //保存当前文件的文件名  
+void do_file_New(); //新建文件  
+void do_file_SaveOrNot(); //修改过的文件是否保存  
+void do_file_Save(); //保存文件  
+void do_file_SaveAs(); //文件另存为  
+bool saveFile(const QString& fileName); //存储文件  
+这些是变量和函数的声明。其中isSaved变量起到标志的作用，用它来标志文件是否被保存过。
+然后我们再在相应的源文件里进行这些函数的定义。  
+3.在mainwindow.cpp中先加入头文件#include <QtGui>，然后在构造函数里添加以下几行代
+码。  
+isSaved = false; //初始化文件为未保存过状态  
+curFile = tr(“未命名.txt”); //初始化文件名为“未命名.txt”  
+setWindowTitle(curFile); //初始化主窗口的标题  
+这是对主窗口进行初始化。效果如下。  
+  
+4.然后添加“新建”操作的函数定义。  
+void MainWindow::do_file_New() //实现新建文件的功能  
+{  
+do_file_SaveOrNot();  
+isSaved = false;  
+curFile = tr(“未命名.txt”);  
+setWindowTitle(curFile);  
+ui->textEdit->clear(); //清空文本编辑器  
+ui->textEdit->setVisible(true); //文本编辑器可见  
+}  
+新建文件，先要判断正在编辑的文件是否需要保存。然后将新建的文件标志为未保存过状态。  
+5.再添加do_file_SaveOrNot函数的定义。  
+void MainWindow::do_file_SaveOrNot() //弹出是否保存文件对话框  
+{  
+if(ui->textEdit->document()->isModified()) //如果文件被更改过，弹出保存对话框  
+{  
+QMessageBox box;  
+box.setWindowTitle(tr(“警告”));  
+box.setIcon(QMessageBox::Warning);  
+box.setText(curFile + tr(” 尚未保存，是否保存？”));  
+box.setStandardButtons(QMessageBox::Yes | QMessageBox::No);  
+if(box.exec() == QMessageBox::Yes) //如果选择保存文件，则执行保存操作  
+do_file_Save();  
+}  
+}  
+这个函数实现弹出一个对话框，询问是否保存正在编辑的文件。  
+  
+6.再添加“保存”操作的函数定义。  
+void MainWindow::do_file_Save() //保存文件  
+{  
+if(isSaved){ //如果文件已经被保存过，直接保存文件  
+saveFile(curFile);  
+}  
+else{  
+do_file_SaveAs(); //如果文件是第一次保存，那么调用另存为  
+}  
+}  
+对文件进行保存时，先判断其是否已经被保存过，如果没有被保存过，就要先对其进行另存为
+操作。  
+7.下面是“另存为”操作的函数定义。  
+void MainWindow::do_file_SaveAs() //文件另存为  
+{  
+QString fileName = QFileDialog::getSaveFileName(this,tr(“另存为”),curFile);  
+//获得文件名  
+if(!fileName.isEmpty()) //如果文件名不为空，则保存文件内容  
+{  
+saveFile(fileName);  
+}  
+}  
+这里弹出一个文件对话框，显示文件另存为的路径。  
+  
+8.下面是实际文件存储操作的函数定义。  
+bool MainWindow::saveFile(const QString& fileName)  
+//保存文件内容，因为可能保存失败，所以具有返回值，来表明是否保存成功  
+{  
+QFile file(fileName);  
+if(!file.open(QFile::WriteOnly | QFile::Text))  
+//以只写方式打开文件，如果打开失败则弹出提示框并返回  
+{  
+QMessageBox::warning(this,tr(“保存文件”),  
+tr(“无法保存文件 %1:\n %2″).arg(fileName)  
+.arg(file.errorString()));  
+return false;  
+}  
+//%1,%2表示后面的两个arg参数的值  
+QTextStream out(&file);   //新建流对象，指向选定的文件  
+out << ui->textEdit->toPlainText();   //将文本编辑器里的内容以纯文本的形式输出到
+流对象中  
+isSaved = true;  
+curFile = QFileInfo(fileName).canonicalFilePath(); //获得文件的标准路径  
+setWindowTitle(curFile); //将窗口名称改为现在窗口的路径  
+return true;  
+}  
+这个函数实现将文本文件进行存储。下面我们对其中的一些代码进行讲解。  
+QFile file(fileName);一句，定义了一个QFile类的对象file，其中filename表明这个文
+件就是我们保存的的文件。然后我们就可以用file代替这个文件，来进行一些操作。Qt中文
+件的操作和C，C++很相似。对于QFile类对象怎么使用，我们可以查看帮助。  
+            点击Qt Creator最左侧的Help，在其中输入QFile，在搜索到的列
+表中选择QFile即可。这时在右侧会显示出QFile类中所有相关信息以及他们的用法和说明。   
+  
+//  
+我们往下拉，会发现下面有关于怎么读取文件的示例代码。  
+//  
+  
+//  
+再往下便能看到用QTextStream类对象，进行字符串输入的例子。下面也提到了QFileInfo
+和QDir等相关的类，我们可以点击它们去看一下具体的使用说明。  
+// 
+  
+上面只是做了一个简单的说明。以后我们对自己不明白的类都可以去帮助里进行查找，这也许
+是我们以后要做的最多的一件事了。对于其中的英文解释，我们最好想办法弄明白它的大意，
+其实网上也有一些中文的翻译，但最好还是从一开始就尝试着看英文原版的帮助，这样以后才
+不会对中文翻译产生依赖。  
+       我们这次只是很简单的说明了一下怎样使用帮助文件，这不表明它不重要，而
+是因为这里不可能将每个类的帮助都解释一遍，没有那么多时间，也没有那么大的篇幅。而更
+重要的是因为，我们这个教程只是引你入门，所以很多东西需要自己去尝试。  
+       在以后的教程里，如果不是特殊情况，就不会再对其中的类进行详细解释，文
+章中的重点是对整个程序的描述，其中不明白的类，自己查看帮助。  
+9.双击mainwindow.ui文件，在图形界面窗口下面的Action Editor动作编辑器里，我们右
+击“新建”菜单一条，选择Go to slot，然后选择triggered（），进入其触发事件槽函数。  
+ 
+  
+同理，进入其他两个菜单的槽函数，将相应的操作的函数写入槽函数中。如下。  
+void MainWindow::on_action_New_triggered() //信号和槽的关联  
+{  
+do_file_New();  
+}  
+void MainWindow::on_action_Save_triggered()  
+{  
+do_file_Save();  
+}  
+void MainWindow::on_action_SaveAs_triggered()  
+{  
+do_file_SaveAs();  
+}  
+最终的mainwindow.cpp文件如下。  
+ 
+ 
+  
+最终的mainwindow.h文件如下。  
+  
+这时点击运行，就能够实现新建文件，保存文件，文件另存为的功能了。 
+ 
+然后实现打开，关闭，退出，撤销，复制，剪切，粘贴的功能。  
+先备份上次的工程文件，然后再将其打开。  
+1.先在mainwindow.h文件中加入函数的声明。  
+void do_file_Open(); //打开文件  
+bool do_file_Load(const QString& fileName); //读取文件  
+  
+   
+2.再在mainwindow.cpp文件中写函数的功能实现。   
+void MainWindow::do_file_Open()//打开文件  
+{  
+do_file_SaveOrNot();//是否需要保存现有文件  
+QString fileName = QFileDialog::getOpenFileName(this);  
+//获得要打开的文件的名字  
+if(!fileName.isEmpty())//如果文件名不为空  
+{  
+do_file_Load(fileName);  
+}  
+ui->textEdit->setVisible(true);//文本编辑器可见  
+}  
+  
+bool MainWindow::do_file_Load(const QString& fileName) //读取文件  
+{  
+QFile file(fileName);  
+if(!file.open(QFile::ReadOnly | QFile::Text))  
+{  
+QMessageBox::warning(this,tr(“读取文件”),tr(“无法读取文
+件 %1:\n%2.”).arg(fileName).arg(file.errorString()));  
+return false;      //如果打开文件失败，弹出对话框，并返回  
+}  
+QTextStream in(&file);  
+ui->textEdit->setText(in.readAll());      //将文件中的所有内容都写到文本编辑
+器中  
+curFile = QFileInfo(fileName).canonicalFilePath();  
+setWindowTitle(curFile);  
+return true;  
+}  
+  
+上面的打开文件函数与文件另存为函数相似，读取文件的函数与文件存储函数相似。  
+3.然后按顺序加入更菜单的关联函数，如下。  
+void MainWindow::on_action_Open_triggered()   //打开操作  
+{  
+do_file_Open();  
+}  
+//  
+void MainWindow::on_action_Close_triggered() //关闭操作  
+{  
+do_file_SaveOrNot();  
+ui->textEdit->setVisible(false);  
+}  
+//  
+void MainWindow::on_action_Quit_triggered() //退出操作  
+{  
+on_action_Close_triggered();     //先执行关闭操作  
+qApp->quit();    //再退出系统，qApp是指向应用程序的全局指针  
+}  
+//  
+void MainWindow::on_action_Undo_triggered() //撤销操作  
+{  
+ui->textEdit->undo();  
+}  
+//  
+void MainWindow::on_action_Cut_triggered() //剪切操作  
+{  
+ui->textEdit->cut();  
+}  
+//  
+void MainWindow::on_action_Copy_triggered() //复制操作  
+{  
+ui->textEdit->copy();  
+}  
+//  
+void MainWindow::on_action_Past_triggered() //粘贴操作  
+{  
+ui->textEdit->paste();  
+}  
+ 
+  
+因为复制，撤销，全选，粘贴，剪切等功能，是TextEdit默认就有的，所以我们只需调用一
+下相应函数就行。  
+到这里，除了查找和帮助两个菜单的功能没有加上以外，其他功能都已经实现了。  
+  
+分类：Qt系列教程 作者： yafeilinux 日期： 四月 30th, 2010.    6,269 views 
+Tags: creator, qt, yafeilinux, 教程  
+   
+ 
+七、Qt Creator实现文本查找 
+本文章原创于www.yafeilinux.com 转载请注明出处。 
+现在加上查找菜单的功能。因为这里要涉及关于Qt Creator的很多实用功能，所以单独用一
+篇文章来介绍。 
+以前都用设计器设计界面，而这次我们用代码实现一个简单的查找对话框。对于怎么实现查找
+功能的，我们详细地分步说明了怎么进行类中方法的查找和使用。其中也将Qt Creator智能
+化的代码补全功能和程序中函数的声明位置和定义位置间的快速切换进行了介绍。 
+1.首先还是保存以前的工程，然后再将其打开。 
+我们发现Qt Creator默认的字体有点小，可以按下Ctrl键的同时按两下+键，来放大字体。
+也可以选择Edit->Advanced->Increase Font Size。 
+ 
+2.在mainwindow.h中加入#include <QLineEdit>的头文件包含，在private中添加 
+QLineEdit *find_textLineEdit; //声明一个行编辑器，用于输入要查找的内容 
+在private slots中添加 
+void show_findText(); 
+在该函数中实现查找字符串的功能。 
+3.我们进入查找菜单的触发事件槽函数，更改如下。 
+void MainWindow::on_action_Find_triggered() 
+{ 
+QDialog *findDlg = new QDialog(this); 
+//新建一个对话框，用于查找操作，this表明它的父窗口是MainWindow。 
+findDlg->setWindowTitle(tr(“查找”)); 
+//设置对话框的标题 
+find_textLineEdit = new QLineEdit(findDlg); 
+//将行编辑器加入到新建的查找对话框中 
+QPushButton *find_Btn = new QPushButton(tr(“查找下一个”),findDlg); 
+//加入一个“查找下一个”的按钮 
+QVBoxLayout* layout = new QVBoxLayout(findDlg); 
+layout->addWidget(find_textLineEdit); 
+layout->addWidget(find_Btn); 
+//新建一个垂直布局管理器，并将行编辑器和按钮加入其中 
+findDlg ->show(); 
+//显示对话框 
+connect(find_Btn,SIGNAL(clicked()),this,SLOT(show_findText())); 
+//设置“查找下一个”按钮的单击事件和其槽函数的关联 
+} 
+这里我们直接用代码生成了一个对话框，其中一个行编辑器可以输入要查找的字符，一个按钮
+可以进行查找操作。我们将这两个部件放到了一个垂直布局管理器中。然后显示这个对话框。
+并设置了那个按钮单击事件与show_findText()函数的关联。 
+ 
+5.下面我们开始写实现查找功能的show_findText()函数。 
+void MainWindow::show_findText()//“查找下一个”按钮的槽函数 
+{ 
+QString findText = find_textLineEdit->text(); 
+//获取行编辑器中的内容 
+} 
+先用一个QString类的对象获得要查找的字符。然后我们一步一步写查找操作的语句。 
+6.在下一行写下ui，然后直接按下键盘上的“<.”键，这时系统会根据是否是指针对象而自
+动生成“->”或“.”，因为ui是指针对象，所以自动生成“->”号，而且弹出了ui中的所
+有部件名称的列表。如下图。 
+ 
+7.我们用向下的方向键选中列表中的textEdit。或者我们可以先输入text，这时能缩减列表
+的内容。 
+ 
+8.如上图我们将鼠标放到textEdit上，这时便出现了textEdit的类名信息，且后面出现一
+个F1按键。我们按下键盘上的F1，便能出现textEdit的帮助。 
+ 
+9.我们在帮助中向下拉，会发现这里有一个find函数。 
+ 
+10.我们点击find，查看其详细说明。 
+ 
+11.可以看到find函数可以实现文本编辑器中字符串的查找。其中有一个FindFlags的参数，
+我们点击它查看其说明。 
+ 
+12.可以看到它是一个枚举变量（enum），有三个选项，第一项是向后查找（即查找光标以前
+的内容，这里的前后是相对的说法，比如第一行已经用完了，光标在第二行时，把第一行叫
+做向后。），第二项是区分大小写查找，第三项是查找全部。 
+13.我们选用第一项，然后写出下面的语句。 
+ui->textEdit->find(findText,QTextDocument::FindBackward); 
+//将行编辑器中的内容在文本编辑器中进行查找 
+当我们刚打出“f”时，就能自动弹出textEdit类的相关属性和方法。 
+ 
+可以看到，当写完函数名和第一个“（”后，系统会自动显示出该函数的函数原型，这样可以
+使我们减少出错。 
+ 
+14.这时已经能实现查找的功能了。但是我们刚才看到find的返回值类型是bool型，而且，
+我们也应该为查找不到字符串作出提示。 
+if(!ui->textEdit->find(findText,QTextDocument::FindBackward)) 
+{ 
+QMessageBox::warning(this,tr(“查找”),tr(“找不到 %1″) 
+.arg(findText); 
+} 
+因为查找失败返回值是false，所以if条件加了“！”号。在找不到时弹出警告对话框。 
+ 
+15.到这里，查找功能就基本上写完了。show_findText()函数的内容如下。 
+ 
+我们会发现随着程序功能的增强，其中的函数也会越来越多，我们都会为查找某个函数的定
+义位置感到头疼。而在Qt Creator中有几种快速定位函数的方法，我们这里讲解三种。 
+第一，在函数声明的地方直接跳转到函数定义的地方。 
+如在do_file_Load上点击鼠标右键，在弹出的菜单中选择Follow Symbol under Cursor或者
+下面的Switch between Method Declaration/Definition。 
+ 
+这时系统就会自动跳转到函数定义的位置。如下图。 
+ 
+第二，快速查找一个文件里的所有函数。 
+我们可以点击窗口最上面的下拉框，这里会显示本文件中所有函数的列表。 
+ 
+第三，利用查找功能。 
+1.我们先将鼠标定位到一个函数名上。 
+ 
+2.然后选择Edit->Find/Replace->Find Dialog。 
+ 
+3.这时会出现一个查找对话框，可以看到要查找的函数名已经写在里面了。 
+ 
+4.当我们按下Search按钮后，会在查找结果窗口显示查找到的结果。 
+ 
+5.我们点击第二个文件。会发现在这个文件中有两处关键字是高亮显示。 
+ 
+6.我们双击第二项，就会自动跳转到函数的定义处。 
+ 
+文章讲到这里，我们已经很详细地说明了怎样去使用一个类里面没有用过的方法函数；也说明
+了Qt Creator中的一些便捷操作。可以看到，Qt Creator开发环境，有很多很人性化的设计，
+我们应该熟练应用它们。 
+      在以后的文章中，我们不会再很详细地去用帮助来说明一个函数是怎么来的，该
+怎么用，这些应该自己试着去查找。 
+分类：Qt系列教程 作者： yafeilinux 日期： 四月 30th, 2010.    3,720 views 
+Tags: creator, qt, yafeilinux, 教程  
+ 
+   
+八、Qt Creator实现状态栏显示 
+本文章原创于www.yafeilinux.com 转载请注明出处。 
+在程序主窗口Mainwindow中，有菜单栏，工具栏，中心部件和状态栏。前面几个已经讲过了，
+这次讲解状态栏的使用。 
+程序中有哪些不明白的类或函数，请自己查看帮助。 
+1.我们在mainwindow.h中做一下更改。 
+加入头文件包含： #include <QLabel> 
+加入私有变量和函数： 
+QLabel* first_statusLabel; //声明两个标签对象，用于显示状态信息 
+QLabel* second_statusLabel; 
+void init_statusBar(); //初始化状态栏 
+加入一个槽函数声明：void do_cursorChanged(); //获取光标位置信息 
+2.在mainwindow.cpp中加入状态栏初始化函数的定义。 
+void MainWindow::init_statusBar() 
+{ 
+QStatusBar* bar = ui->statusBar; //获取状态栏 
+first_statusLabel = new QLabel; //新建标签 
+first_statusLabel->setMinimumSize(150,20); //设置标签最小尺寸 
+first_statusLabel->setFrameShape(QFrame::WinPanel); //设置标签形状 
+first_statusLabel->setFrameShadow(QFrame::Sunken); //设置标签阴影 
+second_statusLabel = new QLabel; 
+second_statusLabel->setMinimumSize(150,20); 
+second_statusLabel->setFrameShape(QFrame::WinPanel); 
+second_statusLabel->setFrameShadow(QFrame::Sunken); 
+bar->addWidget(first_statusLabel); 
+bar->addWidget(second_statusLabel); 
+first_statusLabel->setText(tr(“欢迎使用文本编辑器”)); //初始化内容 
+second_statusLabel->setText(tr(“yafeilinux制作!”)); 
+} 
+这里将两个标签对象加入到了主窗口的状态栏里，并设置了他们的外观和初值。 
+3.在构造函数里调用状态栏初始化函数。 
+init_statusBar(); 
+这时运行程序，效果如下。 
+ 
+4.在mainwindow.cpp中加入获取光标位置的函数的定义。 
+void MainWindow::do_cursorChanged() 
+{ 
+int rowNum = ui->textEdit->document()->blockCount(); 
+//获取光标所在行的行号 
+const QTextCursor cursor = ui->textEdit->textCursor(); 
+int colNum = cursor.columnNumber(); 
+//获取光标所在列的列号 
+first_statusLabel->setText(tr(“%1行 %2列”).arg(rowNum).arg(colNum)); 
+//在状态栏显示光标位置 
+} 
+这个函数可获取文本编辑框中光标的位置，并显示在状态栏中。 
+5.在构造函数添加光标位置改变信号的关联。 
+connect(ui->textEdit,SIGNAL(cursorPositionChanged()),this,SLOT(do_cursorChanged()
+)); 
+这时运行程序。效果如下。 
+ 
+6.在do_file_Load函数的最后添加下面语句。 
+second_statusLabel->setText(tr(“打开文件成功”)); 
+ 
+7.在saveFile函数的最后添加以下语句。 
+second_statusLabel->setText(tr(“保存文件成功”)); 
+ 
+8.在on_action_Find_triggered函数的后面添加如下语句。 
+second_statusLabel->setText(tr(“正在进行查找”)); 
+ 
+9.在on_action_Close_triggered函数最后添加如下语句。 
+first_statusLabel->setText(tr(“文本编辑器已关闭”)); 
+second_statusLabel->setText(tr(“yafeilinux制作!”)); 
+ 
+最终的mainwindow.cpp文件内容如下。 
+ 
+ 
+ 
+ 
+ 
+ 
+最终的mainwindow.h文件如下。 
+ 
+ 
+到这里整个文本编辑器的程序就算写完了。我们这里没有写帮助菜单的功能实现，大家可以
+自己添加。而且程序中也有很多漏洞和不完善的地方，如果有兴趣，大家也可以自己修改。
+因为时间和篇幅的原因，我们这里就不再过多的讲述。 
+分类：Qt系列教程 作者： yafeilinux 日期： 四月 30th, 2010.    3,366 views 
+Tags: creator, qt, yafeilinux, 教程  
+   
+ 
+九、Qt Creator中鼠标键盘事件的处理实现自定义鼠标指针 
+本文章原创于www.yafeilinux.com 转载请注明出处。 
+我们前面一直在说信号，比方说用鼠标按了一下按钮，这样就会产生一个按钮的单击信号，然
+后我们可以在相应的槽函数里进行相应功能的设置。其实在按下鼠标后，程序要先接收到鼠标
+按下的事件，然后将这个事件按默认的设置传给按钮。可以看出，事件和信号并不是一回事，
+事件比信号更底层。而我们以前把单击按钮也叫做事件，这是不确切的，不过大家都知道是什
+么意思，所以当时也没有细分。 
+Qt中的事件可以在QEvent中查看。下面我们只是找两个例子来进行简单的演示。 
+1.还是先建立一个Qt4 Gui Application工程，我这里起名为event。 
+2.添加代码，让程序中可以使用中文。 
+即在main.cpp文件中加入#include <QTextCodec>的头文件包含。 
+再在下面的主函数里添加QTextCodec::setCodecForTr(QTextCodec::codecForLocale()); 
+3.在mainwindow.h文件中做一下更改。 
+添加#include <QtGui>头文件。因为这样就包含了QtGui中所有的子文件。 
+在public中添加两个函数的声明 
+void mouseMoveEvent(QMouseEvent *); 
+void keyPressEvent(QKeyEvent *); 
+4.我们在mainwindow.ui中添加一个Label和一个PushButton，将他们拉长点，因为一会要
+在上面显示标语。 
+5.在mainwindow.cpp中的构造函数里添加两个部件的显示文本。 
+ui->label->setText(tr(“按下键盘上的A键试试！”)); 
+ui->pushButton->setText(tr(“按下鼠标的一个键，然后移动鼠标试试”)); 
+6.然后在下面进行两个函数的定义。 
+/*以下是鼠标移动事件*/ 
+void MainWindow::mouseMoveEvent(QMouseEvent *m) 
+{//这里的函数名和参数不能更改 
+QCursor my(QPixmap(“E:/Qt/Qt-Creator-Example/event/time.png”)); 
+//为鼠标指针选择图片，注意这里如果用绝对路径，要用“/”，而不能用“\” 
+//也可以将图片放到工程文件夹得debug文件夹下，这样用相对路径”time.png”就可以了 
+QApplication::setOverrideCursor(my); 
+//将鼠标指针更改为自己设置的图片 
+int x = m->pos().x(); 
+int y = m->pos().y(); 
+//获取鼠标现在的位置坐标 
+ui->pushButton->setText(tr(“鼠标现在的坐标是(%1,%2)， 哈哈好玩
+吧”).arg(x).arg(y)); 
+//将鼠标的位置坐标显示在按钮上 
+ui->pushButton->move(m->pos()); 
+//让按钮跟随鼠标移动 
+} 
+/*以下是键盘按下事件*/ 
+void MainWindow::keyPressEvent(QKeyEvent *k) 
+{ 
+if(k->key() == Qt::Key_A) //判断是否是A键按下 
+{ 
+ui->label->setPixmap(QPixmap(“E:/Qt/Qt-Creator-Example/event/linux.jpg”)); 
+ui->label->resize(100,100); 
+//更改标签图片和大小 
+} 
+} 
+注意：这两个函数不是自己新建的，而是对已有函数的重定义，所有函数名和参数都不能改。
+第一个函数对鼠标移动事件进行了重写。其中实现了鼠标指针的更改，和按钮跟随鼠标移动的
+功能。 
+第二个函数对键盘的A键按下实现了新的功能。 
+效果如下。 
+ 
+按下鼠标的一个键，并移动鼠标。 
+ 
+按下键盘上的A键。 
+ 
+分类：Qt系列教程 作者： yafeilinux 日期： 四月 30th, 2010.    4,107 views 
+Tags: creator, qt, yafeilinux, 教程  
+   
+十、Qt Creator中实现定时器和产生随机数 
+本文章原创于www.yafeilinux.com 转载请注明出处。 
+有两种方法实现定时器。 
+第一种。自己建立关联。 
+1.新建Gui工程，工程名可以设置为timer。并在主界面上添加一个标签label，并设置其显
+示内容为“0000-00-00 00:00:00 星期日”。 
+2.在mainwindow.h中添加槽函数声明。 
+private slots: 
+void timerUpDate(); 
+3.在mainwindow.cpp中添加代码。 
+添加#include <QtCore>的头文件包含，这样就包含了QtCore下的所有文件。 
+构造函数里添加代码： 
+QTimer *timer = new QTimer(this); 
+//新建定时器 
+connect(timer,SIGNAL(timeout()),this,SLOT(timerUpDate())); 
+//关联定时器计满信号和相应的槽函数 
+timer->start(1000); 
+//定时器开始计时，其中1000表示1000ms即1秒 
+4.然后实现更新函数。 
+void MainWindow::timerUpDate() 
+{ 
+QDateTime time = QDateTime::currentDateTime(); 
+//获取系统现在的时间 
+QString str = time.toString(“yyyy-MM-dd hh:mm:ss dddd”); 
+//设置系统时间显示格式 
+ui->label->setText(str); 
+//在标签上显示时间 
+} 
+5.运行程序，效果如下。 
+ 
+第二种。使用事件。（有点像单片机中的定时器啊） 
+1.新建工程。在窗口上添加两个标签。 
+2.在main.cpp中添加代码，实现中文显示。 
+#include <QTextCodec> 
+QTextCodec::setCodecForTr(QTextCodec::codecForLocale()); 
+3.在mainwindow.h中添加代码。 
+void timerEvent(QTimerEvent *); 
+4.在mainwindow.cpp中添加代码。 
+添加头文件#include <QtCore> 
+在构造函数里添加以下代码。 
+startTimer(1000); //其返回值为1，即其timerId为1 
+startTimer(5000);//其返回值为2，即其timerId为2 
+startTimer(10000); //其返回值为3，即其timerId为3 
+  
+添加了三个定时器，它们的timerId分别为1，2，3。注意，第几个定时器的返回值就为几。
+所以要注意定时器顺序。 
+在下面添加函数实现。 
+void MainWindow::timerEvent(QTimerEvent *t) //定时器事件  
+{  
+switch(t->timerId()) //判断定时器的句柄 
+{ 
+case 1 : ui->label->setText(tr(“每秒产生一个随机数：%1″).arg(qrand()%10));break; 
+case 2 : ui->label_2->setText(tr(“5秒后软件将关闭”));break; 
+case 3 : qApp->quit();break; //退出系统 
+} 
+} 
+这里添加了三个定时器，并都在定时器事件中判断它们，然后执行相应的功能。这样就不用每
+个定时器都写一个关联函数和槽函数了。 
+随机数的实现： 
+上面程序中的qrand()，可以产生随机数，qrand()%10可以产生0-9之间的随机数。要想产生
+100以内的随机数就%100。以此类推。 
+但这样每次启动程序后，都按同一种顺序产生随机数。为了实现每次启动程序产生不同的初始
+值。我们可以使用qsrand(time(0));实现设置随机数的初值，而程序每次启动时time(0)返回
+的值都不同，这样就实现了产生不同初始值的功能。 
+我们将qsrand(time(0));一句加入构造函数里。 
+程序最终运行效果如下。 
+ 
+  
+分类：Qt系列教程 作者： yafeilinux 日期： 四月 30th, 2010.    3,561 views 
+Tags: creator, qt, yafeilinux, 教程  
+十一、Qt 2D绘图（一）绘制简单图形 
+本文章原创于www.yafeilinux.com 转载请注明出处。 
+说明：以后使用的环境为基于Qt 4.6的Qt Creator 1.3.0 windows版本 
+本文介绍在窗口上绘制最简单的图形的方法。 
+1.新建Qt4 Gui Application工程，我这里使用的工程名为painter01，选用QDialog作为
+Base class 
+2.在dialog.h文件中声明重绘事件函数void paintEvent(QPaintEvent *); 
+3.在dialog.cpp中添加绘图类QPainter的头文件包含#include <QPainter> 
+4.在下面进行该函数的重定义。 
+void Dialog::paintEvent(QPaintEvent *) 
+{ 
+    QPainter painter(this); 
+    painter.drawLine(0,0,100,100); 
+} 
+其中创建了QPainter类对象，它是用来进行绘制图形的，我们这里画了一条线Line，其中的
+参数为线的起点（0，0），和终点（100，100）。这里的数值指的是像素，详细的坐标设置我
+们以后再讲，这里知道（0，0）点指的是窗口的左上角即可。运行效果如下： 
+ 
+5.在qt的帮助里可以查看所有的绘制函数，而且下面还给出了相关的例子。 
+ 
+ 
+6.我们下面将几个知识点说明一下，帮助大家更快入门。 
+将函数改为如下： 
+void Dialog::paintEvent(QPaintEvent *) 
+{ 
+    QPainter painter(this); 
+    QPen pen; //画笔 
+    pen.setColor(QColor(255,0,0)); 
+    QBrush brush(QColor(0,255,0,125)); //画刷 
+    painter.setPen(pen); //添加画笔 
+    painter.setBrush(brush); //添加画刷 
+    painter.drawRect(100,100,200,200); //绘制矩形 
+} 
+这里的pen用来绘制边框，brush用来进行封闭区域的填充，QColor类用来提供颜色，我们这
+里使用了rgb方法来生成颜色，即（red，green，blue），它们取值分别是0-255，例如（255，
+0，0）表示红色，而全0表示黑色，全255表示白色。后面的（0，255，0，125），其中的
+125是透明度（alpha）设置，其值也是从0到255，0表示全透明。最后将画笔和画刷添加到
+painter绘制设备中，画出图形。这里的Rect是长方形，其中的参数为（100，100）表示起
+始坐标，200，200表示长和宽。效果如下： 
+ 
+7.其实画笔和画刷也有很多设置，大家可以查看帮助。 
+QPainter painter(this); 
+    QPen pen(Qt::DotLine); 
+    QBrush brush(Qt::blue); 
+    brush.setStyle(Qt::HorPattern); 
+    painter.setPen(pen); 
+    painter.setBrush(brush); 
+    painter.drawRect(100,100,200,200); 
+这里我们设置了画笔的风格为点线，画刷的风格为并行横线，效果如下： 
+ 
+在帮助里可以看到所有的风格。 
+ 
+ 
+我们这里用了Qt::blue，Qt自定义的几个颜色如下： 
+ 
+8.画弧线，这是帮助里的一个例子。 
+QRectF rectangle(10.0, 20.0, 80.0, 60.0); //矩形 
+     int startAngle = 30 * 16;     //起始角度 
+     int spanAngle = 120 * 16;   //跨越度数 
+     QPainter painter(this); 
+     painter.drawArc(rectangle, startAngle, spanAngle); 
+这里要说明的是，画弧线时，角度被分成了十六分之一，就是说，要想为30度，就得是30*16。
+它有起始角度和跨度，还有位置矩形，要想画出自己想要的弧线，就要有一定的几何知识了。
+这里就不再祥述。 
+ 
+分类：Qt系列教程 作者： yafeilinux 日期： 四月 30th, 2010.    4,917 views 
+Tags: 2D绘图, creator, qt, yafeilinux, 教程  
+   
+ 
+十二、Qt 2D绘图（二）渐变填充 
+本文章原创于www.yafeilinux.com 转载请注明出处。 
+在qt中提供了三种渐变方式，分别是线性渐变，圆形渐变和圆锥渐变。如果能熟练应用它们，
+就能设计出炫目的填充效果。 
+线性渐变： 
+1.更改函数如下： 
+void Dialog::paintEvent(QPaintEvent *) 
+{ 
+    QPainter painter(this); 
+    QLinearGradient linearGradient(100,150,300,150); 
+    //从点（100，150）开始到点（300，150）结束，确定一条直线 
+    linearGradient.setColorAt(0,Qt::red); 
+    linearGradient.setColorAt(0.2,Qt::black); 
+    linearGradient.setColorAt(0.4,Qt::yellow); 
+    linearGradient.setColorAt(0.6,Qt::white); 
+    linearGradient.setColorAt(0.8,Qt::green); 
+    linearGradient.setColorAt(1,Qt::blue); 
+    //将直线开始点设为0，终点设为1，然后分段设置颜色 
+    painter.setBrush(linearGradient); 
+    painter.drawRect(100,100,200,100); 
+    //绘制矩形，线性渐变线正好在矩形的水平中心线上 
+} 
+效果如下： 
+ 
+圆形渐变： 
+1.更改函数内容如下： 
+   QRadialGradient radialGradient(200,100,100,200,100); 
+   //其中参数分别为圆形渐变的圆心（200，100），半径100，和焦点（200，100） 
+    //这里让焦点和圆心重合，从而形成从圆心向外渐变的效果 
+    radialGradient.setColorAt(0,Qt::black); 
+    radialGradient.setColorAt(1,Qt::yellow); 
+    //渐变从焦点向整个圆进行，焦点为起始点0，圆的边界为1 
+    QPainter painter(this); 
+    painter.setBrush(radialGradient); 
+    painter.drawEllipse(100,0,200,200); 
+   //绘制圆，让它正好和上面的圆形渐变的圆重合 
+效果如下： 
+ 
+2.要想改变填充的效果，只需要改变焦点的位置和渐变的颜色位置即可。 
+改变焦点位置：QRadialGradient radialGradient(200,100,100,100,100); 
+效果如下： 
+ 
+锥形渐变： 
+1.更改函数内容如下： 
+//圆锥渐变 
+    QConicalGradient conicalGradient(50,50,0); 
+    //圆心为（50，50），开始角度为0 
+    conicalGradient.setColorAt(0,Qt::green); 
+    conicalGradient.setColorAt(1,Qt::white); 
+   //从圆心的0度角开始逆时针填充 
+    QPainter painter(this); 
+    painter.setBrush(conicalGradient); 
+    painter.drawEllipse(0,0,100,100); 
+效果如下： 
+ 
+2.可以更改开始角度，来改变填充效果 
+QConicalGradient conicalGradient(50,50,30); 
+开始角度设置为30度，效果如下： 
+ 
+  
+分类：Qt系列教程 作者： yafeilinux 日期： 四月 30th, 2010.    2,902 views 
+Tags: 2D绘图, creator, qt, yafeilinux, 教程  
+   
+十三、Qt 2D绘图（三）绘制文字 
+本文章原创于www.yafeilinux.com 转载请注明出处。 
+接着上一次的教程，这次我们学习在窗体上绘制文字。 
+1.绘制最简单的文字。 
+我们更改重绘函数如下： 
+void Dialog::paintEvent(QPaintEvent *) 
+{ 
+    QPainter painter(this); 
+    painter.drawText(100,100,”yafeilinux”); 
+} 
+我们在（100，100）的位置显示了一行文字，效果如下。 
+ 
+2.为了更好的控制字体的位置。我们使用另一个构造函数。在帮助里查看drawText，如下。 
+ 
+这里我们看到了构造函数的原型和例子。其中的flags参数可以控制字体在矩形中的位置。我
+们更改函数内容如下。 
+void Dialog::paintEvent(QPaintEvent *) 
+{ 
+    QPainter painter(this); 
+    QRectF ff(100,100,300,200); 
+    //设置一个矩形 
+    painter.drawRect(ff); 
+    //为了更直观地看到字体的位置，我们绘制出这个矩形 
+    painter.setPen(QColor(Qt::red)); 
+    //设置画笔颜色为红色 
+    painter.drawText(ff,Qt::AlignHCenter,”yafeilinux”); 
+    //我们这里先让字体水平居中 
+} 
+效果如下。 
+ 
+可以看到字符串是在最上面水平居中的。如果想让其在矩形正中间，我们可以使用
+Qt::AlignCenter。 
+这里我们也可以使用两个枚举变量进行按位与操作，例如可以使用
+Qt::AlignBottom|Qt::AlignHCenter实现让文字显示在矩形下面的正中间。效果如下。 
+ 
+对于较长的字符串，我们也可以利用“\n”进行换行，例如”yafei\nlinux”。效果如下。 
+ 
+3.如果要使文字更美观，我们就需要使用QFont类来改变字体。先在帮助中查看一下这个类。 
+ 
+可以看到它有好几个枚举变量来设置字体。下面的例子我们对主要的几个选项进行演示。 
+更改函数如下。 
+void Dialog::paintEvent(QPaintEvent *) 
+{ 
+    QFont font(“Arial”,20,QFont::Bold,true); 
+    //设置字体的类型，大小，加粗，斜体 
+    font.setUnderline(true); 
+    //设置下划线 
+    font.setOverline(true); 
+    //设置上划线 
+    font.setCapitalization(QFont::SmallCaps); 
+    //设置大小写 
+    font.setLetterSpacing(QFont::AbsoluteSpacing,5); 
+    //设置间距 
+    QPainter painter(this); 
+    painter.setFont(font); 
+    //添加字体 
+    QRectF ff(100,100,300,200); 
+    painter.drawRect(ff); 
+    painter.setPen(QColor(Qt::red)); 
+    painter.drawText(ff,Qt::AlignCenter,”yafeilinux”); 
+} 
+效果如下。 
+ 
+这里的所有字体我们可以在设计器中进行查看。如下。 
+ 
+  
+分类：Qt系列教程 作者： yafeilinux 日期： 四月 30th, 2010.    3,062 views 
+Tags: 2D绘图, creator, qt, yafeilinux, 教程  
+   
+十四、Qt 2D绘图（四）绘制路径 
+本文章原创于www.yafeilinux.com 转载请注明出处。 
+接着上一次的教程，这次我们学习在窗体上绘制路径。QPainterPath这个类很有用，这里我
+们只是说明它最常使用的功能，更深入的以后再讲。 
+1.我们更改paintEvent函数如下。 
+void Dialog::paintEvent(QPaintEvent *) 
+{ 
+    QPainterPath path; 
+    path.addEllipse(100,100,50,50); 
+    path.lineTo(200,200); 
+    QPainter painter(this); 
+    painter.setPen(Qt::green); 
+    painter.setBrush(Qt::yellow); 
+    painter.drawPath(path); 
+} 
+这里我们新建了一个painterPath对象，并加入了一个圆和一条线。然后绘制这个路径。 
+效果如下。 
+ 
+2.上面绘制圆和直线都有对应的函数啊，为什么还要加入一个painterPath呢？ 
+我们再添加几行代码，你就会发现它的用途了。 
+void Dialog::paintEvent(QPaintEvent *) 
+{ 
+    QPainterPath path; 
+    path.addEllipse(100,100,50,50); 
+    path.lineTo(200,200); 
+    QPainter painter(this); 
+    painter.setPen(Qt::green); 
+    painter.setBrush(Qt::yellow); 
+    painter.drawPath(path); 
+    QPainterPath path2; 
+    path2.addPath(path); 
+    path2.translate(100,0); 
+    painter.drawPath(path2); 
+} 
+效果如下。 
+ 
+这里我们又新建了一个painterPath对象path2，并将以前的path添加到它上面，然后我们
+更改了原点坐标为（100，0），这时你发现我们复制了以前的图形。这也就是painterPath
+类最主要的用途，它能保存你已经绘制好的图形。 
+3.这里我们应该注意的是绘制完一个图形后，当前的位置在哪里。 
+例如： 
+void Dialog::paintEvent(QPaintEvent *) 
+{ 
+    QPainterPath path; 
+    path.lineTo(100,100); 
+    path.lineTo(200,100); 
+    QPainter painter(this); 
+    painter.drawPath(path); 
+} 
+效果如下。 
+ 
+可以看到默认是从原点（0，0）开始绘图的，当画完第一条直线后，当前点应该在（100，100）
+处，然后画第二条直线。 
+再如： 
+void Dialog::paintEvent(QPaintEvent *) 
+{ 
+    QPainterPath path; 
+    path.addRect(50,50,40,40); 
+    path.lineTo(200,200); 
+    QPainter painter(this); 
+    painter.drawPath(path); 
+} 
+效果如下。可见画完矩形后，当前点在矩形的左上角顶点，然后从这里开始画直线。 
+ 
+我们可以自己改变当前点的位置。 
+void Dialog::paintEvent(QPaintEvent *) 
+{ 
+    QPainterPath path; 
+    path.addRect(50,50,40,40); 
+    path.moveTo(100,100); 
+    path.lineTo(200,200); 
+    QPainter painter(this); 
+    painter.drawPath(path); 
+} 
+效果如下图。可见moveTo函数可以改变当前点的位置。 
+ 
+这里我们只讲解了绘制路径类最简单的应用，其实这个类很有用，利用它可以设计出很多特
+效。有兴趣的朋友可以查看一下它的帮助。因为我们这里只是简介，所以不再深入研究。 
+分类：Qt系列教程 作者： yafeilinux 日期： 四月 30th, 2010.    2,714 views 
+Tags: 2D绘图, creator, qt, yafeilinux, 教程  
+   
+十五、Qt 2D绘图（五）显示图片 
+本文章原创于www.yafeilinux.com 转载请注明出处。 
+现在我们来实现在窗口上显示图片，并学习怎样将图片进行平移，缩放，旋转和扭曲。这里
+我们是利用QPixmap类来实现图片显示的。 
+一、利用QPixmap显示图片。 
+1.将以前的工程文件夹进行复制备份，我们这里将工程文件夹改名为painter05。（以前已经
+说过，经常备份工程目录，是个很好的习惯） 
+2.在工程文件夹的debug文件夹中新建文件夹，我这里命名为images，用来存放要用的图片。
+我这里放了一张linux.jpg的图片。如下图所示。 
+ 
+3.在Qt Creator中打开工程。（即打开工程文件夹中的.pro文件），如图。 
+ 
+ 
+4.将dialog.cpp文件中的paintEvent（）函数更改如下。 
+void Dialog::paintEvent(QPaintEvent *) 
+{ 
+    QPainter painter(this); 
+    QPixmap pix; 
+    pix.load(“images/linux.jpg”); 
+    painter.drawPixmap(0,0,100,100,pix); 
+} 
+这里新建QPixmap类对象，并为其添加图片，然后在以（0，0）点开始的宽和高都为100的矩
+形中显示该图片。你可以改变矩形的大小，看一下效果啊。最终程序运行效果如下。 
+ 
+ 
+（说明：下面的操作都会和坐标有关，这里请先进行操作，我们在下一节将会讲解坐标系统。） 
+二、利用更改坐标原点实现平移。 
+Qpainter类中的translate()函数实现坐标原点的改变，改变原点后，此点将会成为新的原点
+（0，0）； 
+例如： 
+void Dialog::paintEvent(QPaintEvent *) 
+{ 
+    QPainter painter(this); 
+    QPixmap pix; 
+    pix.load(“images/linux.jpg”); 
+    painter.drawPixmap(0,0,100,100,pix); 
+    painter.translate(100,100); //将（100，100）设为坐标原点 
+    painter.drawPixmap(0,0,100,100,pix); 
+} 
+这里将（100，100）设置为了新的坐标原点，所以下面在（0，0）点贴图，就相当于在以前的
+（100，100）点贴图。效果如下。 
+ 
+ 
+三、实现图片的缩放。 
+我们可以使用QPixmap类中的scaled()函数来实现图片的放大和缩小。 
+例如： 
+void Dialog::paintEvent(QPaintEvent *) 
+{ 
+    QPainter painter(this); 
+    QPixmap pix; 
+    pix.load(“images/linux.jpg”); 
+    painter.drawPixmap(0,0,100,100,pix); 
+    qreal width = pix.width(); //获得以前图片的宽和高 
+    qreal height = pix.height(); 
+    pix = pix.scaled(width*2,height*2,Qt::KeepAspectRatio); 
+    //将图片的宽和高都扩大两倍，并且在给定的矩形内保持宽高的比值 
+    painter.drawPixmap(100,100,pix); 
+} 
+其中参数Qt::KeepAspectRatio，是图片缩放的方式。我们可以查看其帮助。将鼠标指针放到
+该代码上，当出现F1提示时，按下F1键，这时就可以查看其帮助了。当然我们也可以直接在
+帮助里查找该代码。 
+ 
+这是个枚举变量，这里有三个值，只看其图片就可大致明白，Qt::IgnoreAspectRatio是不保
+持图片的长宽比，Qt::KeepAspectRatio是在给定的矩形中保持长宽比，最后一个也是保持长
+宽比，但可能超出给定的矩形。这里给定的矩形是由我们显示图片时给定的参数决定的，例如
+painter.drawPixmap(0,0,100,100,pix);就是在以（0，0）点为起始点的宽和高都是100的矩
+形中。 
+程序运行效果如下。 
+ 
+四、实现图片的旋转。 
+旋转使用的是QPainter类的rotate()函数，它默认是以原点为中心进行旋转的。我们要改变
+旋转的中心，可以使用前面讲到的translate()函数完成。 
+例如： 
+void Dialog::paintEvent(QPaintEvent *) 
+{ 
+    QPainter painter(this); 
+    QPixmap pix; 
+    pix.load(“images/linux.jpg”); 
+    painter.translate(50,50); //让图片的中心作为旋转的中心 
+    painter.rotate(90); //顺时针旋转90度 
+    painter.translate(-50,-50); //使原点复原 
+    painter.drawPixmap(0,0,100,100,pix); 
+} 
+这里必须先改变旋转中心，然后再旋转，然后再将原点复原，才能达到想要的效果。 
+运行程序，效果如下。 
+ 
+ 
+五、实现图片的扭曲。 
+实现图片的扭曲，是使用的QPainter类的shear(qreal sh，qreal sv)函数完成的。它有两
+个参数，前面的参数实现横行变形，后面的参数实现纵向变形。当它们的值为0时，表示不扭
+曲。 
+例如： 
+void Dialog::paintEvent(QPaintEvent *) 
+{ 
+    QPainter painter(this); 
+    QPixmap pix; 
+    pix.load(“images/linux.jpg”); 
+    painter.drawPixmap(0,0,100,100,pix); 
+    painter.shear(0.5,0); //横向扭曲 
+    painter.drawPixmap(100,0,100,100,pix); 
+} 
+效果如下： 
+ 
+其他扭曲效果： 
+painter.shear(0,0.5); //纵向扭
+曲                            
+painter.shear(0.5,0.5); //横纵扭曲 
+              
+ 
+图片形状的变化，其实就是利用坐标系的变化来实现的。我们在下一节中将会讲解坐标系统。
+这一节中的几个函数，我们可以在其帮助文件中查看其详细解释。 
+分类：Qt系列教程 作者： yafeilinux 日期： 四月 30th, 2010.    4,777 views 
+Tags: 2D绘图, creator, qt, yafeilinux, 教程  
+   
+十六、Qt 2D绘图（六）坐标系统 
+本文章原创于www.yafeilinux.com 转载请注明出处。 
+前面一节我们讲解了图片的显示，其中很多都用到了坐标的变化，这一节我们简单讲一下Qt
+的坐标系统，其实也还是主要讲上一节的那几个函数。这里我们先讲解一下Qt的坐标系，然
+后讲解那几个函数，它们分别是： 
+translate()函数，进行平移变换；scale()函数，进行比例变换；rotate()函数，进行旋转
+变换；shear()函数，进行扭曲变换。 
+最后介绍两个有用的函数save()和restore()，利用它们来保存和弹出坐标系的状态，从而
+实现快速利用几个变换来绘图。 
+一、坐标系简介。 
+Qt中每一个窗口都有一个坐标系，默认的，窗口左上角为坐标原点，然后水平向右依次增大，
+水平向左依次减小，垂直向下依次增大，垂直向上依次减小。原点即为（0，0）点，然后以像
+素为单位增减。 
+例如： 
+void Dialog::paintEvent(QPaintEvent *) 
+{ 
+    QPainter painter(this); 
+    painter.setBrush(Qt::red); 
+    painter.drawRect(0,0,100,100); 
+    painter.setBrush(Qt::yellow); 
+    painter.drawRect(-50,-50,100,100); 
+} 
+我们先在原点（0，0）绘制了一个长宽都是100像素的红色矩形，又在（-50，-50）点绘制了
+一个同样大小的黄色矩形。可以看到，我们只能看到黄色矩形的一部分。效果如下图。 
+ 
+二、坐标系变换。 
+坐标系变换是利用变换矩阵来进行的，我们可以利用QTransform类来设置变换矩阵，因为一
+般我们不需要进行更改，所以这里不在涉及。下面我们只是对坐标系的平移，缩放，旋转，扭
+曲等应用进行介绍。 
+1.利用translate()函数进行平移变换。 
+void Dialog::paintEvent(QPaintEvent *) 
+{ 
+    QPainter painter(this); 
+    painter.setBrush(Qt::yellow); 
+    painter.drawRect(0,0,50,50); 
+   painter.translate(100,100); //将点（100，100）设为原点 
+    painter.setBrush(Qt::red); 
+    painter.drawRect(0,0,50,50); 
+   painter.translate(-100,-100); 
+    painter.drawLine(0,0,20,20); 
+} 
+效果如下。 
+ 
+这里将（100，100）点作为了原点，所以此时（100，100）就是（0，0）点，以前的（0，0）
+点就是 
+（-100，-100）点。要想使原来的（0，0）点重新成为原点，就是将（-100，-100）设为原点。 
+2.利用scale()函数进行比例变换，实现缩放效果。 
+void Dialog::paintEvent(QPaintEvent *) 
+{ 
+    QPainter painter(this); 
+    painter.setBrush(Qt::yellow); 
+    painter.drawRect(0,0,100,100); 
+    painter.scale(2,2); //放大两倍 
+    painter.setBrush(Qt::red); 
+    painter.drawRect(50,50,50,50); 
+} 
+效果如下。 
+ 
+可以看到，painter.scale(2,2)，是将横纵坐标都扩大了两倍，现在的（50，50）点就相当于
+以前的 
+（100，100）点。 
+3.利用shear()函数就行扭曲变换。 
+void Dialog::paintEvent(QPaintEvent *) 
+{ 
+    QPainter painter(this); 
+    painter.setBrush(Qt::yellow); 
+    painter.drawRect(0,0,50,50); 
+    painter.shear(0,1); //纵向扭曲变形 
+    painter.setBrush(Qt::red); 
+    painter.drawRect(50,0,50,50); 
+} 
+效果如下。 
+ 
+这里，painter.shear(0,1)，是对纵向进行扭曲，0表示不扭曲，当将第一个0更改时就会对
+横行进行扭曲，关于扭曲变换到底是什么效果，你观察一下是很容易发现的。 
+4.利用rotate()函数进行比例变换，实现缩放效果。 
+void Dialog::paintEvent(QPaintEvent *) 
+{ 
+    QPainter painter(this); 
+    painter.drawLine(0,0,100,0); 
+    painter.rotate(30); //以原点为中心，顺时针旋转30度 
+    painter.drawLine(0,0,100,0); 
+   painter.translate(100,100); 
+    painter.rotate(30); 
+    painter.drawLine(0,0,100,0); 
+} 
+效果如下。 
+ 
+因为默认的rotate()函数是以原点为中心进行顺时针旋转的，所以我们要想使其以其他点为
+中心进行旋转，就要先进行原点的变换。这里的painter.translate(100,100)将（100，100）
+设置为新的原点，想让直线以其为中心进行旋转，可是你已经发现效果并非如此。是什么原因
+呢？我们添加一条语句，如下： 
+void Dialog::paintEvent(QPaintEvent *) 
+{ 
+    QPainter painter(this); 
+    painter.drawLine(0,0,100,0); 
+    painter.rotate(30); //以原点为中心，顺时针旋转30度 
+    painter.drawLine(0,0,100,0); 
+   painter.rotate(-30); 
+    painter.translate(100,100); 
+    painter.rotate(30); 
+    painter.drawLine(0,0,100,0); 
+} 
+效果如下。 
+ 
+这时就是我们想要的效果了。我们加的一句代码为painter.rotate(-30)，这是因为前面已经
+将坐标旋转了30度，我们需要将其再旋转回去，才能是以前正常的坐标系统。不光这个函数
+如此，这里介绍的这几个函数均如此，所以很容易出错。下面我们将利用两个函数来很好的解
+决这个问题。 
+三、坐标系状态的保护。 
+我们可以先利用save()函数来保存坐标系现在的状态，然后进行变换操作，操作完之后，再
+用restore()函数将以前的坐标系状态恢复，其实就是一个入栈和出栈的操作。 
+例如： 
+void Dialog::paintEvent(QPaintEvent *) 
+{ 
+    QPainter painter(this); 
+    painter.save(); //保存坐标系状态 
+    painter.translate(100,100); 
+    painter.drawLine(0,0,50,50); 
+    painter.restore(); //恢复以前的坐标系状态 
+    painter.drawLine(0,0,50,50); 
+} 
+效果如下。 
+ 
+利用好这两个函数，可以实现快速的坐标系切换，绘制出不同的图形。 
+分类：Qt系列教程 作者： yafeilinux 日期： 四月 30th, 2010.    3,196 views 
+Tags: 2D绘图, creator, qt, yafeilinux, 教程  
+ 
+十七、Qt 2D绘图（七）Qt坐标系统深入 
+本文章原创于www.yafeilinux.com 转载请注明出处。 
+接着上面一节，前面只是很简单的讲解了一下Qt坐标系统的概念，通过对几个函数的应用，
+我们应该已经对Qt的坐标系统有了一个模糊的认识。那么现在就来让我们更深入地研究一下
+Qt窗口的坐标。希望大家把这一节的例子亲手做一下，不要被我所说的东西搞晕了！ 
+        我们还是在以前的工程中进行操作。 
+获得坐标信息： 
+为了更清楚地获得坐标信息，我们这里利用鼠标事件，让鼠标点击左键时输出该点的坐标信息。 
+1.在工程中的dialog.h文件中添加代码。 
+添加头文件： #include <QMouseEvent> 
+在public中添加函数声明：void mousePressEvent(QMouseEvent *); 
+然后到dialog.cpp文件中： 
+添加头文件： #include <QDebug> 
+定义函数： 
+void Dialog::mousePressEvent(QMouseEvent *event) 
+{ 
+   qDebug() << event->pos(); 
+} 
+这里应用了qDebug()函数，利用该函数可以在程序运行时将程序中的一些信息输出，在Qt 
+Creator中会将信息输出到其下面的Application Output窗口。这个函数很有用，在进行简
+单的程序调试时，都是利用该函数进行的。我们这里利用它将鼠标指针的坐标值输出出来。 
+2.然后更改重绘事件函数。 
+void Dialog::paintEvent(QPaintEvent *) 
+{ 
+    QPainter painter(this); 
+    painter.drawRect(0,0,50,50); 
+} 
+我们绘制了一个左上顶点为（0，0），宽和高都是50的矩形。 
+3.这时运行程序。并在绘制的矩形左上顶点点击一下鼠标左键。效果如下。（点击可看大图） 
+ 
+因为鼠标点的不够准确，所以输出的是（1，0），我们可以认为左上角就是原点（0，0）点。
+你可以再点击一下矩形的右下角，它的坐标应该是（50，50）。这个方法掌握了以后，我们就
+开始研究这些坐标了。 
+研究放大后的坐标 
+1.我们现在进行放大操作，然后查看其坐标的变化。 
+void Dialog::paintEvent(QPaintEvent *) 
+{ 
+    QPainter painter(this); 
+    painter.scale(2,2);    //横纵坐标都扩大2倍 
+    painter.drawRect(0,0,50,50); 
+} 
+我们将横纵坐标都扩大2倍，然后运行程序，查看效果： 
+ 
+我们点击矩形右下顶点，是（100，100），比以前的（50，50）扩大了2倍。 
+研究QPixmap或QImage的坐标 
+对于QWidget，QPixmap或QImage等都是绘图设备，我们都可以在其上利用QPainter进行绘
+图。现在我们研究一下QPixmap的坐标（QImage与其效果相同）。 
+1.我们更改重绘事件函数如下。 
+void Dialog::paintEvent(QPaintEvent *) 
+{ 
+    QPainter painter(this); 
+    QPixmap pix(200,200); 
+    pix.fill(Qt::red);   //背景填充为红色 
+    painter.drawPixmap(0,0,pix); 
+} 
+这里新建了一个宽、高都是200像素的QPixmap类对象，并将其背景颜色设置为红色，然后从
+窗口的原点（0，0）点添加该QPixmap类对象。为了表述方便，在下面我们将这个QPixmap
+类对象pix称为画布。 
+我们运行程序，并在画布的左上角和右下角分别点击一下，效果如下： 
+ 
+可以看到其左上角为（0，0）点，右下角为（200，200）点，是没有问题的。 
+2.我们再将函数更改如下。 
+void Dialog::paintEvent(QPaintEvent *) 
+{ 
+    QPainter painter(this); 
+    QPixmap pix(200,200); 
+    pix.fill(Qt::red);   //背景填充为红色 
+    painter.drawPixmap(100,100,pix); 
+} 
+这时我们从窗口的（100，100）点添加该画布，那么此时我们再点击画布的右上角，其坐标会
+是多少呢？ 
+ 
+可以看到，它是（100，100），没错，这是窗口上的坐标，那么这是不是画布上的坐标呢？ 
+3.我们接着更改函数。 
+void Dialog::paintEvent(QPaintEvent *) 
+{ 
+    QPainter painter(this); 
+    QPixmap pix(200,200); 
+    pix.fill(Qt::red);   //背景填充为红色 
+    QPainter pp(&pix);   //新建QPainter类对象，在pix上进行绘图 
+    pp.drawLine(0,0,50,50);     //在pix上的（0，0）点和（50，50）点之间绘
+制直线 
+    painter.drawPixmap(100,100,pix); 
+} 
+这里我们又新建了一个QPainter类对象pp，其中pp(&pix)表明，pp所进行的绘图都是在画
+布pix上进行的。 
+现在先说明一下： 
+QPainter painter(this) ，this就表明了是在窗口上进行绘图，所以利用painter进行的绘
+图都是在窗口上的，painter进行的坐标变化，是变化的窗口的坐标系；而利用pp进行的绘
+图都是在画布上进行的，如果它进行坐标变化，就是变化的画布的坐标系。 
+我们在画布上的（0，0）点和（50，50）点之间绘制了一条直线。这时运行程序，点击这条直
+线的两端，看看其坐标值。 
+ 
+结果是直线的两端的坐标分别是（100，100），（150，150）。我们从中可以得出这样的结论： 
+第一，QWidget和QPixmap各有一套坐标系统，它们互不影响。可以看到，无论画布在窗口的
+什么位置，它的坐标原点依然在左上角，为（0，0）点，没有变。 
+第二，我们所得到的鼠标指针的坐标值是窗口提供的，不是画布的坐标。 
+下面我们继续研究： 
+4.比较下面两个例子。 
+例子一： 
+void Dialog::paintEvent(QPaintEvent *) 
+{ 
+    QPainter painter(this); 
+    QPixmap pix(200,200); 
+    qDebug() << pix.size();   //放大前输出pix的大小 
+    pix.fill(Qt::red);   
+    QPainter pp(&pix);   
+    pp.scale(2,2);           //pix的坐标扩大2倍 
+    pp.drawLine(0,0,50,50);     //在pix上的（0，0）点和（50，50）点之间绘
+制直线 
+    qDebug() << pix.size();    //放大后输出pix的大小 
+    painter.drawPixmap(0,0,pix); 
+} 
+ 
+例子二： 
+void Dialog::paintEvent(QPaintEvent *) 
+{ 
+    QPainter painter(this); 
+    QPixmap pix(200,200); 
+    qDebug() << pix.size();   //放大前输出pix的大小 
+    painter.scale(2,2);     //窗口坐标扩大2倍 
+    pix.fill(Qt::red); 
+    QPainter pp(&pix); 
+    pp.drawLine(0,0,50,50);     //在pix上的（0，0）点和（50，50）点之间绘
+制直线 
+    qDebug() << pix.size();    //放大后输出pix的大小 
+    painter.drawPixmap(0,0,pix); 
+} 
+ 
+两个例子中都使直线的长度扩大了两倍，但是第一个例子是扩大的画布的坐标系，第二个例子
+是扩大的窗口的坐标系，你可以看一下它们的效果。 
+你仔细看一下输出，两个例子中画布的大小都没有变。 
+如果你看过了我写的那个绘图软件的教程（链接过去），现在你就能明白我在其中讲“问题一”
+时说的意思了：虽然画布看起来是大了，但是其大小并没有变，其中坐标也没有变。变的是像
+素的大小或者说像素间的距离。 
+但是，有一点你一定要搞明白，这只是在QPixmap与QWidget结合时才出现的，是相对的说法。
+其实利用scale()函数是会让坐标变化的，我们在开始的例子已经证明了。 
+结论： 
+现在是不是已经很乱了，一会儿是窗口，一会儿是画布，一会儿坐标变化，一会儿又不变了，
+到底是怎么样呢？ 
+其实只需记住一句话： 
+所有的绘图设备都有自己的坐标系统，它们互不影响。 
+分类：Qt系列教程 作者： yafeilinux 日期： 四月 30th, 2010.    2,880 views 
+Tags: 2D绘图, creator, qt, yafeilinux, 教程  
+ 
+ 
+   
+十八、Qt 2D绘图（八）涂鸦板 
+本文章原创于www.yafeilinux.com 转载请注明出处。 
+上面一节我们深入分析了一下Qt的坐标系统，这一节我们在前面程序的基础上稍加改动，设
+计一个涂鸦板程序。 
+简单的涂鸦板： 
+1.我们再在程序中添加函数。 
+我们在dialog.h里的public中再添加鼠标移动事件和鼠标释放事件的函数声明： 
+void mouseMoveEvent(QMouseEvent *); 
+void mouseReleaseEvent(QMouseEvent *); 
+在private中添加变量声明： 
+QPixmap pix; 
+QPoint lastPoint; 
+QPoint endPoint; 
+因为在函数里声明的QPixmap类对象是临时变量，不能存储以前的值，所以为了实现保留上次
+的绘画结果，我们需要将其设为全局变量。 
+后两个QPoint变量存储鼠标指针的两个坐标值，我们需要用这两个坐标值完成绘图。 
+2.在dialog.cpp中进行修改。 
+在构造函数里进行变量初始化。 
+resize(600,500);    //窗口大小设置为600*500 
+pix = QPixmap(200,200); 
+pix.fill(Qt::white); 
+然后进行其他几个函数的定义： 
+void Dialog::paintEvent(QPaintEvent *) 
+{   
+    QPainter pp(&pix); 
+    pp.drawLine(lastPoint,endPoint);   //根据鼠标指针前后两个位置就行绘制直
+线 
+    lastPoint = endPoint;   //让前一个坐标值等于后一个坐标值，这样就能实现画
+出连续的线 
+    QPainter painter(this); 
+    painter.drawPixmap(0,0,pix); 
+} 
+void Dialog::mousePressEvent(QMouseEvent *event) 
+{ 
+    if(event->button()==Qt::LeftButton) //鼠标左键按下 
+        lastPoint = event->pos(); 
+} 
+void Dialog::mouseMoveEvent(QMouseEvent *event) 
+{ 
+    if(event->buttons()&Qt::LeftButton) //鼠标左键按下的同时移动鼠标 
+    { 
+        endPoint = event->pos(); 
+        update(); 
+    } 
+} 
+void Dialog::mouseReleaseEvent(QMouseEvent *event) 
+{ 
+    if(event->button() == Qt::LeftButton) //鼠标左键释放 
+    { 
+        endPoint = event->pos(); 
+        update(); 
+    } 
+} 
+这里的update()函数，是进行界面重绘，执行该函数时就会执行那个重绘事件函数。 
+3.这时运行程序，效果如下。（点击图片可将其放大） 
+ 
+  
+  
+这样简单的涂鸦板程序就完成了。下面我们进行放大后的涂鸦。 
+放大后再进行涂鸦： 
+1.添加放大按钮。 
+在dialog.h中添加头文件声明： #include <QPushButton> 
+在private中添加变量声明： 
+int scale; 
+QPushButton *pushBtn; 
+然后再在下面写上按钮的槽函数声明： 
+private slots: 
+    void zoomIn(); 
+2.在dialog.cpp中进行更改。 
+在构造函数里添加如下代码： 
+scale =1;   //设置初始放大倍数为1，即不放大 
+pushBtn = new QPushButton(this); //新建按钮对象 
+pushBtn->setText(tr(“zoomIn”));   //设置按钮显示文本 
+pushBtn->move(500,450);    //设置按钮放置位置 
+connect(pushBtn,SIGNAL(clicked()),this,SLOT(zoomIn())); //对按钮的单击事件和其槽
+函数进行关联 
+这里我们利用代码添加了一个按钮对象，用它来实现放大操作。 
+再在构造函数以外进行zoomIn()函数的定义： 
+void Dialog::zoomIn() //按钮单击事件的槽函数 
+{ 
+    scale *=2; 
+    update(); 
+} 
+3.通过上一节的学习，我们应该已经知道想让画布的内容放大有两个办法，一个是直接放大
+画布的坐标，一个是放大窗口的坐标。 
+我们主要讲解放大窗口坐标。 
+void Dialog::paintEvent(QPaintEvent *) 
+{   
+    QPainter pp(&pix); 
+    pp.drawLine(lastPoint,endPoint);   //根据鼠标指针前后两个位置就行绘制直
+线 
+    lastPoint = endPoint;   //让前一个坐标值等于后一个坐标值，这样就能实现画
+出连续的线 
+    QPainter painter(this); 
+    painter.scale(scale,scale); //进行放大操作 
+    painter.drawPixmap(0,0,pix); 
+} 
+这时运行程序。 
+先随意画一个图形，如下图。 
+ 
+再按下“zoomIn”按钮，进行放大两倍。可以看到图片放大了，效果如下。 
+ 
+这时我们再进行绘图，绘制出的线条已经不能和鼠标指针的轨迹重合了。效果如下图。 
+ 
+有了前面一节的知识，我们就不难理解出现这个问题的原因了。窗口的坐标扩大了，但是画布
+的坐标并没有扩大，而我们画图用的坐标值是鼠标指针的，鼠标指针又是获取的窗口的坐标值。
+现在窗口和画布的同一点的坐标并不相等，所以就出现了这样的问题。 
+  
+其实解决办法很简单，窗口放大了多少倍，就将获得的鼠标指针的坐标值缩小多少倍就行了。 
+void Dialog::paintEvent(QPaintEvent *) 
+{   
+    QPainter pp(&pix); 
+    pp.drawLine(lastPoint/scale,endPoint/scale); 
+    lastPoint = endPoint; 
+    QPainter painter(this); 
+    painter.scale(scale,scale); //进行放大操作 
+    painter.drawPixmap(0,0,pix); 
+} 
+运行程序，效果如下： 
+ 
+此时已经能进行正常绘图了。 
+  
+这种用改变窗口坐标大小来改变画布面积的方法，实际上是有损图片质量的。就像将一张位图
+放大一样，越放大越不清晰。原因就是，它的像素的个数没有变，如果将可视面积放大，那么
+单位面积里的像素个数就变少了，所以画质就差了。 
+下面我们简单说说另一种方法。 
+放大画布坐标。 
+void Dialog::paintEvent(QPaintEvent *) 
+{   
+    QPainter pp(&pix); 
+    pp.scale(scale,scale); 
+    pp.drawLine(lastPoint/scale,endPoint/scale); 
+    lastPoint = endPoint; 
+    QPainter painter(this); 
+    painter.drawPixmap(0,0,pix); 
+} 
+效果如下： 
+ 
+此时，画布中的内容并没有放大，而且画布也没有变大，不是我们想要的，所以我们再更改一
+下函数。 
+void Dialog::paintEvent(QPaintEvent *) 
+{   
+    if(scale!=1) //如果进行放大操作 
+    { 
+        QPixmap copyPix(pix.size()*scale); //临时画布，大小变化了scale倍 
+        QPainter pter(&copyPix); 
+        pter.scale(scale,scale); 
+        pter.drawPixmap(0,0,pix);   //将以前画布上的内容复制到现在的画布
+上 
+        pix = copyPix;     //将放大后的内容再复制回原来的画布上，这样只
+传递内容，不传递坐标系 
+        scale =1; //让scale重新置1 
+    } 
+    QPainter pp(&pix); 
+    pp.scale(scale,scale); 
+    pp.drawLine(lastPoint/scale,endPoint/scale); 
+    lastPoint = endPoint; 
+    QPainter painter(this); 
+    painter.drawPixmap(0,0,pix); 
+} 
+此时运行效果如下： 
+ 
+这样就好了。可以看到，这样放大后再进行绘制，出来的效果是不同的。 
+我们就讲到这里，如果你有兴趣，可以接着研究！ 
+怎么应用上面讲到的内容，你可以查看Qt涂鸦板程序图文详细教程。 
+分类：Qt系列教程 作者： yafeilinux 日期： 四月 30th, 2010.    2,987 views 
+Tags: 2D绘图, creator, qt, yafeilinux, 教程  
+   
+十九、Qt 2D绘图（九）双缓冲绘图简介 
+本文章原创于www.yafeilinux.com 转载请注明出处。 
+上面一节我们实现了涂鸦板的功能，但是如果我们想在涂鸦板上绘制矩形，并且可以动态地
+绘制这个矩形，也就是说我们可以用鼠标画出随意大小的矩形，那该怎么办呢？ 
+我们先进行下面的三步，最后引出所谓的双缓冲绘图的概念。 
+第一步： 
+我们更改上一节的那个程序的重绘函数。 
+void Dialog::paintEvent(QPaintEvent *) 
+{   
+    QPainter painter(this); 
+    int x,y,w,h; 
+    x = lastPoint.x(); 
+    y = lastPoint.y(); 
+    w = endPoint.x() – x; 
+    h = endPoint.y() – y; 
+    painter.drawRect(x,y,w,h); 
+} 
+然后运行，效果如下。 
+ 
+这时我们已经可以拖出一个矩形了，但是这样直接在窗口上绘图，以前画的矩形是不能保存住
+的。所以我们下面加入画布，在画布上进行绘图。 
+第二步： 
+我们先在构造函数里将画布设置大点：pix = QPixmap(400,400); 
+然后更改函数，如下： 
+void Dialog::paintEvent(QPaintEvent *) 
+{   
+    int x,y,w,h; 
+    x = lastPoint.x(); 
+    y = lastPoint.y(); 
+    w = endPoint.x() – x; 
+    h = endPoint.y() – y; 
+    QPainter pp(&pix); 
+    pp.drawRect(x,y,w,h); 
+    QPainter painter(this); 
+    painter.drawPixmap(0,0,pix); 
+} 
+这时运行程序，效果如下： 
+ 
+现在虽然能画出矩形，但是却出现了无数个矩形，这不是我们想要的结果，我们希望能像第一
+步那样绘制矩形，所以我们再加入一个临时画布。 
+第三步： 
+首先，我们在dialog.h中的private里添加变量声明： 
+QPixmap tempPix; //临时画布 
+bool isDrawing;   //标志是否正在绘图 
+然后在dialog.cpp中的构造函数里进行变量初始化： 
+isDrawing = false; 
+最后更改函数如下： 
+void Dialog::paintEvent(QPaintEvent *) 
+{   
+    int x,y,w,h; 
+    x = lastPoint.x(); 
+    y = lastPoint.y(); 
+    w = endPoint.x() – x; 
+    h = endPoint.y() – y; 
+    QPainter painter(this); 
+    if(isDrawing)     //如果正在绘图 
+    { 
+        tempPix = pix;    //将以前pix中的内容复制到tempPix中，这样实现
+了交互绘图 
+        QPainter pp(&tempPix); 
+        pp.drawRect(x,y,w,h); 
+        painter.drawPixmap(0,0,tempPix); 
+    } 
+    else 
+    { 
+        QPainter pp(&pix); 
+        pp.drawRect(x,y,w,h); 
+        painter.drawPixmap(0,0,pix); 
+    } 
+} 
+void Dialog::mousePressEvent(QMouseEvent *event) 
+{ 
+    if(event->button()==Qt::LeftButton) //鼠标左键按下 
+    { 
+        lastPoint = event->pos(); 
+        isDrawing = true;   //正在绘图 
+    } 
+} 
+void Dialog::mouseMoveEvent(QMouseEvent *event) 
+{ 
+    if(event->buttons()&Qt::LeftButton) //鼠标左键按下的同时移动鼠标 
+    { 
+        endPoint = event->pos(); 
+        update(); 
+    } 
+} 
+void Dialog::mouseReleaseEvent(QMouseEvent *event) 
+{ 
+    if(event->button() == Qt::LeftButton) //鼠标左键释放 
+    { 
+        endPoint = event->pos(); 
+        isDrawing = false;    //结束绘图 
+        update(); 
+    } 
+} 
+我们使用两个画布，就解决了绘制矩形等图形的问题。 
+其中tempPix = pix;一句代码很重要，就是它，才实现了消除那些多余的矩形。 
+ 
+双缓冲绘图简介： 
+根据我的理解，如果将第一步中不用画布，直接在窗口上进行绘图叫做无缓冲绘图，那么第二
+步中用了一个画布，将所有内容都先画到画布上，在整体绘制到窗口上，就该叫做单缓冲绘图，
+那个画布就是一个缓冲区。这样，第三步，用了两个画布，一个进行临时的绘图，一个进行最
+终的绘图，这样就叫做双缓冲绘图。 
+我们已经看到，利用双缓冲绘图可以实现动态交互绘制。其实，Qt中所有部件进行绘制时，
+都是使用的双缓冲绘图。就算是第一步中我们没有用画布，Qt在进行自身绘制时也是使用的
+双缓冲绘图，所以我们刚才那么说，只是为了更好地理解双缓冲的概念。 
+———————————————————————————————————- 
+到这里，我们已经可以进行一些Qt 2D绘图方面的设计了。我这里有两个例子，一个是那个
+Qt涂鸦板程序 ，它是实践了我所讲的这几节的内容，可以说是对这几节内容的一个综合。还
+有一个例子，就是方块游戏系列 那个是对这些知识的应用。如果你有兴趣，可以看一下。 
+  
+分类：Qt系列教程  作者：  yafeilinux 日期：  四月  30th, 2010.    3,098 views 
+Tags: 2D绘图, creator, qt, yafeilinux,  教程   
+   
+ 
+二十、Qt 2D绘图（十）图形视图框架简介 
+本文章原创于www.yafeilinux.com 转载请注明出处。 
+我们前面用基本的绘图类实现了一个绘图软件，但是，我们无法做出像Word或者Flash中那
+样，绘制出来的图形可以作为一个元件进行任意变形。我们要想很容易地做出那样的效果，就
+要使用Qt中的图形视图框架。 
+The QGraphics View Framework（图形视图框架），在Qt Creator中的帮助里可以查看它的
+介绍，当然那是英文的，这里有一篇中文的翻译，大家可以看一下：Qt的graphics View框
+架 
+如果你的程序中要使用大量的2D图元，并且想要这些图元都能进行单独或群组的控制，你就
+要使用这个框架了。比方说像Flash一样的矢量绘图软件，各种游戏软件。但是因为这里涉及
+的东西太多了，不可能用一两篇文章就介绍清楚，所以这里我们只是提及一下，让一些刚入门
+的朋友知道有这样一个可用的框架。 
+最简单的使用： 
+The QGraphics View Framework包含三个大类：QGraphicsItem 项类（或者叫做图元类），
+QGraphicsScene 场景类，和QGraphicsView 视图类。 
+QGraphicsItem 用来绘制你所要用到的图形，QGraphicsScene 用来包含并管理所有的图元，
+QGraphicsView 用来显示所有场景。而他们三个都拥有自己各自的坐标系统。我们下面就来建
+立一个工程，完成一个最简单的例子。 
+1.新建空的Qt工程： 
+ 
+2.更改工程名和存放路径。 
+ 
+3.然后新建C++类。 
+ 
+4.更改类名为MyItem，基类填写为QGraphicsItem，如下图： 
+ 
+5.可以看到新建的类默认已经添加到了工程里。 
+ 
+6.新建C++ Source File，更改名字为main.cpp，如下图： 
+ 
+7.然后更改各文件的内容。 
+更改完成后，myitem.h文件内容如下： 
+ 
+myitem.cpp文件的内容如下： 
+ 
+main.cpp的内容如下： 
+ 
+运行程序，最终效果如下： 
+ 
+这里我们只是演示了一下使用这个框架完成最简单的程序的过程，只起到抛砖引玉的作用。 
+这个框架很复杂，但是功能也很强大，Qt Creator中自带了几个相关的例子（在帮助中查找
+Graphics View Examples即可），你可以参考一下。因为篇幅问题，我们就只讲这么多，如
+果以后有机会，我会推出一个相关的专题来讲述这个框架。 
+分类：Qt系列教程 作者： yafeilinux 日期： 四月 30th, 2010.    3,006 views 
+Tags: 2D绘图, creator, qt, yafeilinux, 教程  
+   
+二十一、Qt数据库（一）简介 
+本文章原创于www.yafeilinux.com 转载请注明出处。 
+从今天开始我们学习Qt数据库编程的内容。 
+先说明：我们以后使用现在最新的基于Qt 4.6.2的Qt Creator 1.3.1 Windows版本，该版本
+是2010年2月17日发布的。 
+数据库几乎是每个较大的软件所必须应用的，而在Qt中也使用QtSql模块实现了对数据库的
+完美支持。我们在Qt Creator的帮助中查找QtSql Module，其内容如下图： 
+ 
+可以看到这个模块是一组类的集合，使用这个模块我们需要加入头文件#include <QtSql>，
+而在工程文件中需要加入一行代码：QT += sql 
+这里每个类的作用在后面都有简单的介绍，你也可以进入其中查看其详细内容。下面我们先
+简单的说一下QSqlDatabase类和QSqlQuery类。 
+QSqlDatabase类实现了数据库连接的操作，现在Qt支持的数据库类型有如下几种： 
+ 
+而现在我们使用的免费的Qt只提供了SQLite和ODBC数据库的驱动(我们可以在Qt Creator
+安装目录下的qt\plugins\sqldrivers文件夹下查看)，而其他数据库的驱动需要我们自己添
+加。SQLite是一个小巧的嵌入式数据库，关于它的介绍你可以自己在网上查找。 
+QSqlQuery类用来执行SQL语句。（关于SQL语句：在我的教程中只会出现很简单的SQL语句，
+你没有相关知识也可以看懂，但是如果想进行深入学习，就需要自己学习相关知识了。） 
+下面我们就先利用这两个类来实现最简单的数据库程序，其他的类我们会在以后的教程中逐个
+学习到。 
+1.新建Qt控制台工程。 
+ 
+2.选择上QtSql模块，这样就会自动往工程文件中添加QT += sql 这行代码了。 
+ 
+3.修改main.cpp中的内容如下。 
+#include <QtCore/QCoreApplication> 
+#include <QtSql> 
+int main(int argc, char *argv[]) 
+{ 
+    QCoreApplication a(argc, argv); 
+    QSqlDatabase db = QSqlDatabase::addDatabase(“QSQLITE”); //添加数据库驱动 
+    db.setDatabaseName(“:memory:”); //数据库连接命名 
+    if(!db.open()) //打开数据库 
+    { 
+        return false; 
+    } 
+    QSqlQuery query; //以下执行相关QSL语句 
+    query.exec(“create table student(id int primary key,name varchar)”); 
+    //新建student表，id设置为主键，还有一个name项 
+    query.exec(“insert into student values(1,’xiaogang’)”); 
+    query.exec(“insert into student values(2,’xiaoming’)”); 
+    query.exec(“insert into student values(3,’xiaohong’)”); 
+    //向表中插入3条记录 
+    query.exec(“select id,name from student where id >= 2″); 
+    //查找表中id >=2 的记录的id项和name项的值 
+    while(query.next())       //query.next()指向查找到的第一条记录，然后
+每次后移一条记录 
+    { 
+        int ele0 = query.value(0).toInt();        //query.value(0)
+是id的值，将其转换为int型 
+        QString ele1 =query.value(1).toString(); 
+        qDebug() << ele0 <<ele1 ;       //输出两个值 
+    } 
+    
+    return a.exec(); 
+} 
+我们使用了SQLite数据库，连接名为“:memory:”表示这是建立在内存中的数据库，也就是
+说该数据库只在程序运行期间有效。如果需要保存该数据库文件，我们可以将它更改为实际的
+文件路径。 
+4.最终效果如下。 
+ 
+5.我们可以将主函数更改如下。 
+int main(int argc, char *argv[]) 
+{ 
+    QCoreApplication a(argc, argv); 
+    qDebug() << “Available drivers:”; 
+    QStringList drivers = QSqlDatabase::drivers(); 
+    foreach(QString driver, drivers) 
+    qDebug() << “\t” << driver; 
+    return a.exec(); 
+} 
+这样运行程序就可以显示现在所有能用的数据库驱动了。 
+ 
+可以看到现在可用的数据库驱动只有三个。 
+  
+分类：Qt系列教程 作者： yafeilinux 日期： 四月 30th, 2010.    4,062 views 
+Tags: creator, qt, yafeilinux, 教程, 数据库  
+   
+二十二、Qt数据库（二）添加MySQL数据库驱动插件 
+本文章原创于www.yafeilinux.com 转载请注明出处。 
+在上一节的末尾我们已经看到，现在可用的数据库驱动只有3种，那么怎样使用其他的数据
+库呢？在Qt中，我们需要自己编译其他数据库驱动的代码，让它们以插件的形式来使用。下
+面我们就以现在比较流行的MySQL数据库为例，说明一下怎样在Qt Creator中添加数据库驱
+动插件。 
+在讲述之前，我们先看一下Qt Creator中数据库的插件到底放在哪里。 
+我们进入Qt Creator的安装目录，然后进入相对应的文件夹下，比方我这里是 
+D:\Qt\2010.02.1\qt\plugins\sqldrivers 
+在这里我们可以看见几个文件，如下图： 
+ 
+根据名字中的关键字，我们可以判断出这就是ODBC数据库和SQLite数据库的驱动插件。下面
+我们编译好MySQL数据库驱动后，也会在这里出现相对应的文件。 
+首先：我们查看怎样安装数据库插件。 
+我们打开Qt Creator，在帮助中搜索SQL Database Drivers关键字。这里列出了编译Qt支
+持的所有数据库的驱动的方法。 
+我们下拉到在windows上编译QMYSQL数据库插件的部分，其内容如下： 
+ 
+这里详细介绍了整个编译的过程，其可以分为以下几步： 
+第一，下载MySQL的安装程序，在安装时选择定制安装，这时选中安装Libs和Include文件。
+安装位置可以是C:\MySQL 。 
+注意：安装位置不建议改动，因为下面进行编译的命令中使用了安装路径，如果改动，那么下
+面也要进行相应改动。 
+第二，进行编译。我们按照实际情况输入的命令如下。 
+cd %QTDIR%\src\plugins\sqldrivers\mysql 
+qmake “INCLUDEPATH+=C:\MySQL\include” “LIBS+=C:\MySQL\lib\opt\libmysql.lib” 
+mysql.pro 
+mingw32-make 
+注意：在上面的命令中qmake之后如果加上“-o Makefile”选项，那么这个插件只能在以
+release模式编译程序时才能使用，所以我们上面没有加这个选项。 
+然后：我们按照上面的过程进行相应操作。 
+1.我们先下载MySQL的安装文件。 
+我们可以到MySQL的官方主页 http://www.mysql.com 进行下载最新的MySQL的windows版本，
+现在具体的下载页面地址为： 
+http://www.mysql.com/downloads/mirror.php?id=383405#mirrors 
+我们不进行注册，直接点击其下面的 
+No thanks, just take me to the downloads! 
+可以在其中选择一个镜像网点进行下载，我使用的是Asia下的最后一个，就是台湾的镜像网
+点下载的。 
+下载到的文件名为：mysql-essential-5.1.44-win32 ，其中的win32表明是32位的windows
+系统，这一点一定要注意。文件大小为40M左右。 
+当然你也可以到中文网站上进行下载：http://www.mysql.cn/，随便下一个windows的版本就
+行。 
+2.安装软件。 
+我们选择定制安装Custom。 
+ 
+然后选中安装Include文件和Lib文件。 
+ 
+我们将安装路径更改为：C:\MySQL 。 
+ 
+最终的界面如下。 
+ 
+安装完成后，我们不进行任何操作，所以将两个选项都取消。 
+ 
+3.进行编译。 
+我们在桌面上开始菜单中找到Qt Creator的菜单，然后打开Qt Command Prompt。 
+ 
+然后输入第一条命令cd %QTDIR%\src\plugins\sqldrivers\mysql 后按回车，运行效果如下。 
+ 
+然后输入第二条命令： 
+qmake “INCLUDEPATH+=C:\MySQL\include” “LIBS+=C:\MySQL\lib\opt\libmysql.lib” 
+mysql.pro 
+按回车后运行效果如下： 
+ 
+最后输入：mingw32-make ，按下回车后经过几秒的编译，最终效果如下： 
+ 
+整个编译过程中都没有出现错误提示，可以肯定插件已经编译完成了。 
+4.我们再次进入Qt Creator安装目录下存放数据库驱动插件的文件夹。 
+我这里是D:\Qt\2010.02.1\qt\plugins\sqldrivers 
+其内容如下： 
+ 
+可以看到已经有了和MySQL相关的文件了。 
+最后：我们编写程序测试插件。 
+1.我们将上一次的主函数更改如下。 
+int main(int argc, char *argv[]) 
+{ 
+QCoreApplication a(argc, argv); 
+QSqlDatabase db = QSqlDatabase::addDatabase(“QMYSQL”); //添加数据库驱动 
+return a.exec(); 
+} 
+运行程序，效果如下。 
+ 
+这里提示：QSqlDatabase: QMYSQL driver not loaded 。 
+2.这时我们需要将C:\MySQL\bin目录下的libmySQL.dll文件复制到我们Qt Creator安装目
+录下的qt\bin目录中。 
+如下图： 
+ 
+3.这时再运行程序，就没有提示了。 
+ 
+4.我们再将主函数更改一下，测试这时可用的数据库驱动。 
+int main(int argc, char *argv[]) 
+{ 
+QCoreApplication a(argc, argv); 
+qDebug() << “Available drivers:”; 
+QStringList drivers = QSqlDatabase::drivers(); 
+foreach(QString driver, drivers) 
+qDebug() << “\t” << driver; 
+return a.exec(); 
+} 
+运行效果如下： 
+ 
+可以看到，现在已经有了MySQL的数据库驱动了。 
+我们这里只介绍了MySQL驱动插件在windows下的编译方法，其他数据库和其他平台的编译方
+法可以按照帮助中的说明进行，我们不再介绍。其实Qt不仅可以编译现成的数据库驱动插件，
+我们也可以编写自己的数据库驱动插件，当然这是一件相当复杂的事情，我们这里也就不再进
+行介绍。 
+关于MySQL的使用，我们的教程里现在不再涉及，在
+http://dev.mysql.com/doc/refman/5.1/zh/index.html 这里有MySQL的中文参考手册，你可
+以进行参考。 
+可以到资源下载页面下载生成的文件。  
+分类：Qt系列教程 作者： yafeilinux 日期： 四月 30th, 2010.    4,543 views 
+Tags: creator, qt, yafeilinux, 教程, 数据库  
+   
+二十三、Qt数据库（三）利用QSqlQuery类执行SQL语句（一） 
+本文章原创于www.yafeilinux.com 转载请注明出处。 
+SQL即结构化查询语言，是关系数据库的标准语言。前面已经提到，在Qt中利用QSqlQuery
+类实现了执行SQL语句。需要说明，我们这里只是Qt教程，而非专业的数据库教程，所以我
+们不会对数据库中的一些知识进行深入讲解，下面只是对最常用的几个知识点进行讲解。 
+我们下面先建立一个工程，然后讲解四个知识点，分别是： 
+一，操作SQL语句返回的结果集。 
+二，在SQL语句中使用变量。 
+三，批处理操作。 
+四，事务操作。 
+我们新建Qt4 Gui Application工程，我这里工程名为query ，然后选中QtSql模块，Base class
+选QWidget。工程建好后，添加C++ Header File ，命名为connection.h ，更改其内容如下： 
+#ifndef CONNECTION_H 
+#define CONNECTION_H 
+#include <QMessageBox> 
+#include <QSqlDatabase> 
+#include <QSqlQuery> 
+static bool createConnection() 
+{ 
+    QSqlDatabase db = QSqlDatabase::addDatabase(“QSQLITE”); 
+    db.setDatabaseName(“:memory:”); 
+    if (!db.open()) { 
+        QMessageBox::critical(0, qApp->tr(“Cannot open database”), 
+            qApp->tr(“Unable to establish a database connection.” 
+                     ), QMessageBox::Cancel); 
+        return false; 
+    } 
+    QSqlQuery query; 
+    query.exec(“create table student (id int primary key, ” 
+               “name varchar(20))”); 
+    query.exec(“insert into student values(0, ‘first’)”); 
+    query.exec(“insert into student values(1, ‘second’)”); 
+    query.exec(“insert into student values(2, ‘third’)”); 
+    query.exec(“insert into student values(3, ‘fourth’)”); 
+    query.exec(“insert into student values(4, ‘fifth’)”); 
+    return true; 
+} 
+#endif // CONNECTION_H 
+然后更改main.cpp的内容如下： 
+#include <QtGui/QApplication> 
+#include “widget.h” 
+#include “connection.h” 
+int main(int argc, char *argv[]) 
+{ 
+    QApplication a(argc, argv); 
+    
+    if (!createConnection()) 
+        return 1; 
+    
+    Widget w; 
+    w.show(); 
+    return a.exec(); 
+} 
+可以看到，我们是在主函数中打开数据库的，而数据库连接用一个函数完成，并单独放在一个
+文件中，这样的做法使得主函数很简洁。我们今后使用数据库时均使用这种方法。我们打开数
+据库连接后，新建了一个学生表，并在其中插入了几条记录。 
+ 
+表中的一行就叫做一条记录，一列是一个属性。这个表共有5条记录，id和name两个属性。
+程序中的“id int primary key”表明id属性是主键，也就是说以后添加记录时，必须有id
+项。 
+下面我们打开widget.ui文件，在设计器中向界面上添加一个Push Button ，和一个Spin Box 。
+将按钮的文本改为“查询”，然后进入其单击事件槽函数，更改如下。 
+void Widget::on_pushButton_clicked() 
+{ 
+    QSqlQuery query; 
+    query.exec(“select * from student”); 
+    while(query.next()) 
+    { 
+        qDebug() << query.value(0).toInt() << query.value(1).toString(); 
+    } 
+} 
+我们在widget.cpp中添加头文件： 
+#include <QSqlQuery> 
+#include <QtDebug> 
+然后运行程序，单击“查询”按钮，效果如下： 
+ 
+可以看到在输出窗口，表中的所有内容都输出出来了。这表明我们的数据库连接已经成功建立
+了。 
+一，操作SQL语句返回的结果集。 
+在上面的程序中，我们使用query.exec(“select * from student”);来查询出表中所有的
+内容。其中的SQL语句“select * from student”中“*”号表明查询表中记录的所有属性。
+而当query.exec(“select * from student”);这条语句执行完后，我们便获得了相应的执
+行结果，因为获得的结果可能不止一条记录，所以我们称之为结果集。 
+结果集其实就是查询到的所有记录的集合，而在QSqlQuery类中提供了多个函数来操作这个集
+合，需要注意这个集合中的记录是从0开始编号的。最常用的有： 
+seek(int n) ：query指向结果集的第n条记录。 
+first() ：query指向结果集的第一条记录。 
+last() ：query指向结果集的最后一条记录。 
+next() ：query指向下一条记录，每执行一次该函数，便指向相邻的下一条记录。 
+previous() ：query指向上一条记录，每执行一次该函数，便指向相邻的上一条记录。 
+record() ：获得现在指向的记录。 
+value(int n) ：获得属性的值。其中n表示你查询的第n个属性，比方上面我们使用“select 
+* from student”就相当于“select id, name from student”，那么value(0)返回id属性
+的值，value(1)返回name属性的值。该函数返回QVariant类型的数据，关于该类型与其他类
+型的对应关系，可以在帮助中查看QVariant。 
+at() ：获得现在query指向的记录在结果集中的编号。 
+需要说明，当刚执行完query.exec(“select * from student”);这行代码时，query是指向
+结果集以外的，我们可以利用query.next()，当第一次执行这句代码时，query便指向了结果
+集的第一条记录。当然我们也可以利用seek(0)函数或者first()函数使query指向结果集的
+第一条记录。但是为了节省内存开销，推荐的方法是，在query.exec(“select * from 
+student”);这行代码前加上query.setForwardOnly(true);这条代码，此后只能使用next()
+和seek()函数。 
+下面将“查询”按钮的槽函数更改如下： 
+void Widget::on_pushButton_clicked() 
+{ 
+    QSqlQuery query; 
+    query.exec(“select * from student”); 
+    qDebug() << “exec next() :”; 
+    if(query.next()) 
+    //开始就先执行一次next()函数，那么query指向结果集的第一条记录 
+    { 
+        int rowNum = query.at(); 
+        //获取query所指向的记录在结果集中的编号 
+        int columnNum = query.record().count(); 
+        //获取每条记录中属性（即列）的个数 
+        int fieldNo = query.record().indexOf(“name”); 
+        //获取”name”属性所在列的编号，列从左向右编号，最左边的编号为0 
+        int id = query.value(0).toInt(); 
+        //获取id属性的值，并转换为int型 
+       QString name = query.value(fieldNo).toString(); 
+        //获取name属性的值 
+        qDebug() << “rowNum is : ” << rowNum //将结果输出 
+                << ” id is : ” << id 
+                << ” name is : ” << name 
+                << ” columnNum is : ” << columnNum; 
+    } 
+    qDebug() << “exec seek(2) :”; 
+    if(query.seek(2)) 
+    //定位到结果集中编号为2的记录，即第三条记录，因为第一条记录的编号为0 
+    { 
+        qDebug() << “rowNum is : ” << query.at() 
+                << ” id is : ” << query.value(0).toInt() 
+                << ” name is : ” << query.value(1).toString(); 
+    } 
+    qDebug() << “exec last() :”; 
+    if(query.last()) 
+    //定位到结果集中最后一条记录 
+    { 
+        qDebug() << “rowNum is : ” << query.at() 
+                << ” id is : ” << query.value(0).toInt() 
+                << ” name is : ” << query.value(1).toString(); 
+    } 
+} 
+然后在widget.cpp文件中添加头文件。 
+#include <QSqlRecord> 
+运行程序，结果如下： 
+ 
+分类：Qt系列教程 作者： yafeilinux 日期： 四月 30th, 2010.    3,845 views 
+Tags: creator, qt, yafeilinux, 教程, 数据库  
+   
+二十四、Qt数据库（四）利用QSqlQuery类执行SQL语句（二） 
+本文章原创于www.yafeilinux.com 转载请注明出处。 
+接着上一篇教程。 
+二，在SQL语句中使用变量。 
+我们先看下面的一个例子，将“查询”按钮的槽函数更改如下： 
+void Widget::on_pushButton_clicked() 
+{ 
+    QSqlQuery query; 
+    query.prepare(“insert into student (id, name) ” 
+                  “values (:id, :name)”); 
+    query.bindValue(0, 5); 
+    query.bindValue(1, “sixth”); 
+    query.exec(); 
+    //下面输出最后一条记录 
+    query.exec(“select * from student”); 
+    query.last(); 
+    int id = query.value(0).toInt(); 
+    QString name = query.value(1).toString(); 
+    qDebug() << id << name; 
+} 
+运行效果如下： 
+ 
+可以看到，在student表的最后又添加了一条记录。在上面的程序中，我们先使用了prepare()
+函数，在其中利用了“:id”和“:name”来代替具体的数据，而后又利用bindValue()函数给
+id和name两个属性赋值，这称为绑定操作。其中编号0和1分别代表“:id”和“:name”，
+就是说按照prepare()函数中出现的属性从左到右编号，最左边是0 。这里的“:id”和
+“:name”，叫做占位符，这是ODBC数据库的表示方法，还有一种Oracle的表示方法就是全
+部用“？”号。如下： 
+query.prepare(“insert into student (id, name) ” 
+                  “values (?, ?)”); 
+query.bindValue(0, 5); 
+query.bindValue(1, “sixth”); 
+query.exec(); 
+我们也可以利用addBindValue()函数，这样就可以省去编号，它是按顺序给属性赋值的，如
+下： 
+query.prepare(“insert into student (id, name) ” 
+                  “values (?, ?)”); 
+query.addBindValue(5); 
+query.addBindValue(“sixth”); 
+query.exec(); 
+当用ODBC的表示方法时，我们也可以将编号用实际的占位符代替，如下： 
+query.prepare(“insert into student (id, name) ” 
+                      “values (:id, :name)”); 
+query.bindValue(“:id”, 5); 
+query.bindValue(“:name”, “sixth”); 
+query.exec(); 
+以上各种形式的表示方式效果是一样的。特别注意，在最后一定要执行exec()函数，所做的
+操作才能被真正执行。 
+下面我们就可以利用绑定操作在SQL语句中使用变量了。 
+void Widget::on_pushButton_clicked() 
+{ 
+    QSqlQuery query; 
+    query.prepare(“select name from student where id = ?”); 
+    int id = ui->spinBox->value(); //从界面获取id的值 
+    query.addBindValue(id); //将id值进行绑定 
+    query.exec(); 
+    query.next(); //指向第一条记录 
+    qDebug() << query.value(0).toString(); 
+} 
+运行程序，效果如下： 
+ 
+我们改变spinBox的数值大小，然后按下“查询”按钮，可以看到对应的结果就出来了。 
+三，批处理操作。 
+当要进行多条记录的操作时，我们就可以利用绑定进行批处理。看下面的例子。 
+void Widget::on_pushButton_clicked() 
+{ 
+    QSqlQuery q; 
+    q.prepare(“insert into student values (?, ?)”); 
+    QVariantList ints; 
+    ints << 10 << 11 << 12 << 13; 
+    q.addBindValue(ints); 
+    QVariantList names; 
+    names << “xiaoming” << “xiaoliang” << “xiaogang” << 
+QVariant(QVariant::String); 
+    //最后一个是空字符串，应与前面的格式相同 
+   q.addBindValue(names); 
+    if (!q.execBatch()) //进行批处理，如果出错就输出错误 
+        qDebug() << q.lastError(); 
+    //下面输出整张表 
+    QSqlQuery query; 
+    query.exec(“select * from student”); 
+    while(query.next()) 
+    { 
+        int id = query.value(0).toInt(); 
+        QString name = query.value(1).toString(); 
+        qDebug() << id << name; 
+    } 
+} 
+然后在widget.cpp文件中添加头文件 #include <QSqlError>   。 
+我们在程序中利用列表存储了同一属性的多个值，然后进行了值绑定。最后执行execBatch()
+函数进行批处理。注意程序中利用QVariant(QVariant::String)来输入空值NULL，因为前面
+都是QString类型的，所以这里要使用QVariant::String 使格式一致化。 
+运行效果如下： 
+ 
+四，事务操作。 
+事务是数据库的一个重要功能，所谓事务是用户定义的一个数据库操作序列，这些操作要么全
+做要么全不做，是一个不可分割的工作单位。在Qt中用transaction()开始一个事务操作，
+用commit()函数或rollback()函数进行结束。commit()表示提交，即提交事务的所有操作。
+具体地说就是将事务中所有对数据库的更新写回到数据库，事务正常结束。rollback()表示回
+滚，即在事务运行的过程中发生了某种故障，事务不能继续进行，系统将事务中对数据库的所
+有已完成的操作全部撤销，回滚到事务开始时的状态。 
+如下面的例子： 
+void Widget::on_pushButton_clicked() 
+{ 
+    if(QSqlDatabase::database().driver()->hasFeature(QSqlDriver::Transactions)) 
+    {     //先判断该数据库是否支持事务操作 
+        QSqlQuery query; 
+        if(QSqlDatabase::database().transaction()) //启动事务操作 
+        { 
+            // 
+            //下面执行各种数据库操作 
+            query.exec(“insert into student values (14, ‘hello’)”); 
+            query.exec(“delete from student where id = 1″); 
+            // 
+            if(!QSqlDatabase::database().commit()) 
+            { 
+                qDebug() << QSqlDatabase::database().lastError(); 
+//提交 
+                if(!QSqlDatabase::database().rollback()) 
+                    qDebug() << 
+QSqlDatabase::database().lastError(); //回滚 
+            } 
+        } 
+        //输出整张表 
+        query.exec(“select * from student”); 
+        while(query.next()) 
+            qDebug() << query.value(0).toInt() << 
+query.value(1).toString(); 
+    } 
+} 
+然后在widget.cpp文件中添加头文件 #include <QSqlDriver> 。 
+QSqlDatabase::database()返回程序前面所生成的连接的QSqlDatabase对象。hasFeature()
+函数可以查看一个数据库是否支持事务。 
+运行结果如下： 
+ 
+可以看到结果是正确的。 
+对SQL语句我们就介绍这么多，其实Qt中提供了更为简单的不需要SQL语句就可以操作数据
+库的方法，我们在下一节讲述这些内容。 
+分类：Qt系列教程 作者： yafeilinux 日期： 四月 30th, 2010.    2,783 views 
+Tags: creator, qt, yafeilinux, 教程, 数据库  
+   
+二十五、Qt数据库（五）QSqlQueryModel 
+本文章原创于www.yafeilinux.com 转载请注明出处。 
+在上一篇的最后我们说到，Qt中使用了自己的机制来避免使用SQL语句，它为我们提供了更
+简单的数据库操作和数据显示模型。它们分别是只读的QSqlQueryModel，操作单表的
+QSqlTableModel和以及可以支持外键的QSqlRelationalTableModel。这次我们先讲解
+QSqlQueryModel。 
+QSqlQueryModel类为SQL的结果集提供了一个只读的数据模型，下面我们先利用这个类进行
+一个最简单的操作。 
+我们新建Qt4 Gui Application工程，我这里工程名为queryModel ，然后选中QtSql模块，
+Base class选QWidget。工程建好后，添加C++ Header File ，命名为database.h，更改其
+内容如下： 
+#ifndef DATABASE_H 
+#define DATABASE_H 
+#include <QSqlDatabase> 
+#include <QSqlQuery> 
+static bool createConnection() 
+{ 
+    QSqlDatabase db = QSqlDatabase::addDatabase(“QSQLITE”); 
+    db.setDatabaseName(“database.db”); 
+    if(!db.open()) return false; 
+    QSqlQuery query; 
+    query.exec(“create table student (id int primary key, name vchar)”); 
+    query.exec(“insert into student values (0,’yafei0′)”); 
+    query.exec(“insert into student values (1,’yafei1′)”); 
+    query.exec(“insert into student values (2,’yafei2′)”); 
+    return true; 
+} 
+#endif // DATABASE_H 
+这里我们使用了db.setDatabaseName(“database.db”); ，我们没有再使用以前的内存数据
+库，而是使用了真实的文件，这样后面对数据库进行的操作就能保存下来了。 
+然后进入main.cpp，将其内容更改如下： 
+#include <QtGui/QApplication> 
+#include “widget.h” 
+#include “database.h” 
+int main(int argc, char *argv[]) 
+{ 
+    QApplication a(argc, argv); 
+    if(!createConnection()) 
+        return 1; 
+    Widget w; 
+    w.show(); 
+    return a.exec(); 
+} 
+下面我们在widget.ui中添加一个显示为“查询”的Push Button，并进入其单击事件槽函数，
+更改如下： 
+void Widget::on_pushButton_clicked() 
+{ 
+    QSqlQueryModel *model = new QSqlQueryModel; 
+    model->setQuery(“select * from student”); 
+    model->setHeaderData(0, Qt::Horizontal, tr(“id”)); 
+    model->setHeaderData(1, Qt::Horizontal, tr(“name”)); 
+    QTableView *view = new QTableView; 
+    view->setModel(model); 
+    view->show(); 
+} 
+我们新建了QSqlQueryModel类对象model，并用setQuery()函数执行了SQL语句“(“select 
+* from student”);”用来查询整个student表的内容，可以看到，该类并没有完全避免SQL
+语句。然后我们设置了表中属性显示时的名字。最后我们建立了一个视图view，并将这个model
+模型关联到视图中，这样数据库中的数据就能在窗口上的表中显示出来了。 
+我们在widget.cpp中添加头文件： 
+#include <QSqlQueryModel> 
+#include <QTableView> 
+我们运行程序，并按下“查询”按键，效果如下： 
+ 
+我们在工程文件夹下查看数据库文件： 
+ 
+ 
+下面我们利用这个模型来操作数据库。 
+1.我们在void Widget::on_pushButton_clicked()函数中添加如下代码： 
+int column = model->columnCount(); //获得列数 
+int row = model->rowCount();    // 获得行数 
+QSqlRecord record = model->record(1); //获得一条记录 
+QModelIndex index = model->index(1,1);   //获得一条记录的一个属性的值 
+qDebug() << “column num is:” << column << endl 
+            << “row num is:” << row << endl 
+            <<”the second record is:” << record << endl 
+            << “the data of index(1,1) is:”<< index.data(); 
+在我们在widget.cpp中添加头文件： 
+#include <QSqlRecord> 
+#include <QModelIndex> 
+#include <QDebug> 
+此时运行程序，效果如下： 
+ 
+2.当然我们在这里也可以使用前面介绍过的query执行SQL语句。 
+例如我们在void Widget::on_pushButton_clicked()函数中添加如下代码： 
+QSqlQuery query = model->query(); 
+query.exec(“select name from student where id = 2 “); 
+query.next(); 
+qDebug() << query.value(0).toString(); 
+这样就可以输出表中的值了，你可以运行程序测试一下。 
+3.当我们将函数改为如下。 
+void Widget::on_pushButton_clicked() 
+{ 
+    QSqlQueryModel *model = new QSqlQueryModel; 
+    model->setQuery(“select * from student”); 
+    model->setHeaderData(0, Qt::Horizontal, tr(“id”)); 
+    model->setHeaderData(1, Qt::Horizontal, tr(“name”)); 
+    QTableView *view = new QTableView; 
+    view->setModel(model); 
+    view->show(); 
+    QSqlQuery query = model->query(); 
+    query.exec(“insert into student values (10,’yafei10′)”); 
+    //插入一条记录 
+} 
+这时我们运行程序，效果如下： 
+ 
+我们发现表格中并没有增加记录，怎么回事呢？ 
+我们关闭程序，再次运行，效果如下： 
+ 
+发现这次新的记录已经添加了。在上面我们执行了添加记录的SQL语句，但是在添加记录之前，
+就已经进行显示了，所以我们的更新没能动态的显示出来。为了能让其动态地显示我们的更新，
+我们可以将函数更改如下： 
+void Widget::on_pushButton_clicked() 
+{ 
+    QSqlQueryModel *model = new QSqlQueryModel; 
+    model->setQuery(“select * from student”); 
+    model->setHeaderData(0, Qt::Horizontal, tr(“id”)); 
+    model->setHeaderData(1, Qt::Horizontal, tr(“name”)); 
+    QTableView *view = new QTableView; 
+    view->setModel(model); 
+    view->show(); 
+    QSqlQuery query = model->query(); 
+    query.exec(“insert into student values (20,’yafei20′)”); 
+    //插入一条记录 
+   model->setQuery(“select * from student”); //再次查询整张表 
+    view->show(); //再次进行显示 
+} 
+这时运行程序，效果如下： 
+ 
+可以看到，这时已经将新添的记录显示出来了。 
+刚开始我们就讲到，这个模型默认是只读的，所以我们在窗口上并不能对表格中的内容进行修
+改。但是我们可以创建自己的模型，然后按照我们自己的意愿来显示数据和修改数据。要想使
+其可读写，需要自己的类继承自QSqlQueryModel，并且重写setData() 和 flags() 两个函数。
+如果我们要改变数据的显示，就要重写data() 函数。 
+下面的例子中我们让student表的id属性列显示红色，name属性列可编辑。 
+1.我们在工程中添加C++ Class，然后Class name设为MySqlQueryModel，Base Class设为
+QSqlQueryModel，如下： 
+ 
+2.我们将mysqlquerymodel.h中的内容更改如下： 
+class MySqlQueryModel : public QSqlQueryModel 
+{ 
+public: 
+    MySqlQueryModel(); 
+    //下面三个函数都是虚函数,我们对其进行重载 
+    Qt::ItemFlags flags(const QModelIndex &index) const; 
+    bool setData(const QModelIndex &index, const QVariant &value, int role); 
+    QVariant data(const QModelIndex &item, int role=Qt::DisplayRole) const; 
+    // 
+private: 
+    bool setName(int studentId, const QString &name); 
+    void refresh(); 
+}; 
+然后将mysqlquerymodel.cpp文件更改如下： 
+#include “mysqlquerymodel.h” 
+#include <QSqlQuery> 
+#include <QColor> 
+MySqlQueryModel::MySqlQueryModel() 
+{ 
+} 
+Qt::ItemFlags MySqlQueryModel::flags( 
+        const QModelIndex &index) const //返回表格是否可更改的标志 
+{ 
+    Qt::ItemFlags flags = QSqlQueryModel::flags(index); 
+    if (index.column() == 1) //第二个属性可更改 
+        flags |= Qt::ItemIsEditable; 
+    return flags; 
+} 
+bool MySqlQueryModel::setData(const QModelIndex &index, const QVariant &value, int 
+/* role */) 
+        //添加数据 
+{ 
+    if (index.column() < 1 || index.column() > 2) 
+        return false; 
+    QModelIndex primaryKeyIndex = QSqlQueryModel::index(index.row(), 0); 
+    int id = data(primaryKeyIndex).toInt(); //获取id号 
+    clear(); 
+    bool ok; 
+    if (index.column() == 1) //第二个属性可更改 
+        ok = setName(id, value.toString()); 
+    refresh(); 
+    return ok; 
+} 
+void MySqlQueryModel::refresh() //更新显示 
+{ 
+    setQuery(“select * from student”); 
+    setHeaderData(0, Qt::Horizontal, QObject::tr(“id”)); 
+    setHeaderData(1, Qt::Horizontal, QObject::tr(“name”)); 
+} 
+bool MySqlQueryModel::setName(int studentId, const QString &name) //添加name属性
+的值 
+{ 
+    QSqlQuery query; 
+    query.prepare(“update student set name = ? where id = ?”); 
+    query.addBindValue(name); 
+    query.addBindValue(studentId); 
+    return query.exec(); 
+} 
+QVariant MySqlQueryModel::data(const QModelIndex &index, int role) const 
+        //更改数据显示样式 
+{ 
+    QVariant value = QSqlQueryModel::data(index, role); 
+    if (role == Qt::TextColorRole && index.column() == 0) 
+        return qVariantFromValue(QColor(Qt::red)); //第一个属性的字体颜色为
+红色 
+    return value; 
+} 
+在widget.cpp文件中添加头文件：#include “mysqlquerymodel.h” 
+然后更改函数如下： 
+void Widget::on_pushButton_clicked() 
+{ 
+    QSqlQueryModel *model = new QSqlQueryModel; 
+    model->setQuery(“select * from student”); 
+    model->setHeaderData(0, Qt::Horizontal, tr(“id”)); 
+    model->setHeaderData(1, Qt::Horizontal, tr(“name”)); 
+    QTableView *view = new QTableView; 
+    view->setModel(model); 
+    view->show(); 
+    MySqlQueryModel *myModel = new MySqlQueryModel; //创建自己模型的对象 
+    myModel->setQuery(“select * from student”); 
+    myModel->setHeaderData(0, Qt::Horizontal, tr(“id”)); 
+    myModel->setHeaderData(1, Qt::Horizontal, tr(“name”)); 
+    QTableView *view1 = new QTableView; 
+    view1->setWindowTitle(“mySqlQueryModel”); //修改窗口标题 
+    view1->setModel(myModel); 
+    view1->show(); 
+} 
+运行效果如下： 
+ 
+可以看到我们要的效果已经出来了。 
+  
+分类：Qt系列教程 作者： yafeilinux 日期： 四月 30th, 2010.    3,085 views 
+Tags: creator, qt, yafeilinux, 教程, 数据库  
+   
+二十六、Qt数据库（六）QSqlTableModel 
+本文章原创于www.yafeilinux.com 转载请注明出处。 
+在上一篇我们讲到只读的QSqlQueryModel也可以使其可编辑，但是很麻烦。Qt提供了操作单
+表的QSqlTableModel，如果我们需要对表的内容进行修改，那么我们就可以直接使用这个类。 
+QSqlTableModel，该类提供了一个可读写单张SQL表的可编辑数据模型。我们下面就对其的
+几个常用功能进行介绍，分别是修改，插入，删除，查询，和排序。 
+在开始讲之前，我们还是新建Qt4 Gui Application工程，我这里工程名为tableModel ，然
+后选中QtSql模块，Base class选QWidget。工程建好后，添加C++ Header File ，命名为
+database.h，更改其内容如下： 
+#ifndef DATABASE_H 
+#define DATABASE_H 
+#include <QSqlDatabase> 
+#include <QSqlQuery> 
+#include <QObject> 
+static bool createConnection() 
+{ 
+    QSqlDatabase db = QSqlDatabase::addDatabase(“QSQLITE”); 
+    db.setDatabaseName(“database.db”); 
+    if(!db.open()) return false; 
+    QSqlQuery query; 
+    query.exec(QObject::tr(“create table student (id int primary key, name 
+vchar)”)); 
+    query.exec(QObject::tr(“insert into student values (0,’刘明’)”)); 
+    query.exec(QObject::tr(“insert into student values (1,’陈刚’)”)); 
+    query.exec(QObject::tr(“insert into student values (2,’王红’)”)); 
+    return true; 
+} 
+#endif // DATABASE_H 
+为了在数据库中能使用中文，我们使用了QObject类的tr()函数。而在下面的main()函数中
+我们也需要添加相应的代码来支持中文。 
+然后将main.cpp的文件更改如下： 
+#include <QtGui/QApplication> 
+#include “widget.h” 
+#include “database.h” 
+#include <QTextCodec> 
+int main(int argc, char *argv[]) 
+{ 
+    QApplication a(argc, argv); 
+    QTextCodec::setCodecForTr(QTextCodec::codecForLocale()); 
+    if(!createConnection()) 
+        return 1; 
+    Widget w; 
+    w.show(); 
+    return a.exec(); 
+} 
+下面我们打开widget.ui，设计界面如下： 
+ 
+其中的部件有Table View 和 Line Edit，其余是几个按钮部件。 
+然后在widget.h中加入头文件： #include <QSqlTableModel> 
+在private中声明对象：QSqlTableModel *model; 
+因为我们要在不同的函数中使用model对象，所以我们在这里声明它。 
+我们到widget.cpp文件中的构造函数里添加如下代码： 
+model = new QSqlTableModel(this); 
+model->setTable(“student”); 
+model->setEditStrategy(QSqlTableModel::OnManualSubmit); 
+model->select(); //选取整个表的所有行 
+// model->removeColumn(1); //不显示name属性列,如果这时添加记录，则该属性的值添加
+不上 
+ui->tableView->setModel(model); 
+// ui->tableView->setEditTriggers(QAbstractItemView::NoEditTriggers);   //使其
+不可编辑 
+此时运行程序，效果如下： 
+ 
+可以看到，这个模型已经完全脱离了SQL语句，我们只需要执行select()函数就能查询整张
+表。上面有两行代码被注释掉了，你可以取消注释，测试一下它们的作用。 
+第一，修改操作。 
+1.我们进入“提交修改”按钮的单击事件槽函数，修改如下： 
+void Widget::on_pushButton_clicked() //提交修改 
+{ 
+    model->database().transaction(); //开始事务操作 
+    if (model->submitAll()) { 
+        model->database().commit(); //提交 
+    } else { 
+        model->database().rollback(); //回滚 
+        QMessageBox::warning(this, tr(“tableModel”), 
+                             tr(“数据库错误: %1″) 
+                             .arg(model->lastError().
+text())); 
+    } 
+} 
+这里用到了事务操作，真正起提交操作的是model->submitAll()一句，它提交所有更改。 
+2.进入“撤销修改”按钮单击事件槽函数，并更改如下： 
+void Widget::on_pushButton_2_clicked() //撤销修改 
+{ 
+     model->revertAll(); 
+} 
+它只有简单的一行代码。 
+我们需要在widget.cpp文件中添加头文件： 
+#include <QMessageBox> 
+#include <QSqlError> 
+此时运行程序，效果如下： 
+ 
+我们将“陈刚”改为“李强”，如果我们点击“撤销修改”，那么它就会重新改为“陈刚”，
+而当我们点击“提交修改”后它就会保存到数据库，此时再点击“撤销修改”就修改不回来了。 
+可以看到，这个模型可以将所有修改先保存到model中，只有当我们执行提交修改后，才会真
+正写入数据库。当然这也是因为我们在最开始设置了它的保存策略： 
+model->setEditStrategy(QSqlTableModel::OnManualSubmit); 
+OnManualSubmit表明我们要提交修改才能使其生效。 
+第二，查询操作。 
+1.我们进入“查询”按钮的单击事件槽函数，更改如下： 
+void Widget::on_pushButton_7_clicked() //查询 
+{ 
+    QString name = ui->lineEdit->text(); 
+    model->setFilter(QObject::tr(“name = ‘%1′”).arg(name)); //根据姓名进行
+筛选 
+    model->select(); //显示结果 
+} 
+我们使用setFilter()函数进行关键字筛选，这个函数是对整个结果集进行查询。为了使用变
+量，我们使用了QObject类的tr()函数。 
+2.我们进入“返回全表”按钮的单击事件槽函数，更改如下： 
+void Widget::on_pushButton_8_clicked() //返回全表 
+{ 
+    model->setTable(“student”);   //重新关联表 
+    model->select();   //这样才能再次显示整个表的内容 
+} 
+为了再次显示整个表的内容，我们需要再次关联这个表。 
+运行效果如下： 
+ 
+我们输入一个姓名，点击“查询”按钮后，就可以显示该记录了。再点击“返回全表”按钮则
+返回。 
+第三，排序操作。 
+我们分别进入“按id升序排列”和“按id降序排列”按钮的单击事件槽函数，更改如下： 
+void Widget::on_pushButton_5_clicked() //升序 
+{ 
+    model->setSort(0,Qt::AscendingOrder); //id属性，即第0列，升序排列 
+    model->select(); 
+} 
+void Widget::on_pushButton_6_clicked() //降序 
+{ 
+    model->setSort(0,Qt::DescendingOrder); 
+    model->select(); 
+} 
+我们这里使用了setSort()函数进行排序，它有两个参数，第一个参数表示按第几个属性排序，
+表头从左向右，最左边是第0个属性，这里就是id属性。第二个参数是排序方法，有升序和
+降序两种。 
+运行程序，效果如下： 
+ 
+这是按下“按id降序排列”按钮后的效果。 
+第四，删除操作。 
+我们进入“删除选中行”按钮单击事件槽函数，进行如下更改： 
+void Widget::on_pushButton_4_clicked() //删除当前行 
+{ 
+    int curRow = ui->tableView->currentIndex().row(); 
+    //获取选中的行 
+    model->removeRow(curRow); 
+    //删除该行 
+    int ok = QMessageBox::warning(this,tr(“删除当前行!”),tr(“你确定” 
+                                        
+                   “删除当前行吗？”), 
+                         QMessageBox::Yes,QMessageBox::No
+); 
+    if(ok == QMessageBox::No) 
+    { 
+       model->revertAll(); //如果不删除，则撤销 
+    } 
+    else model->submitAll(); //否则提交，在数据库中删除该行 
+} 
+这里删除行的操作会先保存在model中，当我们执行了submitAll()函数后才会真正的在数据
+库中删除该行。这里我们使用了一个警告框来让用户选择是否真得要删除该行。 
+运行效果如下： 
+ 
+我们点击第二行，然后单击“删除选中行”按钮，出现了警告框。这时你会发现，表中的第二
+行前面出现了一个小感叹号，表明该行已经被修改了，但是还没有真正的在数据库中修改，这
+时的数据有个学名叫脏数据(Dirty Data)。当我们按钮“Yes”按钮后数据库中的数据就会被
+删除，如果按下“No”，那么更改就会取消。 
+第五，插入操作。 
+我们进入“添加记录”按钮的单击事件槽函数，更改如下： 
+void Widget::on_pushButton_3_clicked() //插入记录 
+{ 
+    int rowNum = model->rowCount(); //获得表的行数 
+   int id = 10; 
+    model->insertRow(rowNum); //添加一行 
+    model->setData(model->index(rowNum,0),id); 
+    //model->submitAll(); //可以直接提交 
+} 
+我们在表的最后添加一行，因为在student表中我们设置了id号是主键，所以这里必须使用
+setData函数给新加的行添加id属性的值，不然添加行就不会成功。这里可以直接调用
+submitAll()函数进行提交，也可以利用“提交修改”按钮进行提交。 
+运行程序，效果如下： 
+ 
+按下“添加记录”按钮后，就添加了一行，不过在该行的前面有个星号，如果我们按下“提交
+修改”按钮，这个星号就会消失。当然，如果我们将上面代码里的提交函数的注释去掉，也就
+不会有这个星号了。 
+       可以看到这个模型很强大，而且完全脱离了SQL语句，就算你不怎么懂数据库，
+也可以利用它进行大部分常用的操作。我们也看到了，这个模型提供了缓冲区，可以先将修
+改保存起来，当我们执行提交函数时，再去真正地修改数据库。当然，这个模型比前面的模
+型更高级，前面讲的所有操作，在这里都能执行。 
+分类：Qt系列教程 作者： yafeilinux 日期： 四月 30th, 2010.    3,406 views 
+Tags: creator, qt, yafeilinux, 教程, 数据库  
+   
+二十七、Qt数据库（七）QSqlRelationalTableModel 
+本文章原创于www.yafeilinux.com 转载请注明出处。 
+讲完QSqlTableModel了，我们这次讲这个类的扩展类QSqlRelationalTableModel，它们没有
+太大的不同，唯一的就是后者在前者的基础之上添加了外键（或者叫外码）的支持。 
+QSqlRelationalTableModel，该类为单张的数据库表提供了一个可编辑的数据模型，它支持
+外键。 
+我们还是新建Qt4 Gui Application工程，我这里工程名为relationalTableModel ，然后选
+中QtSql模块，Base class选QWidget。工程建好后，添加C++ Header File ，命名为database.h，
+更改其内容如下： 
+  
+#ifndef DATABASE_H 
+#define DATABASE_H 
+#include <QSqlDatabase> 
+#include <QSqlQuery> 
+static bool createConnection() 
+{ 
+    QSqlDatabase db = QSqlDatabase::addDatabase(“QSQLITE”); 
+    db.setDatabaseName(“database.db”); 
+    if(!db.open()) return false; 
+    QSqlQuery query; 
+    query.exec(“create table student (id int primary key, name vchar,course 
+int)”); 
+    query.exec(“insert into student values (1,’yafei0′,1)”); 
+    query.exec(“insert into student values (2,’yafei1′,1)”); 
+    query.exec(“insert into student values (3,’yafei2′,2)”); 
+    query.exec(“create table course (id int primary key, name vchar, teacher 
+vchar)”); 
+    query.exec(“insert into course values (1,’Math’,'yafeilinux1′)”); 
+    query.exec(“insert into course values (2,’English’,'yafeilinux2′)”); 
+    query.exec(“insert into course values (3,’Computer’,'yafeilinux3′)”); 
+    return true; 
+} 
+#endif // DATABASE_H 
+我们在这里建立了两个表，student表中有一项是course，它是int型的，而course表的主
+键也是int型的。如果要将course项和course表进行关联，它们的类型就必须相同，一定要
+注意这一点。 
+然后将main.cpp中的内容更改如下： 
+#include <QtGui/QApplication> 
+#include “widget.h” 
+#include “database.h” 
+int main(int argc, char *argv[]) 
+{ 
+    QApplication a(argc, argv); 
+    if(!createConnection()) return 1; 
+    Widget w; 
+    w.show(); 
+    return a.exec(); 
+} 
+我们在widget.h中添加头文件： #include <QSqlRelationalTableModel> 
+然后在private中声明对象：    QSqlRelationalTableModel *model; 
+我们在widget.ui中添加一个Table View部件到窗体上，然后到widget.cpp中的构造函数里
+添加如下代码： 
+    model = new QSqlRelationalTableModel(this); 
+    model->setEditStrategy(QSqlTableModel::OnFieldChange); //属性变化时写入数
+据库 
+    model->setTable(“student”); 
+    model->setRelation(2,QSqlRelation(“course”,”id”,”name”)); 
+    //将student表的第三个属性设为course表的id属性的外键，并将其显示为course
+表的name属性的值 
+    model->setHeaderData(0, Qt::Horizontal, QObject::tr(“ID”)); 
+    model->setHeaderData(1, Qt::Horizontal, QObject::tr(“Name”)); 
+    model->setHeaderData(2, Qt::Horizontal, QObject::tr(“Course”)); 
+    model->select(); 
+    ui->tableView->setModel(model); 
+我们修改了model的提交策略，OnFieldChange表示只要属性被改动就马上写入数据库，这样
+就不需要我们再执行提交函数了。setRelation()函数实现了创建外键，注意它的格式就行了。 
+运行效果如下： 
+ 
+可以看到Course属性已经不再是编号，而是具体的课程了。关于外键，你也应该有一定的认
+识了吧，说简单点就是将两个相关的表建立一个桥梁，让它们关联起来。 
+那么我们也希望，如果用户更改课程属性，那么他只能在课程表中有的课程中进行选择，而不
+能随意填写课程。在Qt中的QSqlRelationalDelegate委托类就能实现这个功能。我们只需在
+上面的构造函数的最后添加一行代码： 
+ui->tableView->setItemDelegate(new QSqlRelationalDelegate(ui->tableView)); 
+添加代理（委托），在我这里不知为什么会出现SqlRelationalDelegate is not a type name
+的提示，不过可以编译通过。 
+我们需要在widget.cpp中添加头文件： #include <QSqlRelationalDelegate> 
+运行效果如下： 
+ 
+可以看到这时修改Course属性时，就会出现一个下拉框，只能选择course表中的几个值。 
+而利用这个类来操作数据库，与前面讲到的QSqlTableModel没有区别，这里就不再重复。这
+几篇文章一共讲了好几种操作数据库的方法，到底应该使用哪个呢？那就看你的需求了，根
+据这几种方法的特点进行选择吧。 
+分类：Qt系列教程 作者： yafeilinux 日期： 四月 30th, 2010.    2,422 views 
+Tags: creator, qt, yafeilinux, 教程, 数据库  
+   
+二十八、Qt数据库（八）XML（一） 
+本文章原创于www.yafeilinux.com 转载请注明出处。 
+我们把XML放到数据库部分来讲，因为XML与数据库有着千丝万缕的联系，这里我们不再对
+XML进行过多的介绍，如果你还没有接触过它，可以在网上搜索一下关键字，其实对于我们下
+面讲述的内容，即便你不知道什么是XML，你也会很快掌握的。 
+在Qt中提供了QtXml模块实现了对XML数据的处理，我们在Qt帮助中输入关键字QtXml Module，
+可以看到该模块的类表。 
+ 
+在这里我们可以看到所有相关的类，它们主要是服务于两种操作XML文档的方法：DOM和SAX。
+Dom（Document Object Model，即文档对象模型）把XML文档转换成应用程序可以遍历的树形
+结构，这样便可以随机访问其中的节点。它的缺点是需要将整个XML文档读入内存，消耗内存
+较多。对于SAX我们放到后面再讲。 
+除了上面的两种方法外，Qt还提供了简单的QXmlStreamReader和QXmlStreamWriter对XML
+文档进行读写。 
+下面我们先介绍使用DOM的方式来操作XML文档。 
+下面是一个规范的XML文档： 
+<?xml version=”1.0″ encoding=”UTF-8″?>  //XML说明 
+<library>  //根元素 
+<book   id=”01″>   //library元素的第一个子元素，“id”是其属性 
+<title>Qt</title>   //book元素的子元素，“Qt”是元素的文本 
+<author>shiming</author>   //book元素的子元素，title元素的兄弟元素 
+</book>  //结束标记名 
+<book   id=”02″> 
+<title>Linux</title> 
+<author>yafei</author> 
+</book> 
+</library> 
+（我们为了讲述方便使用了//注释，其实XML文档中是没有这些注释的） 
+可以看到，一个规范的XML文档，是用XML说明开始的，主要由各元素组成。XML文档第一个
+元素就是根元素，XML文档必须有且只有一个根元素。元素是可以嵌套的。 
+下面我们就使用程序读出该文档中所有信息。 
+在Qt Creator中新建控制台工程Qt4 Console Application，工程名为xml01，在选择模块页
+选中QtXml（如果在这里没有添加，就需要在工程文件中手动添加QT += xml ）。 
+下面我们更改main.cpp的内容如下： 
+#include <QtCore/QCoreApplication> 
+#include <QtXml> 
+int main(int argc, char *argv[]) 
+{ 
+QCoreApplication a(argc, argv); 
+QDomDocument doc;   //新建QDomDocument类对象，它代表一个XML文档 
+QFile file(“my.xml”);   //建立指向“my.xml”文件的QFile对象 
+if (!file.open(QIODevice::ReadOnly)) return 0;  //以只读方式打开 
+if (!doc.setContent(&file)) { file.close(); return 0; } 
+//将文件内容读到doc中 
+file.close(); 
+//关闭文件 
+QDomNode firstNode = doc.firstChild();  //获得doc的第一个节点，即XML说明 
+qDebug() << firstNode.nodeName()   //输出XML说明 
+<< firstNode.nodeValue(); 
+return a.exec(); 
+} 
+我们先运行一下程序。然后在工程文件夹的debug文件夹下单击鼠标右键，新建文本文档，改
+名为“my.xml”，这里一定要注意把原来的“.txt”后缀改为“.xml” 。然后我们利用记事
+本打开该文件，并将上面的XML文档的信息写入其中，不要写注释信息，然后保存。 
+ 
+再次运行程序，效果如下： 
+ 
+我们不愿意让输出信息出现双引号，可以更改程序代码： 
+qDebug() << qPrintable(firstNode.nodeName())   //输出XML说明 
+<< qPrintable(firstNode.nodeValue()); 
+这里利用了qPrintable()函数。 
+效果如下： 
+ 
+下面我们在return a.exec();代码前继续添加代码： 
+QDomElement docElem = doc.documentElement();  //返回根元素 
+QDomNode n = docElem.firstChild();   //返回根节点的第一个子节点 
+while(!n.isNull()) 
+{   //如果节点不为空 
+if (n.isElement())  //如果节点是元素 
+{ 
+QDomElement e = n.toElement();  //将其转换为元素 
+qDebug() << qPrintable(e.tagName())   //返回元素标记 
+<< qPrintable(e.attribute(“id”));  //返回元素id属性的值 
+} 
+n = n.nextSibling();  //下一个兄弟节点 
+} 
+这样便能输出根元素及其子元素了。我们这里使用了firstChild()函数和nextSibling()函数，
+然后利用while()循环来实现对所有子元素的遍历。运行结果如下： 
+ 
+下面我们更改if()语句中的代码，用另一种方法遍历book元素的所有子元素。 
+if (n.isElement())  //如果节点是元素 
+{ 
+QDomElement e = n.toElement();  //将其转换为元素 
+qDebug() << qPrintable(e.tagName())   //返回元素标记 
+<< qPrintable(e.attribute(“id”));  //返回元素id属性的值 
+QDomNodeList list = e.childNodes(); //获得元素e的所有子节点的列表 
+for(int i=0; i<list.count(); i++) //遍历该列表 
+{ 
+QDomNode node = list.at(i); 
+if(node.isElement()) 
+qDebug() << “   “<< qPrintable(node.toElement().tagName()) 
+<<qPrintable(node.toElement().text()); 
+} 
+} 
+这里使用了childNodes()函数获得了元素所有子节点的列表，然后通过遍历这个列表实现了
+遍历其所有子元素。运行程序，效果如下： 
+ 
+小结：通过上面的例子，我们实现了对一个XML文档的读取。可以看到，在QDom中，是将整
+个XML文件读到内存中的doc对象中的。然后使用节点（QDomNode ）操作doc对象，像XML
+说明，元素，属性，文本等等都被看做是节点，这样就使得操作XML文档变得很简单，我们只
+需通过转换函数将节点转换成相应的类型，如 
+QDomElement e = n.toElement(); 
+在下一节我们将讲述XML文件的创建和写入。 
+分类：Qt系列教程 作者： yafeilinux 日期： 五月 4th, 2010.    3,886 views 
+Tags: creator, dom, qt, xml, yafeilinux, 教程, 数据库  
+   
+二十九、Qt数据库（九）XML（二） 
+本文章原创于 www.yafeilinux.com 转载请注明出处。 
+在上一节中我们用手写的方法建立了一个XML文档，并且用DOM的方法对其进行了读取。现在
+我们使用代码来创建那个XML文档，并且对它实现查找，更新，插入等操作。 
+首先，我们新建Qt4 Gui Application工程，工程名为xml02，然后添加QtXml模块，我们选
+择QWidget为Base class 。 
+1.为了在程序中可以使用中文，我们先在main.cpp文件中添加头文件： 
+#include <QTextCodec> 
+然后在main()函数中添加一行代码： 
+QTextCodec::setCodecForTr(QTextCodec::codecForLocale()); 
+2.然后到widget.ui文件中，将界面设计如下： 
+ 
+其中用到的部件有Push Button，ListWidget，Label和Line Edit 。 
+3.我们再到widget.cpp文件中，添加头文件：#include <QtXml> 
+然后在构造函数中添加代码如下： 
+QFile file(“my.xml”); 
+if(!file.open(QIODevice::WriteOnly | QIODevice::Truncate)) return ; 
+//只写方式打开，并清空以前的信息 
+QDomDocument doc; 
+QDomProcessingInstruction instruction;  //添加处理指令 
+instruction = doc.createProcessingInstruction(“xml”, 
+“version=\”1.0\” encoding=\”UTF-8\”"); 
+doc.appendChild(instruction); 
+QDomElement root = doc.createElement(tr(“书库”)); 
+doc.appendChild(root); //添加根元素 
+//添加第一个book元素及其子元素 
+QDomElement book = doc.createElement(tr(“图书”)); 
+QDomAttr id = doc.createAttribute(tr(“编号”)); 
+QDomElement title = doc.createElement(tr(“书名”)); 
+QDomElement author = doc.createElement(tr(“作者”)); 
+QDomText text; 
+id.setValue(tr(“1″)); 
+book.setAttributeNode(id); 
+text = doc.createTextNode(tr(“Qt”)); 
+title.appendChild(text); 
+text = doc.createTextNode(tr(“shiming”)); 
+author.appendChild(text); 
+book.appendChild(title); 
+book.appendChild(author); 
+root.appendChild(book); 
+//添加第二个book元素及其子元素 
+book = doc.createElement(tr(“图书”)); 
+id = doc.createAttribute(tr(“编号”)); 
+title = doc.createElement(tr(“书名”)); 
+author = doc.createElement(tr(“作者”)); 
+id.setValue(tr(“2″)); 
+book.setAttributeNode(id); 
+text = doc.createTextNode(tr(“Linux”)); 
+title.appendChild(text); 
+text = doc.createTextNode(tr(“yafei”)); 
+author.appendChild(text); 
+book.appendChild(title); 
+book.appendChild(author); 
+root.appendChild(book); 
+QTextStream out(&file); 
+doc.save(out,4);   //将文档保存到文件，4为子元素缩进字符数 
+file.close(); 
+这样我们就建立起了一个XML文档，过程并不复杂，只要注意一下元素的父子关系就可以了。
+最后我们用save()函数将数据从doc中保存到文件中。 
+4.下面我们读取整个XML文档，我们从widget.ui中单击“查看全部信息”按钮，进入它的
+单击事件槽函数，并更改如下： 
+void Widget::on_pushButton_clicked()  //显示全部 
+{ 
+ui->listWidget->clear(); //先清空显示 
+QFile file(“my.xml”); 
+if (!file.open(QIODevice::ReadOnly)) return ; 
+QDomDocument doc; 
+if (!doc.setContent(&file)) 
+{ 
+file.close(); 
+return ; 
+} 
+file.close(); 
+//返回根节点及其子节点的元素标记名 
+QDomElement docElem = doc.documentElement();  //返回根元素 
+QDomNode n = docElem.firstChild();   //返回根节点的第一个子节点 
+while(!n.isNull())  //如果节点不为空 
+{ 
+if (n.isElement()) //如果节点是元素 
+{ 
+QDomElement e = n.toElement(); //将其转换为元素 
+ui->listWidget->addItem(e.tagName()+e.attribute(tr(“编号”))); 
+QDomNodeList list = e.childNodes(); 
+for(int i=0; i<list.count(); i++) 
+{ 
+QDomNode node = list.at(i); 
+if(node.isElement()) 
+ui->listWidget->addItem(“   “+node.toElement().tagName() 
++” : “+node.toElement().text()); 
+} 
+} 
+n = n.nextSibling();  //下一个兄弟节点 
+} 
+} 
+这里的代码就是上一节我们讲的读取XML文档所用的代码，只是将以前的qDebug()输出换成
+了在listWidget上进行输出。运行程序，单击按键，效果如下： 
+ 
+5.下面我们加入添加功能，进入“添加”按键的单击事件槽函数，更改如下： 
+void Widget::on_pushButton_5_clicked()  //添加 
+{ 
+ui->listWidget->clear(); //我们先清空显示，然后显示“无法添加！” 
+ui->listWidget->addItem(tr(“无法添加！”)); 
+QFile file(“my.xml”); 
+if (!file.open(QIODevice::ReadOnly)) return; 
+QDomDocument doc; 
+if (!doc.setContent(&file)) 
+{ 
+file.close(); 
+return; 
+} 
+file.close(); 
+QDomElement root = doc.documentElement(); 
+QDomElement book = doc.createElement(tr(“图书”)); 
+QDomAttr id = doc.createAttribute(tr(“编号”)); 
+QDomElement title = doc.createElement(tr(“书名”)); 
+QDomElement author = doc.createElement(tr(“作者”)); 
+QDomText text; 
+QString num = root.lastChild().toElement().attribute(tr(“编号”)); 
+int count = num.toInt() +1; 
+id.setValue(QString::number(count)); 
+//我们获得了最后一个孩子结点的编号，然后加1，便是新的编号 
+book.setAttributeNode(id); 
+text = doc.createTextNode(ui->lineEdit_2->text()); 
+//注意：你那可能不是lineEdit_2。 
+title.appendChild(text); 
+text = doc.createTextNode(ui->lineEdit_3->text()); 
+author.appendChild(text); 
+book.appendChild(title); 
+book.appendChild(author); 
+root.appendChild(book); 
+if(!file.open(QIODevice::WriteOnly | QIODevice::Truncate)) return ; 
+QTextStream out(&file); 
+doc.save(out,4);   //将文档保存到文件，4为子元素缩进字符数 
+file.close(); 
+ui->listWidget->clear(); //最后更改显示为“添加成功！” 
+ui->listWidget->addItem(tr(“添加成功！”)); 
+} 
+这里先用只读方式打开XML文件，将其读入doc中，然后关闭。我们将新的节点加入到最后面，
+并使其“编号”为以前的最后一个节点的编号加1。最后我们再用只写的方式打开XML文件，
+将修改完的doc写入其中。运行程序，效果如下： 
+ 
+ 
+我们先添加一个节点，然后再查看全部信息，发现确实已经添加成功了。 
+6.查找，删除，更新操作。 
+因为这三个功能都要先利用“编号”进行查找，所以我们放在一起实现。 
+我们先在widget.h文件中添加一个函数声明： 
+void doXml(const QString operate); 
+它有一个参数，用来传递所要进行的操作。 
+然后到widget.cpp文件中对它进行定义： 
+void Widget::doXml(const QString operate) 
+{ 
+ui->listWidget->clear(); 
+ui->listWidget->addItem(tr(“没有找到相关内容！”)); 
+QFile file(“my.xml”); 
+if (!file.open(QIODevice::ReadOnly)) return ; 
+QDomDocument doc; 
+if (!doc.setContent(&file)) 
+{ 
+file.close(); 
+return ; 
+} 
+file.close(); 
+QDomNodeList list = doc.elementsByTagName(tr(“图书”)); 
+//以标签名进行查找 
+for(int i=0; i<list.count(); i++) 
+{ 
+QDomElement e = list.at(i).toElement(); 
+if(e.attribute(tr(“编号”)) == ui->lineEdit->text()) 
+{  //如果元素的“编号”属性值与我们所查的相同 
+if(operate == “delete”)  //如果是删除操作 
+{ 
+QDomElement root = doc.documentElement();  //取出根节点 
+root.removeChild(list.at(i));  //从根节点上删除该节点 
+QFile file(“my.xml”);     //保存更改 
+if(!file.open(QIODevice::WriteOnly | QIODevice::Truncate)) return ; 
+QTextStream out(&file); 
+doc.save(out,4); 
+file.close(); 
+ui->listWidget->clear(); 
+ui->listWidget->addItem(tr(“删除成功！”)); 
+} 
+else if(operate == “update”)  //如果是更新操作 
+{ 
+QDomNodeList child = list.at(i).childNodes(); 
+//找到它的所有子节点，就是“书名”和“作者” 
+child.at(0).toElement().firstChild().setNodeValue(ui->lineEdit_2->text()); 
+//将它子节点的首个子节点（就是文本节点）的内容更新 
+child.at(1).toElement().firstChild().setNodeValue(ui->lineEdit_3->text()); 
+QFile file(“my.xml”);     //保存更改 
+if(!file.open(QIODevice::WriteOnly | QIODevice::Truncate)) return ; 
+QTextStream out(&file); 
+doc.save(out,4);   //将文档保存到文件，4为子元素缩进字符数 
+file.close(); 
+ui->listWidget->clear(); 
+ui->listWidget->addItem(tr(“更新成功！”)); 
+} 
+else if(operate == “find”)  //如果是查找操作 
+{ 
+ui->listWidget->clear(); 
+ui->listWidget->addItem(e.tagName()+e.attribute(tr(“编号”))); 
+QDomNodeList list = e.childNodes(); 
+for(int i=0; i<list.count(); i++) 
+{ 
+QDomNode node = list.at(i); 
+if(node.isElement()) 
+ui->listWidget->addItem(“   “+node.toElement().tagName() 
++” : “+node.toElement().text()); 
+} 
+} 
+} 
+} 
+} 
+然后我们分别进入“查找”，“删除”，“更新”三个按键的单击事件槽函数，更改如下： 
+void Widget::on_pushButton_2_clicked()  //查找 
+{ 
+doXml(“find”); 
+} 
+void Widget::on_pushButton_3_clicked()  //删除 
+{ 
+doXml(“delete”); 
+} 
+void Widget::on_pushButton_4_clicked()  //更新 
+{ 
+doXml(“update”); 
+} 
+这时，我们运行程序。 
+在“图书编号”中输入1，然后点击“查找”按键，效果如下： 
+ 
+这时我们将下面的“书名”和“作者”进行更改，然后单击“更新”按键，效果如下： 
+ 
+再次点击“查找”按键： 
+ 
+然后点击“删除”按键： 
+ 
+再点击“查看全部信息”按键： 
+ 
+我们发现，所有的操作的结果都是正确的。 
+我们的Dom部分就讲到这里，下一节我们讲述用SAX的方法读取XML文档。 
+分类：Qt系列教程 作者： yafeilinux 日期： 五月 5th, 2010.    3,154 views 
+Tags: creator, dom, qt, xml, yafeilinux, 教程, 数据库  
+   
+三十、Qt数据库（十）XML（三） 
+本文章原创于 www.yafeilinux.com 转载请注明出处。 
+我们前面讲述了用DOM的方法对XML文档进行操作，DOM实现起来很灵活，但是这样也就使得
+编程变得复杂了些，而且我们前面也提到过，DOM需要预先把整个XML文档都读入内存，这样
+就使得它不适合处理较大的文件。 
+下面我们讲述另一种读取XML文档的方法，即SAX 。是的，如果你只想读取并显示整个XML
+文档，那么SAX是很好的选择，因为它提供了比DOM更简单的接口，并且它不需要将整个XML
+文档一次性读入内存，这样便可以用来读取较大的文件。我们对SAX不再进行过多的介绍，因
+为现在你就可以掌握我们下面要讲的内容了。如果你对SAX有兴趣，可以到网上查找相关资料。 
+在Qt的QtXml模块中提供了一个QXmlSimpleReader的类，它便是基于SAX的XML解析器。这
+个解析器是基于事件的，但这些事件由它自身进行关联，我们并不需要进行设置。我们只需知
+道，当解析器解析一个XML的元素时，就会执行相应的事件，我们只需要重写这些事件处理函
+数，就能让它按照我们想法进行解析。 
+比如要解析下面的元素： 
+<title>Qt</title> 
+解析器会依次调用如下事件处理函数：startElement()，characters()，endElement()。 
+我们可以在startElement()中获得元素名（如“title”）和属性，在characters()中获得元
+素中的文本（如“Qt”），在endElement()中进行一些结束读取该元素时想要进行的操作。 
+而所有的这些事件处理函数我们都可以通过继承QXmlDefaultHandler类来重写。 
+下面我们先看一个简单的例子： 
+1.新建空工程Empty Qt4 Project ，工程名为xml03 。 
+2.我们在工程中添加C++ Class，Class name为MySAX ，Base class为QXmlDefaultHandler 
+3.我们再添加一个main.cpp文件。 
+4.然后我们在xml03.pro文件中加入一行代码：QT += xml 
+下面是几个文件的内容： 
+main.cpp文件： 
+ 
+mysax.h文件： 
+ 
+mysax.cpp文件： 
+ 
+ 
+（注：上面程序中的注释//开始读写元素，应为//开始读取元素） 
+我们先运行一下程序，然后将第一节我们建立的“my.xml”文件复制到我们现在的工程文件
+夹的debug文件夹下。 
+然后再运行程序，效果如下： 
+ 
+可以看到文件的解析过程如下： 
+QFile file(fileName); 
+QXmlInputSource inputSource(&file);  //读取文件内容 
+QXmlSimpleReader reader;   //建立QXmlSimpleReader对象 
+reader.setContentHandler(this);  //设置内容处理程序 
+reader.setErrorHandler(this);  //设置错误处理程序 
+reader.parse(inputSource);  //解析文件 
+这里，setContentHandler()就是设置了startElement()，characters()，endElement()等事
+件的处理程序。而且我们一般都要设置错误处理程序setErrorHandler()，最后我们使用
+parse()来对文件进行解析，在解析过程中会不停地调用事件处理函数，当然整个调用过程是
+在内部进行的，不用我们去进行设置。利用SAX读取XML文档是十分方便快速的。 
+我们XML的内容就讲到这里，当然，Qt还提供了基于流的XML处理类，Qt也提供了一个
+QtXmlPatterns模块来进行XML文档的处理，这些内容我们就不再进行讲述。 
+分类：Qt系列教程 作者： yafeilinux 日期： 五月 6th, 2010.    2,969 views 
+Tags: creator, qt, SAX, xml, yafeilinux, 教程, 数据库  
+   
+三十一、Qt 4.7.0及Qt Creator 2.0 beta版安装全程图解 
+本文章原创于 www.yafeilinux.com 转载请注明出处。 
+现在诺基亚Qt官网上已经提供了最新的Qt 4.7.0和Qt Creator 2.0 beta版的下载，我们
+第一时间对其进行了测试使用，并将其作为我们系列教程的一部分，来和大家一起尝鲜全新
+的Qt 。 
+ 
+说明：下面我们只是下载了Qt 的桌面版开发环境，其中并没有包含移动平台的开发库。我们
+会在这个专题的最后讲解Nokia Qt SDK 完整版的安装和使用。 
+1.我们到官方网站下载相关软件。  
+http://qt.nokia.com/developer/qt-qtcreator-prerelease 
+ 
+2.我们需要分别下载Qt及Qt Creator 。  
+ 
+ 
+3.我们先安装qt-win-opensource-4.7.0-beta1-mingw，安装开始时的设置全部使用默认设置
+即可。在最后会弹出如下警告框，我们选择“是”即可。 
+ 
+4.然后我们安装qt-creator-win-opensource-2.0.0-beta1，全部保持默认设置即可。 
+5.下面我们打开安装好的Qt Creator，其界面如下。 
+ 
+可以看到，新的Qt Creator的界面有所变化。 
+6.我们先新建常用的Gui工程Qt Gui Application，工程名设为“hello”，然后设置下面的
+保存路径，注意路径中不能有中文。后面的选项全部默认即可。 
+ 
+7.建立好工程后，界面如下。 
+ 
+8.我们双击mainwindow.ui文件，这时便进入了界面设置模式，我们在窗口上添加一个Label
+部件，然后更改其内容为“hello world！”效果如下。 
+ 
+可以看到，新的Qt Creator中添加了一个界面设计模式的选项  ，我们可以更方便的从
+代码编辑界面转到可视的窗口设计界面。 
+9.这时我们再回到Edit界面中，可以看到ui文件的内容，它是一个XML文件。 
+ 
+10.这时我们点击Run按钮，运行程序，如果这时出现下面的提示框，我们选中其中的选择框，
+然后点击“Save All”按钮即可。 
+ 
+说明：下面的几步只是在以前没有装过Qt的系统上才会出现，如果你以前已经安装过Qt的
+其他版本，这里的情况有所不同。不过，你也可以按照下面的方法将你新安装的Qt Creator
+设置为最新的Qt4.7.0 。 
+11.此时程序并没有成功运行，而是输出了下面的错误。 
+Qt version Qt in PATH is invalid. Set valid Qt Version in Tools/Options 
+Could not determine the path to the binaries of the Qt installation, maybe the qmake 
+path is wrong? 
+Error while building project hello (target: Desktop) 
+When executing build step ‘qmake’ 
+如下图： 
+ 
+错误提示的意思是：在PATH系统环境变量中的Qt版本信息不可用，我们需要在Tools/Options
+菜单中进行设置。 
+12.我们进入Qt Creator的Tools菜单，再进入其Options子菜单。然后在Qt4页面可以进
+行Qt的版本设置。 
+ 
+可以看到，这时还没有可用的Qt版本。我们有两种方法进行设置，一种是去设置环境变量，
+一种是直接在这里添加Qt的安装路径。 
+方法一： 
+我们在桌面上右击“我的电脑”，然后选择“属性”，然后选择“高级”页面，再选择下面的
+“环境变量”，如下图。 
+ 
+我们选择下面的列表中的“Path”项，点击“编辑按钮”。如下图。 
+ 
+这时我们将我们的Qt4.7.0的bin文件夹的路径加入环境变量中，我这里是
+“C:\Qt\4.7.0-beta1\bin”，如果你开始按照默认路径安装，也应该是这个路径，如果不是，
+请改为自己的路径。我们需要将“;C:\Qt\4.7.0-beta1\bin”加入变量值中，注意这里前面有
+一个英文半角的“;”号，它用来将我们的变量值与已有的变量值隔开。如下图： 
+ 
+然后我们点击确定就可以了。 
+方法二，在下面附录中给出。 
+13.我们设置好环境变量后，需要关闭Qt Creator，然后重新打开。 
+这时我们再进入Qt版本设置界面，发现它已经发现Qt in PATH了，我们点击Qt in PATH，
+在下面的MinGW Directory中设置一下MinGW文件夹的路径，也就是我们安装的Qt Creator
+的目录下的mingw文件夹的路径，我这里是“C:\Qt\qtcreator-1.3.83\mingw”。设置好后按
+“OK”按钮即可。如下图。 
+ 
+14.我们在Qt Creator的File菜单中选择Recent Projects，然后打开我们上次关闭的工程。 
+如下图。 
+ 
+这时我们再次运行程序，已经成功了。效果如下。 
+ 
+可以看到，新的Qt Creator的界面有所不同，但是它在编写普通程序时，与以前的版本差别
+不大。而它支持的全新的Qt Quick编程界面，我们会在下一节进行讲述。 
+附录：手动设置Qt的版本信息。 
+我们在上面讲述了通过设置环境变量来设置Qt的版本信息，其实，我们也可以直接通过手动
+添加Qt的路径来设置Qt的版本。方法如下。 
+1.我们在Qt版本设置界面单击右上角的“+”号按钮，这时效果如下。 
+ 
+2.然后将下面的信息添加完整，如下。 
+ 
+3.我们重新打开我们的工程文件，这时如果你已经用过方法一进行环境变量设置，并且已经
+运行过该程序了，那么可能会弹出如下窗口。 
+ 
+我们选择第二项，在新的文件夹下编译该工程即可。这时运行程序，便没有错误了。 
+说明：第二种方法看似很简单，但是它存在一些缺点。比如，我们想直接双击运行工程文件夹
+下已经编译好的.exe文件时，就会出现缺少.dll文件的提示。而第一种方法就不会再出现这
+样的提示。所以我们推荐使用方法一。 
+体验全新的Qt 4.7.0 ，更多精彩内容，尽在www.yafeilinux.com ！ 
+分类：Qt系列教程 作者： yafeilinux 日期： 五月 11th, 2010.    3,951 views 
+Tags: beta, creator, qt, Qt 4.7, Qt 4.7.0, Qt Creator 2.0, Qt Quick, Qt4.7, Qt4.7.0, 
+Qt版本, yafeilinux, 安装, 教程, 环境变量  
+   
+三十二、第一个Qt Quick程序（QML程序） 
+本文章原创于 www.yafeilinux.com 转载请注明出处。 
+上一节我们详细讲述了Qt 4.7和Qt Creator 2.0的安装。这一节，我们讲述Qt Quick的应
+用。 
+Qt Quick是Qt 4.7主推的技术，下面是Qt官网对其进行的介绍： 
+Qt Quick 是一种高级用户界面技术，使用它可轻松地创建供移动和嵌入式设备使用的动态触
+摸式界面和轻量级应用程序。三种全新的技术共同构成了 Qt Quick 用户界面创建工具包：一
+个改进的Qt Creator IDE、一种新增的简便易学的语言 (QML) 和一个新加入 Qt 库中名为 
+QtDeclarative 的模块，这些使得 Qt 更加便于不熟悉 C++ 的开发人员和设计人员使用。 
+下面我们先到Qt Creator中查看相关帮助文件，让我们对它有个大体的了解。 
+我们查看Qt Creator中的帮助Help，首先进入我们眼帘的便是Qt Creator的介绍，在这里
+你可以查看Qt Creator的相关信息和使用方法。 
+   
+我们查看下面的目录，可以看到这里有简单的工程的建立教程。我们进入Creating an 
+Animated Application 的链接，这个便是一个最简单的QML工程的教程，你可以参考一下。 
+   
+下面我们建立自己的QML工程。 
+1.新建Qt QML Application ，工程名设置为helloWorld 。 
+   
+2.我们点击helloWorld.qmlproject文件。 
+在这里可以看到它就是包含了几个文件夹的路径信息，默认的都是本工程文件夹。 
+在最上面，有一句提示，Do you want to enable the experimental Qt Quick Designer? 你
+是否要启用实验中的Qt Quick Designer？当然，所以我们点击后面的按钮来启用Qt Quick 
+Designer。 
+   
+3.这时弹出一个提示框。 
+它的大体内容是，如果启用Qt Quick Designer ，将影响Qt Creator的整体稳定性。还告诉
+了我们怎么停用Qt Quick Designer。我们选择“Enable Qt Quick Designer”。 
+   
+4.我们关闭Qt Creator，然后重新打开它。我们再次打开刚才建立的工程。 
+双击helloWorld.qml文件，这时我们期盼已久的Qt Quick Designer界面终于出现了。对于
+这个界面，我们以后再详细讲解。 
+   
+5.我们再次回到Edit模式下，查看helloWorld.qml文件的内容。 
+import Qt 4.6 
+Rectangle { 
+    width: 200 
+    height: 200 
+    Text { 
+        x: 66 
+        y: 93 
+        text: “Hello World” 
+    } 
+} 
+这就是传说中的QML语言了，看上去有点像CSS，就像官网所说的，它是JavaScript的扩展。
+我们这里先不对这些代码做什么解释，到后面会专门来讲这个语言的。 
+6.我们这时运行程序，效果如下。 
+   
+7.我们更换一下程序的皮肤。 
+在skin菜单中选择一个皮肤。 
+   
+运行效果如下： 
+   
+我们可以在其上右击鼠标，选择Quit菜单，退出程序。 
+8.关于停用Qt Quick。 
+我们打开Help菜单，进入About Plugins子菜单。然后将Qt Quick项的对勾去掉即可。 
+   
+到这里，一个最简单的Qt Quick程序就完成了。我们可以看到，这是一个全新的体验，它与
+以前的Qt应用是完全不同的。在以后的教程里我们会对Qt Quick及其包含的QML语言进行全
+面的讲解。 
+体验全新的Qt 4.7.0 ，更多精彩内容，尽在www.yafeilinux.com ！ 
+分类：Qt系列教程  作者：  yafeilinux 日期：  五月  11th, 2010.    3,629 views 
+Tags: creator, QML, qt, Qt Creator 2.0, Qt Quick, Qt4.7, yafeilinux,  教程   
+   
+三十三、体验QML演示程序 
+本文章原创于 www.yafeilinux.com 转载请注明出处。 
+前面我们讲述了简单的QML工程的建立。对于一个新生的事物，我们最感兴趣的是它到底能做
+什么，而对于QML，Qt已经自带了大量的演示程序，我们可以体验一下QML的强大。 
+1.所有的小例子都在Qt4.7的安装目录下的examples\declarative目录下。 
+我这里的路径是C:\Qt\4.7.0-beta1\examples\declarative 。 
+2.运行qml文件的方法： 
+方法一：使用qml.exe 
+所有的qml文件都需要使用一个叫qml.exe的程序来运行。它在C:\Qt\4.7.0-beta1\bin目录
+下。我们双击qml.exe，然后用它打开一个qml文件，效果如下： 
+   
+   
+为了以后方便使用，我们可以让qml.exe成为qml文件的默认运行程序。我们在任意一个qml
+文件上右击鼠标，在“打开方式”菜单中选择“选择程序…”然后找到qml.exe，并选中下面
+的“始终使用选择的程序打开这种文件”选择框，然后按“确定”，以后就可以直接双击打开
+qml文件了。 
+   
+方法二：在Qt Creator中打开 
+为了安全起见，我们先将要使用的文件夹复制出来，比如我们将
+C:\Qt\4.7.0-beta1\examples\declarative下的animations文件夹复制到F盘中。然后我们
+打开Qt Creator ，新建工程，这里选择Import Existing Qt QML Directory一项。如下图。 
+   
+然后填写工程名，路径指定到我们复制的animations文件夹。 
+   
+完成后我们点击Qt Creator工程列表中的任意一个qml文件，然后点击运行按钮，就可以执
+行了。 
+   
+注意：演示程序中可能存在一些错误或警告，比如上面的color-animation.qml使用第一种方
+法，直接用qml.exe打开是无法执行的，我们只能使用第二种方法运行它。 
+3.除了在examples\declarative中的这些小例子外，Qt还提供了几个较大的例子。 
+它们在C:\Qt\4.7.0-beta1\demos\declarative目录中，不过现在这里的大部分qml文件都不
+能直接执行，我们都需要使用上面的方法二，在Qt Creator中执行它们。下面是其中几个的
+简单介绍： 
+Samegame的例子： 
+   
+webbrowser的例子： 
+   
+注意这个例子需要能上网才能正常运行，我们可以使用键盘上的左右方向键来缩放网页。 
+photoviewer的例子： 
+   
+   
+   
+这个例子也是自动从网上下载图片的，速度有点慢。 
+4.查看源代码。 
+看完了qml文件运行时的绚丽效果，我们下面来查看一下它的源代码。我们当然可以在Qt 
+Creator中直接查看其代码，其实更简单的方法是，使用记事本或写字板等文本编辑器直接打
+开qml文件。下面是一个qml文件的内容。 
+   
+现在你可以发现了，利用QML，编写几句简单的代码就能实现让人心动的界面。那么我们就在
+以后的教程中好好学习一下这个让人期待的QML语言吧。 
+体验全新的Qt 4.7.0 ，更多精彩内容，尽在www.yafeilinux.com ！ 
+分类：Qt系列教程  作者：  yafeilinux 日期：  五月  18th, 2010.    3,539 views 
+Tags: creator, declarative, demo, QML, qml.exe, qt, Qt 4.7, Qt Creator 2.0, Qt Quick, yafeilinux   
+   
+三十四、Qt Quick Designer介绍 
+本文章原创于 www.yafeilinux.com 转载请注明出处。 
+在对Qt Quick和QML有了一些了解后，现在我们就来熟悉一下这个全新的Qt Quick Designer
+界面。 
+在这一篇中我们会用一个例子来介绍一下Qt Quick Designer界面，但是不会对代码进行过多
+的讲解。到下一篇我们讲解QML组件时会对这个程序生成的代码进行逐行讲解，再往后的几篇，
+我们就会对Qt Quick中的几个特色功能进行举例讲解，而在讲解例子的同时，我们也会将QML
+语言的讲述加入其中。我们会在完成几个实例的同时掌握QML语言。 
+我们新建一个Qt QML Application，我这里的工程名为“helloWorld”。 
+一，熟悉Qt Quick Designer界面 
+ 
+这是整个Qt Quick Designer界面，它由几个面板组成，下面分别进行介绍。 
+ 
+主设计面板，也就是我们下面所说的场景。这是我们的主设计区，所有的项目都要放到这里，
+当程序执行时，就是显示的这个面板上的内容。 
+ 
+Navigator导航器面板。场景中所有的项目都在这里列出。在这里，我们可以选中一个特定的
+项目，那么场景中对应的项目也会被选中，我们也可以在这里拖拽项目来更改它们的从属关系，
+或者点击项目后面的“眼睛”图标来设置它是否可以显示。 
+ 
+Properties属性面板。在这里我们可以设置项目的属性。比如项目名称，填充颜色，边框颜
+色，项目大小和位置，以及项目的缩放，旋转和不透明度等。 
+ 
+Library库面板。在这里提供了一些常用的部件，我们可以将它们拖放到场景中来使用。在
+Resources子面板中，我们可以看到我们工程文件夹下的图片等资源，我们也可以将它们拖拽
+到场景中直接使用。当我们以后新建了组件后，它也会出现在Library中。 
+ 
+状态面板。这里可以为场景新建或删除一个状态。 
+ 
+设计模式和代码编辑模式的转换，我们可以点击“Edit”图标进入代码编辑界面。 
+二，简单的使用。 
+1.我们从库面板中拖入一个Rectangle到场景中，调整它的大小。然后在属性面板中更改其
+ID为“myButton”，并更改其颜色。将其Radius属性更改为10，这时它就会变为圆角了。这
+时的属性面板如下。 
+ 
+2.然后我们从库面板中拖入一个Mouse Area部件到“myButton”上，注意，要使得Mouse Area
+部件成为“myButton”的子项目，在导航器面板中可以看到它们的关系。 
+ 
+这时我们选中了这个Mouse Area部件，在属性面板中将其id改为“myMouseArea”，然后在
+Geometry子面板中点击 图标，鼠标区域填充整个“myButton”。 
+ 
+3.这时我们在状态面板中点击一下后面的带有加号的方块，新建一个状态。如下图。 
+ 
+我们在State1状态下，更改场景中的“Hello World”，改变它的字体大小，并更改颜色。如
+下图。 
+ 
+然后我们进入Advanced子面板，更改一下Opacity（不透明度）和Rotation（旋转）的值。
+如下图。 
+ 
+4.我们下面点击“Edit”图标，进入代码编辑界面。 
+在这里我们找到state代码段，添加一行代码when: myMouseArea.pressed ，如下： 
+states: [ 
+State { 
+name: “State1″ 
+when: myMouseArea.pressed 
+这里我们省略了其他代码。 
+5.此时我们运行程序，效果如下。 
+ 
+然后我们点击按钮，效果如下： 
+ 
+这样这个简单的例子就讲完了。我们可以注意到，当我们在设计器中更改界面时，编辑器中的
+代码就自动改变了。其实，如果我们在编辑器中更改了代码，对应的设计器中的界面也会相应
+改变的。这样就实现了真正的所见即所得。在后面的章节中你会进一步体会到Qt Quick实现
+一个炫酷界面是那么简单。 
+体验全新的Qt 4.7.0 ，更多精彩内容，尽在 www.yafeilinux.com ！ 
+分类：Qt系列教程  作者：  yafeilinux 日期：  五月  26th, 2010.    2,367 views 
+Tags: creator, declarative, QML, qt, Qt Creator 2.0, Qt Quick, Qt Quick Designer, Qt4.7, yafeilinux,  教程   
+   
+    State { 
+        name: "state1" 
+        PropertyChanges { 
+            target: myText 
+            font.pointSize:20; color:"red" 
+            rotation:30; opacity:0.5 
+        } 
+        when:myMouseArea.pressed 
+    } 
+    ] 
+这里我们使用了“[ ]”括号，它表示列表属性，也就是说，在方括号中间可以写多个项目作
+为其属性值，它们需要用英文“,”隔开。例如： 
+[ 
+State{}, 
+State{} 
+] 
+因为我们这里只有一个项目，所以也可以省去方括号。在State{}中，我们又使用了
+PropertyChanges{}项目，它用来改变特定项目的属性值。这里我们先指定了要改变的项目是
+“myText”，然后再更改其属性值。这里的opacity属性，是不透明度，当为0时表示全透明，
+为1时表示完全不透明，所有项目的该属性默认值都是1。 
+下面一句when:myMouseArea.pressed ，表示当鼠标区域被点击时，进入该状态。这里需要说
+明的是，因为默认的开始状态，就是不做改变时的状态，所以我们要指定什么时候进入我们新
+建的状态。 
+（其实我们也可以将“state1”作为默认的状态，我们可以在“mainWindow”中添加一行代码：
+state: “state1″  这样就表明了使“state1”作为初始状态。但这时我们要将
+when:myMouseArea.pressed一行代码删去。） 
+此时我们再进入Design界面，效果如下： 
+ 
+5.这时整个程序的代码如下： 
+import Qt 4.6 
+Rectangle{ 
+id:mainWindow; width:200; height:200 
+Text { 
+id: myText 
+text: “Hello World!” 
+anchors.centerIn:parent 
+} 
+Rectangle{ 
+id:myButton; width:50; height:30 
+x:75; y:136; radius:10; color:”blue” 
+MouseArea{id:myMouseArea; anchors.fill:parent} 
+} 
+states: [ 
+State { 
+name: "state1" 
+PropertyChanges { 
+target: myText 
+font.pointSize:20; color:"red" 
+rotation:30; opacity:0.5 
+} 
+when:myMouseArea.pressed 
+} 
+] 
+} 
+运行程序，效果如下： 
+ 
+上面我们一步一步重写了整个程序，并在每一步完成时都查看了设计器中的界面。就像前一节
+所说的那样，Qt Quick 实现了真正的可视化编程，代码与界面完全同步，让用户可以直观的
+看到执行结果。这个程序很小可以这样实现，但是如果稍大点的程序，所有的项目的定义都写
+在一个文件中，就会显得很繁琐。而且，像按钮一样的部件，我们可能需要多次使用，我们也
+不愿意重复编写代码。所以，我们需要将子项目单独来写，这样就形成了组件。 
+QML组件 
+1.我们在工程中新建Qt QML File，命名为“Button”。 
+注意：组件的名称的首字母一定要大写。 
+2.然后我们将Button.qml文件中的内容更改如下： 
+import Qt 4.7 
+Rectangle{ 
+id:myButton; width:50; height:30 
+radius:10; color:”blue” 
+signal clicked() 
+MouseArea{id:myMouseArea; anchors.fill:parent 
+onClicked: myButton.clicked() 
+} 
+} 
+这里我们新建了一个signal信号函数clicked()。当执行该函数时，Button组件就会发出
+clicked()信号。我们在MouseArea中添加了一行代码： 
+onClicked: myButton.clicked() 
+其中onClicked关联到MouseArea的clicked()信号，它相当于槽函数，这行代码的效果是，
+当MouseArea被按下时，就执行“myButton”的clicked()函数。 
+3.我们在helloWorld.qml中删除以下代码 
+Rectangle{ 
+id:myButton; width:50; height:30 
+x:75; y:136; radius:10; color:”blue” 
+MouseArea{id:myMouseArea; anchors.fill:parent} 
+} 
+和when:myMouseArea.pressed 
+4.我们进入helloWorld.qml的设计器界面。 
+可以看到，在库面板，已经有Button元件了，我们将一个Button拖入场景中。如下图。 
+ 
+5.我们回到helloWorld.qml文件中，在新增的代码中添加一行代码。 
+Button { 
+id: button1 
+x: 75 
+y: 135 
+onClicked:mainWindow.state = “state1″ 
+} 
+这个onClicked就是对应按钮的clicked信号。当按钮被按下时，我们让主窗口进入新建的状
+态。 
+6.此时执行程序，效果如下。 
+ 
+我们可以看到，QML组件是可以直接在其他文件中使用的，我们不需要进行声明，或者包含头
+文件。而工程中的一个组件，会自动添加到Library库中供我们使用。我们也看到了QML中的
+信号和槽也十分简单。 
+在这一节中我们讲述了QML语言的一些基本知识，而且引出了组件的概念，最后还讲述了信号
+的关联。这部分内容很多，也有些乱，我们最好多进行一些练习，对于各个项目的属性可以查
+看帮助文件。 
+体验全新的Qt 4.7.0 ，更多精彩内容，尽在 www.yafeilinux.com ！  
+分类：Qt系列教程  作者：  yafeilinux 日期：  五月  26th, 2010.    2,488 views 
+Tags: creator, QML, QML组件, qt, Qt Creator 2.0, Qt Quick, Qt Quick  Designer, Qt4.7   
+   
+三十五、QML组件 
+本文章原创于 www.yafeilinux.com 转载请注明出处。 
+在上一节中，我们简单讲述了Qt Quick Designer的使用。现在我们开始讲述程序中生成的代
+码，然后引出QML组件的概念。这一节也包含了对QML语言的简单讲解。 
+我们先来看一下上一次生成的代码。 
+首先看一下整个文件的框架： 
+ 
+import Qt 4.6  //QML文件都要以import开头 
+Rectangle {   //这里定义了一个矩形，以及它包含的所有子项目 
+id: mainWindow //矩形的id属性，相当于C++中的对象名，需要用小写字母开头 
+width: 200  //矩形的宽和高 
+height: 200 
+//下面是矩形的三个子项目 
+Text { 
+//这里定义了文本的内容 
+… 
+} 
+Rectangle { 
+//这里定义了一个矩形，以及该矩形中的所有子项目 
+… 
+} 
+states: [ 
+//这里是一系列状态 
+... 
+] 
+} 
+下面我们查看每一个子项目的内容： 
+文本项目： 
+Text { 
+id: text1 //id属性 
+x: 66   //在父项目（mainWindow）中的位置 
+y: 93 
+text: “Hello World”  //文本内容 
+} 
+矩形项目： 
+Rectangle { 
+id: myButton  //属性 
+x: 50 
+y: 134 
+width: 100 
+height: 27 
+color: “#8d4848″ 
+radius: 10 
+MouseArea {  //子项目 
+id: myMouseArea 
+x: 12 
+y: 6 
+width: 100 
+height: 100 
+anchors.fill: parent  //填充整个父项目（myButton） 
+anchors.bottomMargin: 0 
+anchors.topMargin: 0 
+anchors.leftMargin: 0 
+anchors.rightMargin: 0 
+} 
+} 
+状态项目： 
+states: [ 
+State { 
+name: "State1"   //新建的状态 
+when: myMouseArea.pressed   //当鼠标按下时启用 
+PropertyChanges {  //属性改变 
+target: text1  //目标是text1项目 
+x: 25       //下面是对text1各属性的改变 
+y: 48 
+width: 154 
+height: 57 
+color: "#38883e" 
+rotation: 30 
+scale: 1 
+opacity: 0.5 
+font.bold: false 
+verticalAlignment: "AlignVCenter" 
+horizontalAlignment: "AlignHCenter" 
+font.pointSize: 20 
+} 
+} 
+] 
+以上除了我们添加的那行代码外，其他的代码全部是自动生成的，而且格式很规范。其实这些
+代码我们完全可以自己来写。下面我们就重写上面的代码，再一点一点得实现整个程序的功能。 
+1.添加主窗口。 
+import Qt 4.6 
+Rectangle{ 
+id:mainWindow; width:200; height:200 
+} 
+在QML中，必须有一个根元素，第一个元素即是根元素，它将做为所有项目的父项目。对于项
+目的属性，可以一个属性写一行，也可以像上面这样，所有的属性都写在一行，不过中间要用
+英文的“;”分号隔开。对于id属性，它和我们接触过的变量名一样，必须用小写字母或下划
+线开头，且不能包含字母，数字和下划线以外的字符。 
+这时我们进入Design界面，其内容如下： 
+ 
+2.添加文本项目。 
+因为其是“mainWindow”的子项目，所以Text{}要写在“mainWindow”的两个{}号里面。 
+我们在下面输入“Tex”，这时会自动弹出待选列表，我们发现列表中第一个就是“Text”，
+所有我们直接按下回车键，让系统自动补全输入。 
+ 
+ 
+可以看到系统自动生成了“id”和“text”两个属性值。我们只需更改其内容即可。然后我们
+再添加文本的位置属性。其内容如下： 
+Text { 
+id: myText 
+text: “Hello World!” 
+anchors.centerIn:parent 
+} 
+这里的anchors是一个布局管理器，它可以固定项目的位置，我们这里的 
+anchors.centerIn:parent就是表示“myText”要在其父项目的中心。我们这时再查看Design
+界面，效果如下： 
+ 
+3.添加矩形项目。 
+我们添加一个矩形，作为按钮。它也是“mainWindow”的子项目。而在按钮中还有一个
+MouseArea子项目，它填充整个按钮，因为只有添加了这个MouseArea，按钮才能接受鼠标点
+击事件。又因为，MouseArea只是填充了按钮，所以只有在按钮上点击，才会触发鼠标点击事
+件，而点击其他地方，是没有效果的。代码如下： 
+Rectangle{ 
+id:myButton; width:50; height:30 
+x:75; y:136; radius:10; color:”blue” 
+MouseArea{id:myMouseArea; anchors.fill:parent} 
+} 
+这里有个radius属性，它是矩形的半径值，简单的说就是它可以使矩形的四个角变为弧线。
+现在我们在看一下Design界面，效果如下： 
+ 
+4.状态项目。 
+说是状态项目，更确切的说是“mainWindow”的状态属性，然后在其状态属性中又包含状态项
+目。 
+states: [ 
+    State { 
+        name: "state1" 
+        PropertyChanges { 
+            target: myText 
+            font.pointSize:20; color:"red" 
+            rotation:30; opacity:0.5 
+        } 
+        when:myMouseArea.pressed 
+    } 
+    ] 
+这里我们使用了“[ ]”括号，它表示列表属性，也就是说，在方括号中间可以写多个项目作
+为其属性值，它们需要用英文“,”隔开。例如： 
+[ 
+State{}, 
+State{} 
+] 
+因为我们这里只有一个项目，所以也可以省去方括号。在State{}中，我们又使用了
+PropertyChanges{}项目，它用来改变特定项目的属性值。这里我们先指定了要改变的项目是
+“myText”，然后再更改其属性值。这里的opacity属性，是不透明度，当为0时表示全透明，
+为1时表示完全不透明，所有项目的该属性默认值都是1。 
+下面一句when:myMouseArea.pressed ，表示当鼠标区域被点击时，进入该状态。这里需要说
+明的是，因为默认的开始状态，就是不做改变时的状态，所以我们要指定什么时候进入我们新
+建的状态。 
+（其实我们也可以将“state1”作为默认的状态，我们可以在“mainWindow”中添加一行代码：
+state: “state1″  这样就表明了使“state1”作为初始状态。但这时我们要将
+when:myMouseArea.pressed一行代码删去。） 
+此时我们再进入Design界面，效果如下： 
+ 
+5.这时整个程序的代码如下： 
+import Qt 4.6 
+Rectangle{ 
+id:mainWindow; width:200; height:200 
+Text { 
+id: myText 
+text: “Hello World!” 
+anchors.centerIn:parent 
+} 
+Rectangle{ 
+id:myButton; width:50; height:30 
+x:75; y:136; radius:10; color:”blue” 
+MouseArea{id:myMouseArea; anchors.fill:parent} 
+} 
+states: [ 
+State { 
+name: "state1" 
+PropertyChanges { 
+target: myText 
+font.pointSize:20; color:"red" 
+rotation:30; opacity:0.5 
+} 
+when:myMouseArea.pressed 
+} 
+] 
+} 
+运行程序，效果如下： 
+ 
+上面我们一步一步重写了整个程序，并在每一步完成时都查看了设计器中的界面。就像前一节
+所说的那样，Qt Quick 实现了真正的可视化编程，代码与界面完全同步，让用户可以直观的
+看到执行结果。这个程序很小可以这样实现，但是如果稍大点的程序，所有的项目的定义都写
+在一个文件中，就会显得很繁琐。而且，像按钮一样的部件，我们可能需要多次使用，我们也
+不愿意重复编写代码。所以，我们需要将子项目单独来写，这样就形成了组件。 
+QML组件 
+1.我们在工程中新建Qt QML File，命名为“Button”。 
+注意：组件的名称的首字母一定要大写。 
+2.然后我们将Button.qml文件中的内容更改如下： 
+import Qt 4.7 
+Rectangle{ 
+id:myButton; width:50; height:30 
+radius:10; color:”blue” 
+signal clicked() 
+MouseArea{id:myMouseArea; anchors.fill:parent 
+onClicked: myButton.clicked() 
+} 
+} 
+这里我们新建了一个signal信号函数clicked()。当执行该函数时，Button组件就会发出
+clicked()信号。我们在MouseArea中添加了一行代码： 
+onClicked: myButton.clicked() 
+其中onClicked关联到MouseArea的clicked()信号，它相当于槽函数，这行代码的效果是，
+当MouseArea被按下时，就执行“myButton”的clicked()函数。 
+3.我们在helloWorld.qml中删除以下代码 
+Rectangle{ 
+id:myButton; width:50; height:30 
+x:75; y:136; radius:10; color:”blue” 
+MouseArea{id:myMouseArea; anchors.fill:parent} 
+} 
+和when:myMouseArea.pressed 
+4.我们进入helloWorld.qml的设计器界面。 
+可以看到，在库面板，已经有Button元件了，我们将一个Button拖入场景中。如下图。 
+ 
+5.我们回到helloWorld.qml文件中，在新增的代码中添加一行代码。 
+Button { 
+id: button1 
+x: 75 
+y: 135 
+onClicked:mainWindow.state = “state1″ 
+} 
+这个onClicked就是对应按钮的clicked信号。当按钮被按下时，我们让主窗口进入新建的状
+态。 
+6.此时执行程序，效果如下。 
+ 
+我们可以看到，QML组件是可以直接在其他文件中使用的，我们不需要进行声明，或者包含头
+文件。而工程中的一个组件，会自动添加到Library库中供我们使用。我们也看到了QML中的
+信号和槽也十分简单。 
+在这一节中我们讲述了QML语言的一些基本知识，而且引出了组件的概念，最后还讲述了信号
+的关联。这部分内容很多，也有些乱，我们最好多进行一些练习，对于各个项目的属性可以查
+看帮助文件。 
+体验全新的Qt 4.7.0 ，更多精彩内容，尽在 www.yafeilinux.com ！  
+分类：Qt系列教程  作者：  yafeilinux 日期：  五月  26th, 2010.    2,490 views 
+Tags: creator, QML, QML组件, qt, Qt Creator 2.0, Qt Quick, Qt Quick  Designer, Qt4.7   
+   
+三十六、QML项目之Image和BorderImage 
+本文章原创于 www.yafeilinux.com 转载请注明出处。 
+从这一节开始我们讲述QML的一些基本组成元素和项目。正是这些部件才使得QML变得使用简
+单但功能强大。 
+我们先打开Qt Creator，然后进入帮助模式，在左上角选择Contents方式显示。我们点击Qt 
+Reference Documentation一项，这时就显示出了Qt4.7的内容列表。如下图。 
+ 
+我们选择Qt API Overviews的UI design & Qt Quick一项。如下图。 
+   
+这里有Declarative UI 和 QML的概述，下面列有一些教程和QML相关内容的文章列表。我们
+可以查看自己所需要的内容。我们点击Reference下面的QML Elements一项。 
+   
+这里列出了所有的标准Qt Declarative元素和QML项目。如下图。 
+   
+我们以后可以在这里查看自己所需要用到的元素和项目的帮助文件。在这一节里，我们主要介
+绍QML Items中的Image 和 BorderImage 两个项目。 
+一、Image图片 
+1.我们新建Qt QML Application，工程名为“myImage”。 
+2.我们在库面板中拖入一个Image到场景中，在属性面板中我们可以选择一张图片的路径。 
+   
+其实，更好的方法是，我们将图片放到工程文件夹中，这样在库面板的资源栏中我们就可以直
+接看到该图片了，而且该图片也会显示在工程文件列表中。 
+3.我们将两张图片放到工程文件夹下。如下图。 
+   
+然后在库面板的资源页面查看添加的图片。我们可以将图片直接拖入场景。如下图。 
+   
+在工程文件列表中也会显示这两个图片。 
+   
+4.图片平铺方式。 
+在属性面板中我们可以设置图片的平铺方式Fill Mode。如下图。 
+   
+Stretch：默认选择的是Stretch一项，表示拉伸图片。就是说当将图片缩放时会拉伸图片。 
+其效果如下： 
+   
+当图片缩放或者旋转时我们也可以选中属性面板中Smooth一项，使图片变得平滑。效果如下： 
+   
+PreserveAspectFit：拉伸时缩放图片，总是显示完整图片。 
+ 
+PreserveAspectCrop：拉伸时缩放图片，但是可能对图片进行裁剪。 
+   
+Tile：平铺图片。 
+   
+TileVertically：竖直平铺图片。 
+   
+TileHorizontally：水平平铺图片。 
+   
+5.使用网络上的图片。 
+我们也可以使用网络上的图片，直接在属性面板上更改图片路径为图片的地址即可。 
+    
+这时，如果你的电脑连接着网络，那么图片会自动下载并显示出来，效果如下。 
+   
+但是有时候从网上下载图片是很慢的，所有我们希望在没有下载完图片时，图片区域可以有些
+提示，所以我们利用Image的status属性，在Edit代码编辑界面，更改Image段代码如下： 
+Image { 
+        id: image1 
+        Text{id:text1}  //用于显示信息 
+        width: 200 
+        height: 200 
+        fillMode: “Tile” 
+        source: “http://j.imagehost.org/0317/linux.jpg” 
+        states: [ 
+        State {   //没有下载完图片时的状态 
+            name: "loading" 
+            when: image1.status != Image.Ready 
+            PropertyChanges { 
+                target: text1 
+                text:"loading..." 
+            } 
+        } 
+        ] 
+} 
+这时运行程序效果如下： 
+     
+ 
+二、BorderImage边界图片 
+  
+边界图片，顾名思义，就是将一张图片作为窗口的边界。它主要的特点就是，在这里用四条线
+将一张图片分成了9部分。如下图。 
+   
+这四条线分别用它们到图片各边界的像素值来表示，上下左右依次是top，bottom，left和
+right。比如top = 50 就是说离图片上边界50像素的地方就是上边界线。这样，将图片分为
+9个区域后，它们各自就有了不同的平铺规定。 
+下面我们先看例子，再进行总结。 
+1.我们在库面板中选中Border Image，拖入场景。 
+然后在属性面板中输入图片的路径，并设置其各边界线的值均为30。如下图。 
+    
+ 
+这时我们拉伸图片，查看效果。 
+   
+可以看到，图片四个角没有变化，其他区域都被拉伸了。这时我们再将各边界线的值改为60，
+然后查看效果。 
+   
+可以看到，被边界线分到四个角的图片是不被拉伸的。 
+2.平铺方式。 
+在这里我们可以分别指定水平方向的平铺方式（horizontalTileMode属性）和竖直方向的平
+铺方式（verticalTileMode属性）。平铺方式有以下三种： 
+BorderIamge.Stretch ：缩放图像以适合拉伸。（默认值） 
+BorderImage.Repeat ：平铺图像，当空间不够时，最后一个图像可能会被裁剪。 
+BorderImage.Round ：平铺图像，但是缩放所有平铺的图像，确保最后一个图像不会被裁剪。 
+我们上面就是使用的Stretch方式。下面我们改用其他方式，查看效果。 
+我们先更改代码如下： 
+BorderImage { 
+        id: borderimage1 
+        horizontalTileMode:BorderImage.Repeat 
+        verticalTileMode:BorderImage.Repeat 
+        border.bottom:30;border.top:30;border.right:30;border.left:30 
+        anchors.fill:parent 
+        source: “colors.png” 
+} 
+这时运行程序，效果如下： 
+   
+我们更改平铺方式： 
+horizontalTileMode:BorderImage.Round 
+verticalTileMode:BorderImage.Round 
+再次运行程序，效果如下： 
+   
+我们再次更改平铺方式： 
+horizontalTileMode:BorderImage.Round 
+verticalTileMode:BorderImage.Repeat 
+效果如下： 
+   
+3.结论 
+使用边界图片，我们需要先指定四条边界线，然后指定水平和竖直方向的平铺方式。 
+图片被四条边界线分为9个区域： 
+区域5会通过horizontalTileMode和verticalTileMode进行平铺。 
+区域2,8会通过horizontalTileMode进行平铺。 
+区域4,6会通过verticalTileMode进行平铺。 
+区域1,3,7,9的图像不会变化。 
+这一节中我们讲述了图片的使用。可以看到，在QML中图片是很容易操作的，我们可以按照我
+们自己的想法来显示图片。 
+  
+体验全新的Qt 4.7.0 ，更多精彩内容，尽在 www.yafeilinux.com ！ 
+分类：Qt系列教程  作者：  yafeilinux 日期：  五月  27th, 2010.    1,811 views 
+Tags: BorderImage, Image, Qt Creator 2.0, Qt Quick, Qt4.7   
+   
+ 
+三十七、Flipable、Flickable和状态与动画 
+本文章原创于 www.yafeilinux.com 转载请注明出处。 
+在前面的例子中我们已经多次提到过状态State了，在这一节中我们再次讲解一下QML中状态
+和动画的知识，然后讲解两个特效：Flipable翻转效果和Flickable弹动效果。 
+我们先新建一个Qt QML Application工程，命名为“myAnimation”。 
+一、状态与动画 
+在QML中提供了多个实用的动画元素。其列表如下。 
+ 
+下面我们进行简单的讲解。 
+1.PropertyAnimation 属性动画。 
+列表中的NumberAnimation 数值动画，ColorAnimation颜色动画和RotationAnimation旋转
+动画都继承自PropertyAnimation。 
+例如将程序代码更改如下： 
+import Qt 4.6 
+Rectangle { 
+width: 300;height: 200 
+Rectangle{ 
+id:page; width:50; height:50 
+x:0; y:100; color:”red” 
+PropertyAnimation on x{ to:100; duration:1000 } 
+} 
+} 
+其中的属性动画的代码可以用数值动画来代替： 
+NumberAnimation on x{ to:100; duration:1000} 
+顾名思义，数值动画，就是只能对类型为real的属性进行动画设置。例如上面对x属性，使
+其在1000ms即一秒的时间里由以前的 0 变为100。效果如下： 
+ 
+我们再将属性动画改为： 
+PropertyAnimation on color{ to:”blue”; duration:1000} 
+它可以用颜色动画来代替，相当于： 
+ColorAnimation on color{ to:”blue”; duration:1000} 
+颜色动画只能用于类型是 color的属性。效果如下： 
+ 
+2.缓冲曲线 
+我们很多时候不想让动画只是线性的变化，例如实现一些皮球落地，刹车等特殊动画效果，我
+们就可以在动画中使用缓冲曲线。 
+例如： 
+NumberAnimation on x{ to:100; duration:1000 
+easing.type: “InOutElastic”} 
+这里的曲线类型有很多种，我们可以查看QML PropertyAnimation Element Reference 关键
+字，在这个帮助文件中列出了所有的曲线类型。 
+ 
+3.状态过渡动画 
+我们将程序代码更改如下： 
+Rectangle { 
+width: 300;height: 200 
+Rectangle{ 
+id:page; width:50; height:50 
+x:0; y:100; color:”red” 
+MouseArea{id:mouseArea; anchors.fill:parent} 
+states: State {name: “state1″ 
+when:mouseArea.pressed 
+PropertyChanges {target: page 
+x:100;color:”blue” 
+} 
+} 
+transitions: Transition { 
+from: “”; to: “state1″ 
+NumberAnimation{property:”x”;duration:500} 
+ColorAnimation{duration:500} 
+} 
+} 
+} 
+这里我们设置了一个新的状态“state1”，当鼠标在小矩形上按下时进入该状态。这种状态之
+间的改变我们前面已经讲过。但是我们想让两个状态之间进行变化时成为连续的，具有动画效
+果，那么就要使用上面的transitions状态过渡。 
+可以看到，在transitions中我们使用了Transition{}元素，然后从”" 到”state1″ 即从
+默认状态进入“state1”状态。下面我们分别使用了数值动画和颜色动画，这样当从默认状态
+过渡到新建状态时，就会变为连续的动画。注意：这里颜色动画元素中省去了指定颜色属性。 
+运行程序，效果如下： 
+ 
+4.并行动画 
+在上面的例子里我们看到，数值动画和颜色动画是并行执行的，其实我们也可以明确指出，让
+它们并行执行。那就是ParallelAnimation并行动画。上面的代码可以更改为： 
+ParallelAnimation{ 
+NumberAnimation{property:”x”;duration:500} 
+ColorAnimation{duration:500} 
+} 
+5.序列动画 
+与上面的并行动画相对应的是序列动画SequentialAnimation，使用它我们可以使两个动画按
+顺序执行，也就是一个执行完了，另一个才执行。 
+SequentialAnimation{ 
+NumberAnimation{property:”x”;duration:500} 
+ColorAnimation{duration:500} 
+} 
+这样当红色方块完成移动后再变为蓝色。 
+6.属性默认动画。 
+有时我们不希望设置固定的状态，而是想当一个属性改变时，它就能执行默认的动画。那么我
+们就可以使用Behavior{}元素。我们将程序代码更改如下： 
+Rectangle { 
+width: 300;height: 200 
+Rectangle{ 
+id:page; width:50; height:50; y:100; color:”red” 
+x:mouseArea.pressed?100:0; 
+MouseArea{id:mouseArea; anchors.fill:parent} 
+Behavior on x { NumberAnimation{ duration:500} } 
+} 
+} 
+这里使鼠标按下时属性x为100，并设置了x的默认动画，这样只要x发生了变化，它就会执
+行默认的动画。 
+7.其他动画元素。 
+在开始的动画元素列表中还有其他一些动画元素没有讲到，我们会在后面的应用中使用到它们。
+你也可以先查看一下它们的帮助文档。 
+二、Flipable翻转效果 
+在QML中提供了一种可以将图片翻转的特效Flipable，它具有强烈的3D视觉效果。 
+我们更改代码如下： 
+Rectangle{ 
+    width:300; height:250 
+    Flipable{ 
+        id:flipable; width:back.width; height:back.height 
+        property int angle : 0  //翻转角度 
+        property bool flipped : false //用来标志是否翻转 
+        front: Image {source:”front.png”}  //指定前面的图片 
+        back: Image {source:”back.png”}    //指定背面的图片 
+        transform:Rotation{ //指定原点 
+            origin.x:flipable.width/2; origin.y:flipable.height/2 
+            axis.x:0; axis.y:1; axis.z:0 //指定按y轴旋转 
+            angle:flipable.angle 
+        } 
+        states:State{ 
+            name:”back”  //背面的状态 
+            PropertyChanges {target:flipable; angle:180} 
+            when:flipable.flipped 
+        } 
+        transitions: Transition { 
+            NumberAnimation{property:”angle”;duration:1000} 
+        } 
+        MouseArea{ 
+            anchors.fill:parent 
+            onClicked:flipable.flipped =!flipable.flipped 
+            //当鼠标按下时翻转 
+        } 
+    } 
+} 
+运行效果如下： 
+ 
+我们可以看到，使用Flipable时，我们需要设置其前面和后面的图片，并设置背面的状态，
+然后设置旋转，并为状态改变设置动画就可以了。 
+通过改变转轴和角度，我们可以使用Flipable设计出很多其他特效。 
+三、Flickable弹动效果 
+所谓Flickable效果就是你可以拖动它，它会根据你鼠标拖动的速度不同而移动不同的距离，
+并且这个移动好像有惯性一样，就像你推一下平面上的玩具汽车一样。我们看一个例子。 
+将程序代码更改如下： 
+Rectangle{ 
+width:200; height:200 
+Flickable{ 
+width:200;height:200 
+Image{id: picture; source:”01.jpg”} 
+contentWidth:picture.width 
+contentHeight:picture.height 
+} 
+} 
+这时运行程序，我们拖动整个图片，更改拖动的速度，这种感觉很爽！ 
+ 
+我们拖动图片的角落，它会自动弹回去。 
+ 
+对于这样一个较大的图片，我们可以使用Flickable效果来查看整张图片。其实到底是否可以
+移动整个图片，取决于contentWidth和contentHeight的大小。 
+我们如果将代码改为：contentWidth:100;contentHeight:100 
+那么图片就无法通过拖动显示全部内容了。 
+对于Flickable效果我们在下一节中还会继续接触到，到时候我们可以看一下它更强的的功能。 
+这一节中我们讲述了动画效果和两个特效，其实这一节的内容就是整个QML的核心内容。因为
+QML设计的Declarative界面主要内容就是其动画效果。我们也看到了，其实像翻转效果和弹
+动效果等都是为手机的触屏而设计的，所以要感受到它的真实效果，最好能在一个触屏手机上
+测试程序。 
+体验全新的Qt 4.7.0 ，更多精彩内容，尽在 www.yafeilinux.com ！  
+分类：Qt系列教程  作者：  yafeilinux 日期：  五月  28th, 2010.    1,877 views 
+Tags: creator, Flickable, Flipable, QML, qt, Qt 4.7.0, Qt Creator 2.0, yafeilinux,  状态与动画   
+   
+三十八、QML视图 
+本文章原创于 www.yafeilinux.com 转载请注明出处。 
+在QML中提供了三种视图方式：ListView列表视图、GridView网格视图和PathView路径视图。
+这三种视图都是继承自Flickable ，所以它们都有Flickable效果。下面我们简单介绍一下
+ListView和PathView。 
+一、ListView列表视图。 
+如果你了解Qt的模型视图结构，那么这一节的内容就很好理解了，如果你没接触过，也没关
+系，因为它其实很简单。在Qt中我们要想利用视图显示一些数据，并不是将这些数据直接放
+到视图中的，因为视图只管显示，它不存储数据。我们的数据要放在数据模型中。但是数据模
+型中只是存放数据，它并不涉及数据的显示方式。所以，我们还要用一个叫做代理的东东来设
+置数据模型中的数据怎样在视图中显示。那么就构成了下面的关系。 
+ 
+我们先看下面的例子： 
+1.新建一个Qt QML Application工程，命名为“myView”。 
+2.我们更改代码如下： 
+import Qt 4.6 
+Rectangle { 
+width:200;height:200 
+ListModel{  //数据模型 
+id:listModel 
+ListElement{name:”Tom”;number:”001″} 
+ListElement{name:”John”;number:”002″} 
+ListElement{name:”Sum”;number:”003″} 
+} 
+Component{     //代理 
+id:delegate 
+Item{ id:wrapper; width:200; height:40 
+Column{ 
+x:5; y:5 
+Text{text:”<b>Name:</b>”+name} 
+Text{text:”<b>Number:</b>”+number} 
+} 
+} 
+} 
+Component{   //高亮条 
+id:highlight 
+Rectangle{color:”lightsteelblue”;radius:5} 
+} 
+ListView{  //视图 
+width:parent.width; height:parent.height 
+model:listModel  //关联数据模型 
+delegate:delegate  //关联代理 
+highlight:highlight  //关联高亮条 
+focus:true  //可以获得焦点，这样就可以响应键盘了 
+} 
+} 
+运行效果如下： 
+ 
+我们可以拖动整个列表，而且可以使用键盘的方向键来选择列表中的项目。 
+在这个程序中，我们先设置了数据模型，在其中加入了一些数据。然后设置了代理，在代理中
+我们设置了要怎样显示我们的数据。最后，我们在视图中关联了数据模型和代理，将数据显示
+出来了。这里为了达到更好的显示效果，我们使用了一个高亮条。其中的代理和高亮条都可以
+使用Component{}组件来实现。 
+3.我们可以对视图做一些设置。 
+我们可以设置keyNavigationWraps:true 使到达最后一个项目后重新返回第一个项目。 
+我们可以设置orientation:ListView.Horizontal使列表水平显示。这时你拖动列表，发现了
+吧，它可以自动移动到下一条，这就是Flickable的作用。默认的是ListView.Vertical竖直
+显示。 
+二、PathView路径视图 
+1.什么是路径视图，我们先来看一个例子。 
+Rectangle { 
+width:300;height:300; 
+ListModel{  //数据模型 
+id:listModel 
+ListElement{icon:”01.gif”} 
+ListElement{icon:”02.gif”} 
+ListElement{icon:”03.gif”} 
+ListElement{icon:”04.gif”} 
+} 
+Component{     //代理 
+id:delegate 
+Item{ id:wrapper; width:50; height:50 
+Column{ 
+Image {source:icon;width:50;height:50} 
+} 
+} 
+} 
+PathView{  //路径视图 
+anchors.fill:parent; model:listModel; delegate:delegate 
+path:Path{startX:120;startY:200 
+PathQuad{x:120;y:25;controlX:260;controlY:125} 
+PathQuad{x:120;y:200;controlX:-20;controlY:125} 
+} 
+} 
+} 
+效果如下： 
+ 
+你可以拖动一个图标查看效果，是的，所有图标的转起来了。这就是路径视图。我们在程序中，
+设置了一个路径，如上面的： 
+path:Path{startX:120;startY:200 
+PathQuad{x:120;y:25;controlX:260;controlY:125} 
+PathQuad{x:120;y:200;controlX:-20;controlY:125} 
+} 
+它们确定了一个椭圆形，所有的项目都在这个路径上，当拖动一个项目，所有的项目都会在路
+径上移动。 
+2.关于Path 
+在QML中提供了三种Path。PathLine直线，PathQuad二次贝塞尔曲线，PathCubic三次贝塞
+尔曲线。你可以在帮助中查看它们的使用，这里不再进行过多介绍。 
+3.路径属性。 
+我们可以通过路径属性PathAttribute ，来设置不同路径上不同位置的项目。 
+例如我们更改上面的程序： 
+Component{     //代理 
+id:delegate 
+Item{ id:wrapper; width:50; height:50 
+scale:PathView.scale; opacity:PathView.opacity 
+Column{ 
+Image {source:icon;width:50;height:50} 
+} 
+} 
+} 
+PathView{ 
+anchors.fill:parent; model:listModel; delegate:delegate 
+path:Path{startX:120;startY:200 
+PathAttribute{name:”scale”;value:1.0} 
+PathAttribute{name:”opacity”;value:1.0} 
+PathQuad{x:120;y:25;controlX:260;controlY:125} 
+PathAttribute{name:”scale”;value:0.5} 
+PathAttribute{name:”opacity”;value:0.5} 
+PathQuad{x:120;y:200;controlX:-20;controlY:125} 
+} 
+} 
+} 
+效果如下： 
+ 
+我们在Path中设置了路径属性，使得在不同点的图片具有不同的效果，这里设置了缩放和不
+透明度两个属性。我们只需设置开始点和结束点两个点的属性，这样就会在整个路径上进行线
+性插值。 
+这一节介绍了两个视图，还有一个GridView网格视图，它的操作是相似的，在这里就不再进
+行介绍了。 
+体验全新的Qt 4.7.0 ，更多精彩内容，尽在 www.yafeilinux.com ！  
+分类：Qt系列教程  作者：  yafeilinux 日期：  五月  28th, 2010.    2,055 views 
+Tags: declarative, GridView, ListView, PathView, QML, Qt Creator 2.0, Qt4.7.0, yafeilinux   
+   
+三十九、QtDeclarative模块 
+本文章原创于 www.yafeilinux.com 转载请注明出处。 
+在一开始我们就提到过Qt Quick由三部分组成，前面我们已经讲了Qt Quick Designer和QML，
+这一节我们讲述QtDeclarative模块。 
+我们在帮助中查找QtDeclarative Module关键字。这里列出了该模块的所有相关类。应该说
+明这个模块中的类是Qt新加的标准C++类，不是QML元素。 
+   
+这个模块的作用就是将QML元素与以前的标准C++类相结合。而且它提供了一个很简单的方法
+使新建的QML文件作为一个项目加入到以前的图形视图的应用中。下面我们来看一个简单的例
+子。 
+  
+1.我们新建Empty Qt Project ，工程名为“myDeclarative”。然后添加一个C++ Source File ，
+命名为main.cpp 。 
+2.我们在工程文件myDeclarative.pro中添加一行代码：QT += declarative 表明使用了
+QtDeclarative模块。 
+3.我们更改main.cpp的内容如下。 
+#include <QtDeclarative/QDeclarativeView> 
+#include <QtDeclarative/QDeclarativeItem> 
+#include <QtDeclarative/QDeclarativeEngine> 
+#include <QtDeclarative/QDeclarativeComponent> 
+#include <QtGui> 
+int main(int argc, char** argv) 
+{ 
+    QApplication app(argc,argv); 
+    QDeclarativeEngine engine; 
+    QDeclarativeComponent component(&engine,QUrl(“main.qml”)); 
+    QDeclarativeItem *item = qobject_cast<QDeclarativeItem 
+*>(component.create()); 
+    QDeclarativeView *view = new QDeclarativeView; 
+    QGraphicsScene *scene = new QGraphicsScene; 
+    view->setScene(scene); 
+    scene->addItem(item); 
+    view->show(); 
+    return app.exec(); 
+} 
+4.我们新建Qt QML File，文件名为“main.qml”。其内容如下。 
+import Qt 4.6 
+Rectangle { 
+    width: 200 
+    height: 200 
+    color:”green” 
+    Rectangle { 
+        id: rectangle1 
+        x: 50 
+        y: 50 
+        width: 100 
+        height: 100 
+        color: “blue” 
+        radius: 30 
+    } 
+} 
+5.然后我们运行程序，这时可能发现窗口中是空白的，而输出窗口中会出现下面的提示： 
+QDeclarativeComponent: Component is not ready 
+QGraphicsScene::addItem: cannot add null item 
+这是因为，在Qt Creator 2.0中，将目标文件与源代码分开了。也就是说，我们的源代码放
+在了一个文件夹中（如这里的myDeclarative文件夹），编译生成的文件放在了另一个文件中
+（这里是myDeclarative-build-desktop文件夹），你可以到磁盘中查看一下。而程序中
+QUrl(“main.qml”)表明在本文件夹中的main.qml文件，就是说main.qml要在目标文件夹下，
+而现在它却在源代码文件夹下，所以程序运行时没有找到该文件。 
+6.我们可以将main.qml文件复制到myDeclarative-build-desktop文件夹中，但是这样每次
+在Qt Creator中改动该文件都要复制一次，很麻烦。所以我们也可以直接改程序中的路径，
+将QUrl(“main.qml”)改为QUrl(“../myDeclarative/main.qml”) 就可以了。当然，最好
+的方法是，新建一个资源文件，将main.qml文件加入资源文件中。 
+7.运行程序，效果如下： 
+   
+8.下面我们来讲解一下main.cpp文件中的内容。 
+首先是头文件包含，这里一定要明确指定二级目录，如 
+#include <QtDeclarative/QDeclarativeView> 
+而不能像其他Qt头文件一样只写#include <QtDeclarative> 
+因为现在的测试版中，这样会出错误。 
+然后是后面的： 
+QDeclarativeEngine engine; 
+QDeclarativeComponent component(&engine,QUrl(“main.qml”)); 
+QDeclarativeItem *item = qobject_cast<QDeclarativeItem *>(component.create()); 
+这里的QDeclarativeEngine用来对下面的QML组件进行环境配置，而QML组件
+QDeclarativeComponent用来代表一个QML文件。再往下，QDeclarativeItem就是相当于一个
+QGraphicsItem，我们使用类型转换将QML组件转换为一个项目。 
+再往下： 
+QDeclarativeView *view = new QDeclarativeView; 
+QGraphicsScene *scene = new QGraphicsScene; 
+view->setScene(scene); 
+scene->addItem(item); 
+view->show(); 
+我们新建了一个视图，然后新建一个场景，将项目加入场景中，然后在视图中显示出来，这与
+以前的图形视图编程是一样的。需要说明的是，这里使用了QDeclarativeView类，它是
+QtDeclarative模块的组成部分，拥有QGraphicsView的所有功能。当然如果这里改为
+QGraphicsView也是可以的。 
+9.可以看到，要将一个QML文件作为一个项目用于图形视图编程是很简单的。我们只需要四
+步： 
+第一，新建QDeclarativeEngine 
+第二，新建一个QDeclarativeComponent 
+第三，生成QDeclarativeItem 
+第四，将QDeclarativeItem作为一个项目用于图形视图中。 
+其实QtDeclarative模块还有很多功能，我们在这里就不再过多介绍了。有兴趣的朋友可以先
+自己查看帮助文件。 
+到这里Qt Quick部分的教程也就告一段落了。其实我们只是讲解了Qt Quick很小的一部分知
+识，要想感受Qt Quick的强大，还是需要靠大量的编程去体会的。 
+体验全新的Qt 4.7.0 ，更多精彩内容，尽在 www.yafeilinux.com ！ 
+分类：Qt系列教程  作者：  yafeilinux 日期：  五月  29th, 2010.    5,351 views 
+Tags: declarative, QML, Qt 4.7.0, Qt Creator 2.0, Qt Quick, Qt4.7, Qt4.7.0, QtDeclarative   
+   
+四十、使用Nokia Qt SDK开发Symbian和Maemo终端软件 
+本文章原创于 www.yafeilinux.com 转载请注明出处。 
+Nokia Qt SDK Beta已经发布了，利用它可以很容易地开发Symbian和Maemo终端软件，将来
+也会支持MeeGo平台。它与我们以前用的Qt开发环境的区别是，它的目标平台是移动平台，
+如Symbian，也就是说利用它编译生成的可执行文件，只能在模拟器或Symbian手机上运行，
+不能直接在电脑上运行。而以前我们的开发目标是桌面系统，如Windows。当然这个SDK中的
+Qt Creator就是我们以前应用的Qt Creator，我们也可以很容易地让它用于桌面软件的开发。 
+Nokia Qt SDK开发Symbian程序教程：教程 
+几天前诺基亚Qt举行了全球的诺基亚Qt SDK Beta概览网上直播。下面是相关内容。 
+诺基亚Qt SDK Beta概览 (中文网上直播)： 
+诺基亚Qt SDK现已推出Beta版，供开发伙伴使用并搜集反馈意见。该SDK支持最新版的Qt4.6
+库，包括面向移动开发的Qt APIs。SDK提供了同时面向Symbian和Maemo终端的统一开发伙
+伴工具，其中包括Qt Creator IDE、一个模拟器，也包括真机调试，和一站式安装包。 
+使用诺基亚Qt SDK，开发伙伴们开展工作将更快更好。能在不同平台间使用同样代码实现更
+佳过渡，诺基亚Qt SDK向大家提供了面向多种终端的最有效方法。 
+这个网络直播讲解了SDK的功能及其安装设置，也演示了应用的编码和测试。 
+查看直播的视频：诺基亚Qt SDK Beta概览视频 
+查看相关PDF文件：诺基亚Qt SDK Beta概览文档 
+因为上面的视频和教程中对Nokia Qt SDK的使用已经讲得很详细了，所以我们这里就不再讲
+述这个过程了。下面简单说明一下，怎样在Qt Creator中使用以前的Qt库开发桌面程序。 
+我们在Options菜单中查看Qt Versions，如果我们以前已经安装了Qt的其他版本，并且已
+经加入了系统PATH环境变量中，那么这里会显示出来。如果没有在PATH中添加，那么我们需
+要添加一下，或者直接在这里的Manual中添加，详细设置请参考三十一、Qt 4.7.0及Qt Creator 
+2.0 beta版安装全程图解一文。 
+ 
+这里设置好以后，我们只需要在建立工程时选择Desktop（表明是桌面程序）中的Qt in PATH
+即可。 
+ 
+分类：Qt系列教程  作者：  yafeilinux 日期：  五月  29th, 2010.    2,720 views 
+Tags: Maemo, Nokia Qt SDK, Qt SDK Beta概览网上直播, Symbian   
+   
+四十一、Qt网络（一）简介 
+本文章原创于 www.yafeilinux.com 转载请注明出处。 
+提示：以后我们使用的编程环境为Windows下基于Qt 4.6.3的Qt Creator 1.3.1 。 
+从这一节开始我们讲述Qt网络应用方面的编程知识。在开始这部分知识的学习之前，你最好
+已经拥有了一定的网络知识和Qt的编程基础。在下面的教程中我们不会对一个常用的网络名
+词去进行详细解释，对于不太了解的地方，你可以参考相关书籍。不过，你也没有必要非得先
+去学习网络教材，而后再学习本部分内容，因为Qt提供了简单明了的接口函数，使得我们这
+里并没有涉及太多专业的知识。看完教程后，你也许会发现，自己虽然不懂网络，但却可以编
+写网络应用程序了。 
+下面我们打开Qt Creator，在Help页面中我们搜索QtNetwork Module 关键字，其内容如下
+图。 
+   
+在Qt中提供了网络模块（QtNetwork Module）来用于网络程序的开发，可以看到，在这里提
+供了多个相关类。有用于FTP编程的QFtp类，用于HTTP编程的QNetworkAccessManager类和
+QNetworkReply类，用于获得本机信息的QHostInfo类，用于Tcp编程的QTcpServer类和
+QTcpSocket类，用于UDP编程的QUdpSocket类，用于网络加密的QSslSocket类，用于网络
+代理的QNetworkProxy类等等。 
+如果你以前就使用过Qt进行网络部分编程，或者看过其他教材上相关内容，你可能会问，这
+里怎么没有了QHttp类。我们现在搜索QHttp关键字，其内容如下。 
+   
+可以看到这里有一个警告： 
+This class is obsolete. It is provided to keep old source code working. We strongly 
+advise against using it in new code. 
+大概意思是：这个类是过时的。它的提供只是为了保证旧的源代码。我们强烈建议在新代码中
+不要使用它。 
+所以在我们的教程中不会再讲解这个类，对于HTTP部分的编程，我们使用
+QNetworkAccessManager类和QNetworkReply类 。 
+       最后需要说明的是：使用这个模块我们需要在工程文件中添加 QT += network ，
+然后使用时添加 #include <QtNetwork> 头文件。 
+对于网络部分相关的例子，我们可以查看其演示程序。在Windows的开始菜单中选择Qt 
+Creator的安装目录，然后选择Qt Demo菜单。我们可以在Networking菜单中找到网络部分
+的例子。如下图。 
+   
+   
+我们可以运行这些例子查看效果，也可以查看它们的帮助文件，如下图，点击Documentation
+即可。 
+   
+当我们对Qt中的网络编程有了一定了解之后，我们就可以开始下一步的学习了。 
+分类：Qt系列教程  作者：  yafeilinux 日期：  六月  16th, 2010.    2,882 views 
+Tags: QtNetwork Module, Qt网络, Qt网络教程, yafeilinux,  网络教程   
+   
+四十二、Qt网络（二）HTTP编程 
+本文章原创于 www.yafeilinux.com 转载请注明出处。 
+HTTP即超文本传输协议，它是一种文件传输协议。这一节中我们将讲解如何利用HTTP从网站
+上下载文件。 
+       上一节中我们已经提到过了，现在Qt中使用QNetworkAccessManager类和
+QNetworkReply类来进行HTTP的编程。下面我们先看一个简单的例子，然后再进行扩展。 
+（一）最简单的实现。 
+1.我们新建Qt4 Gui QApplication 。 
+工程名为“http”，然后选中QtNetwork模块，最后Base class选择QWidget 。注意：如果
+新建工程时没有添加QtNetwork模块，那么就要手动在工程文件.pro中添加代码 QT += 
+network ，表明我们使用了网络模块。 
+2.我们在widget.ui文件中添加一个 Text Browser ，如下图。 
+   
+3..在widget.h中我们添加代码。 
+添加头文件：#include <QtNetwork> 
+私有变量private中：QNetworkAccessManager *manager; 
+私有槽函数private slots 中：void replyFinished(QNetworkReply *); 
+4.在widget.cpp文件中添加代码。 
+在构造函数中添加如下代码： 
+manager = new QNetworkAccessManager(this);  //新建QNetworkAccessManager对象 
+connect(manager,SIGNAL(finished(QNetworkReply*)),  //关联信号和槽 
+            this,SLOT(replyFinished(QNetworkReply*))); 
+manager->get(QNetworkRequest(QUrl(“http://www.yafeilinux.com”))); //发送请求 
+然后定义函数： 
+void Widget::replyFinished(QNetworkReply *reply)  //当回复结束后 
+{ 
+    QTextCodec *codec = QTextCodec::codecForName(“utf8″); 
+    //使用utf8编码，这样才可以显示中文 
+    QString all = codec->toUnicode(reply->readAll()); 
+    ui->textBrowser->setText(all); 
+    reply->deleteLater();   //最后要释放reply对象 
+} 
+5.运行效果如下。 
+   
+6.代码分析。 
+上面实现了最简单的应用HTTP协议下载网页的程序。QNetworkAccessManager类用于发送网
+络请求和接受回复，具体的，它是用QNetworkRequest 类来管理请求，QNetworkReply类进行
+接收回复，并对数据进行处理。 
+在上面的代码中，我们使用了下面的代码来发送请求： 
+manager->get(QNetworkRequest(QUrl(“http://www.yafeilinux.com”))); 
+它返回一个QNetworkReply对象，这个下面再讲。我们只需知道只要发送请求成功，它就会下
+载数据。而当数据下载完成后，manager会发出finished()信号，我们对它进行了关联： 
+connect(manager,SIGNAL(finished(QNetworkReply*)),  
+            this,SLOT(replyFinished(QNetworkReply*))); 
+也就是说，当下载数据结束时，就会执行replyFinished()函数。在这个函数中我们对接收的
+数据进行处理： 
+QTextCodec *codec = QTextCodec::codecForName(“utf8″); 
+QString all = codec->toUnicode(reply->readAll()); 
+ui->textBrowser->setText(all); 
+这里，为了能显示下载的网页中的中文，我们使用了QTextCodec 类对象，应用utf8编码。 
+使用reply->readAll()函数就可以将下载的所有数据读出。然后，我们在textBrowser中将
+数据显示出来。当reply对象已经完成了它的功能时，我们需要将它释放，就是最后一条代码： 
+reply->deleteLater(); 
+（二）功能扩展 
+通过上面的例子可以看到，Qt中编写基于HTTP协议的程序是十分简单的，只有十几行代码。
+不过，一般我们下载文件都想要看到下载进度。下面我们就更改上面的程序，让它可以下载任
+意的文件，并且显示下载进度。 
+1.我们更改widget.ui文件如下图。 
+   
+这里我们添加了一个Line Edit ，一个Label ，一个Progress Bar 和一个Push Button ，
+它们的熟悉保持默认即可。我们在Push Button上点击鼠标右键，选择Go to slot ，然后选
+择clicked() ，进入其单击事件槽函数，现在我们先不写代码。 
+在写代码之前，我们先介绍一下整个程序执行的流程： 
+开始我们先让进度条隐藏。当我们在Line Edit中输入下载地址，点击下载按钮后，我们应用
+输入的下载地址，获得文件名，在磁盘上新建一个文件，用于保存下载的数据，然后进行链接，
+并显示进度条。在下载过程中，我们将每次获得的数据都写入文件中，并更新进度条，在接收
+完文件后，我们重新隐藏进度条，并做一些清理工作。 
+根据这个思路，我们开始代码的编写。 
+2.我们在widget.h文件中添加代码，完成后其部分内容如下。 
+class Widget : public QWidget { 
+    Q_OBJECT 
+public: 
+    Widget(QWidget *parent = 0); 
+    ~Widget(); 
+    void startRequest(QUrl url); //请求链接 
+protected: 
+    void changeEvent(QEvent *e); 
+private: 
+    Ui::Widget *ui; 
+    QNetworkAccessManager *manager; 
+    QNetworkReply *reply; 
+    QUrl url;   //存储网络地址 
+    QFile *file;  //文件指针 
+private slots: 
+    void on_pushButton_clicked();  //下载按钮的单击事件槽函数 
+    void httpFinished();  //完成下载后的处理 
+    void httpReadyRead();  //接收到数据时的处理 
+    void updateDataReadProgress(qint64,qint64); //更新进度条 
+}; 
+   
+3.widget.cpp文件中的相关内容如下。 
+（1）构造函数中： 
+manager = new QNetworkAccessManager(this);  
+ui->progressBar->hide(); 
+   
+我们在构造函数中先隐藏进度条。等开始下载时再显示它。 
+（2）下载按钮的单击事件槽函数。 
+void Widget::on_pushButton_clicked()  //下载按钮 
+{ 
+    url = ui->lineEdit->text(); 
+ //获取在界面中输入的url地址，如
+http://zz.onlinedown.net/down/laolafangkuaijin.rar 
+    QFileInfo info(url.path()); 
+    QString fileName(info.fileName()); 
+    //获取文件名 
+    if (fileName.isEmpty()) fileName = “index.html”; 
+//如果文件名为空，则使用“index.html”， 
+//例如使用“http://www.yafeilinux.com”时，文件名就为空 
+    file = new QFile(fileName); 
+    if(!file->open(QIODevice::WriteOnly)) 
+    {   //如果打开文件失败，则删除file，并使file指针为0，然后返回 
+        qDebug() << “file open error”; 
+        delete file; 
+        file = 0; 
+        return; 
+    } 
+    startRequest(url);  //进行链接请求 
+    ui->progressBar->setValue(0);  //进度条的值设为0 
+    ui->progressBar->show();  //显示进度条 
+} 
+   
+这里我们先从界面中获取输入的地址，然后分解出文件名。因为地址中可能没有文件名，这时
+我们就使用一个默认的文件名。然后我们用这个文件名新建一个文件，这个文件会保存到工程
+文件夹的debug文件夹下。下面我们打开文件，然后进行链接，并显示进度条。 
+（3）链接请求函数。 
+void Widget::startRequest(QUrl url)  //链接请求 
+{ 
+    reply = manager->get(QNetworkRequest(url)); 
+    //下面关联信号和槽 
+    connect(reply,SIGNAL(finished()),this,SLOT(httpFinished())); 
+    //下载完成后 
+    connect(reply,SIGNAL(readyRead()),this,SLOT(httpReadyRead())); 
+    //有可用数据时 
+    connect(reply,SIGNAL(downloadProgress(qint64,qint64)), 
+            this,SLOT(updateDataReadProgress(qint64,qint64))); 
+    //更新进度条 
+} 
+   
+在上一个例子中我们就提到了manager->get(QNetworkRequest(url))，返回的是一个
+QNetworkReply对象，这里我们获得这个对象，使用它完成显示数据下载进度的功能。这里主
+要是关联了几个信号和槽。当有可用数据时，reply就会发出readyRead()信号，我们这时就
+可以将可用的数据保存下来。就是在这里，实现了数据分段下载保存，这样比下载完所有数据
+再保存，要节省很多内存。而利用reply的downloadProgress()信号，很容易就实现了进度
+条的显示 。 
+（4）保存数据函数。 
+void Widget::httpReadyRead()   //有可用数据 
+{ 
+    if (file) file->write(reply->readAll());  //如果文件存在，则写入文件 
+} 
+   
+这里当file可用时，将下载的数据写入文件。 
+（5）更新进度条函数。 
+void Widget::updateDataReadProgress(qint64 bytesRead, qint64 totalBytes) 
+ { 
+    ui->progressBar->setMaximum(totalBytes); //最大值 
+    ui->progressBar->setValue(bytesRead);  //当前值 
+} 
+   
+每当有数据到来时，都更新进度条。 
+（6）完成下载。 
+void Widget::httpFinished()  //完成下载 
+{ 
+    ui->progressBar->hide(); 
+    file->flush(); 
+    file->close(); 
+    reply->deleteLater(); 
+    reply = 0; 
+    delete file; 
+    file = 0; 
+} 
+   
+这里只是当下载完成后，进行一些处理。 
+4.我们运行程序，效果如下。 
+下载网页文件： 
+   
+下载华军软件园上的劳拉方块游戏： 
+   
+下载完成后可以看到工程文件夹中debug文件夹中的下载的文件。 
+   
+我们HTTP应用的内容就讲到这里，可以看到它是很容易的，也不需要你了解太多的HTTP的原
+理知识。关于相关的类的其他使用，你可以查看其帮助。在上面的例子中，我们只是为了讲解
+知识，所以程序还很不完善，对于一个真正的工程，我们还需要注意更多的细节，你可以查看
+Qt演示程序HTTP Client的源代码。 
+     下一节我们将讲述FTP的内容。 
+分类：Qt系列教程  作者：  yafeilinux 日期：  六月  17th, 2010.    4,414 views 
+Tags: creator, http, qt, Qt http, Qt网络, yafeilinux,  教程   
+   
+四十三、Qt网络（三）FTP（一） 
+本文章原创于 www.yafeilinux.com 转载请注明出处。 
+上一节我们讲述了HTTP的编程，这一节讲述与其及其相似的FTP的编程。FTP即File Transfer 
+Protocol，也就是文件传输协议。FTP的主要作用，就是让用户连接上一个远程计算机，查看
+远程计算机有哪些文件，然后把文件从远程计算机上拷贝到本地计算机，或者把本地计算机的
+文件送到远程计算机上。 
+     在Qt中，我们可以使用上一节讲述的QNetworkAccessManager和QNetworkReply
+类来进行FTP 程序的编写，因为它们用起来很简单。但是，对于较复杂的FTP操作，Qt还提
+供了QFtp类，利用这个类，我们很容易写出一个FTP客户端程序。下面我们先在帮助中查看
+这个类。 
+   
+在QFtp中，所有的操作都对应一个特定的函数，我们可以称它们为命令。如connectToHost()
+连接到服务器命令，login()登录命令，get()下载命令，mkdir()新建目录命令等。因为QFtp
+类以异步方式工作，所以所有的这些函数都不是阻塞函数。也就是说，如果一个操作不能立即
+执行，那么这个函数就会直接返回，直到程序控制权返回Qt事件循环后才真正执行，它们不
+会影响界面的显示。 
+所有的命令都返回一个int 型的编号，使用这个编号让我们可以跟踪这个命令，查看其执行
+状态。当每条命令开始执行时，都会发出commandStarted()信号，当该命令执行结束时，会
+发出commandFinished()信号。我们可以利用这两个信号和命令的编号来获取命令的执行状态。
+当然，我们不想执行每条命令都要记下它的编号，所以我们也可以使用currentCommand()来
+获取现在执行的命令，其返回值与命令的对应关系如下图。 
+   
+下面我们先看一个简单的FTP客户端的例子，然后对它进行扩展。 
+在这个例子中我们从FTP服务器上下载一个文件并显示出来。 
+1.我们新建Qt4 Gui QApplication 。 
+工程名为“myFtp”，然后选中QtNetwork模块，最后Base class选择QWidget 。 
+2.修改widget.ui文件。 
+在其中添加一个Text Browser 和一个 Label，效果如下。 
+   
+3.在main.cpp中进行修改。 
+为了在程序中可以使用中文，我们在main.cpp中添加头文件#include <QTextCodec> 
+并在main()函数中添加代码：
+QTextCodec::setCodecForTr(QTextCodec::codecForLocale()); 
+4.在widget.h中进行修改。 
+先添加头文件：#include <QFtp> 
+再在private中定义对象：QFtp *ftp; 
+添加私有槽函数： 
+private slots: 
+    void ftpCommandStarted(int); 
+void ftpCommandFinished(int,bool); 
+5.在widget.cpp中进行更改。 
+（1）在构造函数中添加代码： 
+ftp = new QFtp(this); 
+    ftp->connectToHost(“ftp.qt.nokia.com”); //连接到服务器 
+    ftp->login();   //登录 
+    ftp->cd(“qt”);   //跳转到“qt”目录下 
+    ftp->get(“INSTALL”);  //下载“INSTALL”文件 
+    ftp->close();   //关闭连接 
+    connect(ftp,SIGNAL(commandStarted(int)), 
+            this,SLOT(ftpCommandStarted(int))); 
+    //当每条命令开始执行时发出相应的信号 
+    connect(ftp,SIGNAL(commandFinished(int,bool)), 
+            this,SLOT(ftpCommandFinished(int,bool))); 
+//当每条命令执行结束时发出相应的信号 
+我们在构造函数里执行了几个FTP的操作，登录站点，并下载了一个文件。然后我们又关联了
+两个信号和槽，用来跟踪命令的执行情况。 
+（2）实现槽函数： 
+void Widget::ftpCommandStarted(int) 
+{ 
+    if(ftp->currentCommand() == QFtp::ConnectToHost){ 
+        ui->label->setText(tr(“正在连接到服务器…”)); 
+    } 
+    if (ftp->currentCommand() == QFtp::Login){ 
+        ui->label->setText(tr(“正在登录…”)); 
+    } 
+    if (ftp->currentCommand() == QFtp::Get){ 
+        ui->label->setText(tr(“正在下载…”)); 
+    } 
+    else if (ftp->currentCommand() == QFtp::Close){ 
+        ui->label->setText(tr(“正在关闭连接…”)); 
+    } 
+} 
+每当命令执行时，都会执行ftpCommandStarted()函数，它有一个参数int id，这个id就是
+调用命令时返回的id，如int loginID = ftp->login(); 这时，我们就可以用if(id == loginID)
+来判断执行的是否是login()函数。但是，我们不想为每个命令都设置一个变量来存储其返回
+值，所以，我们这里使用了ftp->currentCommand() ，它也能获取当前执行的命令的类型。
+在这个函数里我们让开始不同的命令时显示不同的状态信息。 
+void Widget::ftpCommandFinished(int,bool error) 
+{ 
+    if(ftp->currentCommand() == QFtp::ConnectToHost){ 
+        if(error) ui->label->setText(tr(“连接服务器出现错
+误：%1″).arg(ftp->errorString())); 
+        else ui->label->setText(tr(“连接到服务器成功”)); 
+    } 
+    if (ftp->currentCommand() == QFtp::Login){ 
+        if(error) ui->label->setText(tr(“登录出现错
+误：%1″).arg(ftp->errorString())); 
+        else ui->label->setText(tr(“登录成功”)); 
+    } 
+    if (ftp->currentCommand() == QFtp::Get){ 
+        if(error) ui->label->setText(tr(“下载出现错
+误：%1″).arg(ftp->errorString())); 
+        else { 
+            ui->label->setText(tr(“已经完成下载”)); 
+            ui->textBrowser->setText(ftp->readAll()); 
+        } 
+    } 
+    else if (ftp->currentCommand() == QFtp::Close){ 
+        ui->label->setText(tr(“已经关闭连接”)); 
+    } 
+} 
+这个函数与ftpCommandStarted()函数相似，但是，它是在一个命令执行结束时执行的。它有
+两个参数，第一个int id，就是调用命令时返回的编号，我们在上面已经讲过了。第二个是
+bool error，它标志现在执行的命令是否出现了错误。如果出现了错误，那么error 为true ，
+否则为false。我们可以利用它来输出错误信息。在这个函数中，我们在完成一条命令时显示
+不同的状态信息，并显示可能的出错信息。在if (ftp->currentCommand() == QFtp::Get) 中，
+也就是已经完成下载时，我们让textBrowser显示下载的信息。 
+6.运行程序，效果如下。 
+登录状态。 
+   
+下载完成后。 
+   
+7.出错演示。 
+下面我们演示一下出错时的情况。 
+将构造函数中的代码ftp->login();改为ftp->login(“tom”,”123456″); 
+这时我们再运行程序： 
+   
+可以看到，它输出了错误信息，指明了错误的指令和出错的内容。其实我们设置的这个错误，
+也是想告诉大家，在FTP中如果没有设置用户名和密码，那么默认的用户名应该是anonymous，
+这时密码可以任意填写，而使用其他用户名是会出错的。 
+     在下一节中，我们将会对这个程序进行扩展，让它可以浏览服务器上的所有文件，
+并进行下载。 
+分类：Qt系列教程  作者：  yafeilinux 日期：  六月  22nd, 2010.    2,149 views 
+Tags: ftp, QFtp, Qt网络   
+   
+四十四、Qt网络（四）FTP（二） 
+本文章原创于 www.yafeilinux.com 转载请注明出处。 
+前面讲述了一个最简单的FTP客户端程序的编写，这一节我们将这个程序进行扩展，使其可以
+浏览并能下载服务器上的所有文件。 
+1.更改widget.ui文件如下。 
+     
+我们删除了Text Browser ，加入了几个Label ，Line Edit ，Push Button部件，一个Tree 
+Widget及一个Progress Bar部件。然后我们对其中几个部件做如下更改。 
+（1）将“FTP服务器”标签后的Line Edit的objectName属性改为“ftpServerLineEdit”，
+其text 属性改为“ftp.qt.nokia.com”。 
+（2）将“用户名”标签后的Line Edit的objectName属性改为“userNameLineEdit”，其
+text属性改为“anonymous”，将其toolTip属性改为“默认用户名请使用：anonymous ，此
+时密码任意。” 
+（3）将“密码”标签后的Line Edit的objectName属性改为“passWordLineEdit”，其text
+属性改为“123456”，将其echoMode属性改为“Password”。 
+（4）将“连接”按钮的objectName属性改为“connectButton”。 
+（5）将“返回上一级目录”按钮的objectName属性改为“cdToParentButton”。 
+（6）将“下载”按钮的objectName属性改为“downloadButton”。 
+（7）将Tree Widget的objectName属性改为“fileList”，然后在Tree Widget部件上单击
+鼠标右键，选择Edit Items菜单，添加列属性如下。 
+   
+最终的界面如下。 
+   
+下面我们的程序中，就是实现在用户填写完相关信息后，按下“连接”按钮，就可以连接到
+FTP服务器，并在Tree Widget中显示服务器上的所有文件，我们可以按下“下载”按钮来下
+载选中的文件，并使用进度条显示下载进度。 
+2.更改widget.h文件。 
+（1）添加头文件#include <QtGui> 
+（2）在private中添加变量： 
+QHash<QString, bool> isDirectory; 
+//用来存储一个路径是否为目录的信息 
+QString currentPath; 
+//用来存储现在的路径 
+（3）添加槽函数： 
+private slots: 
+    void on_downloadButton_clicked(); 
+    void on_cdToParentButton_clicked(); 
+    void on_connectButton_clicked(); 
+    void ftpCommandFinished(int,bool); 
+    void ftpCommandStarted(int); 
+    void updateDataTransferProgress(qint64,qint64 ); 
+    //更新进度条 
+    void addToList(const QUrlInfo &urlInfo); 
+    //将服务器上的文件添加到Tree Widget中 
+    void processItem(QTreeWidgetItem*,int); 
+//双击一个目录时显示其内容 
+3.更改widget.cpp的内容。 
+（1）实现“连接”按钮的单击事件槽函数。 
+void Widget::on_connectButton_clicked()   //连接按钮 
+{ 
+    ui->fileList->clear(); 
+    currentPath.clear(); 
+    isDirectory.clear(); 
+    ftp = new QFtp(this); 
+    connect(ftp,SIGNAL(commandStarted(int)),this,SLOT(ftpCommandStarted(int)))
+; 
+    connect(ftp,SIGNAL(commandFinished(int,bool)), 
+this,SLOT(ftpCommandFinished(int,bool))); 
+    connect(ftp,SIGNAL(listInfo(QUrlInfo)),this,SLOT(addToList(QUrlInfo))); 
+    connect(ftp,SIGNAL(dataTransferProgress(qint64,qint64)), 
+            this,SLOT(updateDataTransferProgress(qint64,qint64))); 
+    QString ftpServer = ui->ftpServerLineEdit->text(); 
+    QString userName = ui->userNameLineEdit->text(); 
+    QString passWord = ui->passWordLineEdit->text(); 
+    ftp->connectToHost(ftpServer,21); //连接到服务器,默认端口号是21 
+    ftp->login(userName,passWord);   //登录 
+} 
+我们在“连接”按钮的单击事件槽函数中新建了ftp对象，然后关联了相关的信号和槽。这里
+的listInfo()信号由ftp->list()函数发射，它将在登录命令完成时调用，下面我们提到。而
+dataTransferProgress()信号在数据传输时自动发射。最后我们从界面上获得服务器地址，用
+户名和密码等信息，并以它们为参数执行连接和登录命令。 
+（2）更改ftpCommandFinished()函数。 
+我们在相应位置做更改。 
+首先，在登录命令完成时，我们调用list()函数： 
+ui->label->setText(tr(“登录成功”)); 
+ftp->list();   //发射listInfo()信号，显示文件列表 
+然后，在下载命令完成时，我们使下载按钮可用： 
+ui->label->setText(tr(“已经完成下载”)); 
+ui->downloadButton->setEnabled(true); 
+最后再添加一个if语句，处理list命令完成时的情况： 
+if (ftp->currentCommand() == QFtp::List){ 
+        if (isDirectory.isEmpty()) 
+        { //如果目录为空,显示“empty” 
+            ui->fileList->addTopLevelItem( 
+                new QTreeWidgetItem(QStringList()<< 
+tr(“<empty>”))); 
+            ui->fileList->setEnabled(false); 
+            ui->label->setText(tr(“该目录为空”)); 
+        } 
+} 
+我们在list命令完成时，判断文件列表是否为空，如果为空，就让Tree Widget不可用，并
+显示“empty”条目。 
+（3）添加文件列表函数的内容如下。 
+void Widget::addToList(const QUrlInfo &urlInfo)  //添加文件列表 
+{ 
+     QTreeWidgetItem *item = new QTreeWidgetItem; 
+     item->setText(0, urlInfo.name()); 
+     item->setText(1, QString::number(urlInfo.size())); 
+     item->setText(2, urlInfo.owner()); 
+     item->setText(3, urlInfo.group()); 
+     item->setText(4, urlInfo.lastModified().toString(“MMM dd yyyy”)); 
+     QPixmap pixmap(urlInfo.isDir() ? “../dir.png” : “../file.png”); 
+     item->setIcon(0, pixmap); 
+     isDirectory[urlInfo.name()] = urlInfo.isDir(); 
+     //存储该路径是否为目录的信息 
+     ui->fileList->addTopLevelItem(item); 
+     if (!ui->fileList->currentItem()) { 
+         ui->fileList->setCurrentItem(ui->fileList->topLevelItem(0)); 
+         ui->fileList->setEnabled(true); 
+     } 
+} 
+当ftp->list()函数执行时会发射listInfo()信号，此时就会执行addToList()函数，在这里
+我们将文件信息显示在Tree Widget上，并在isDirectory中存储该文件的路径及其是否为目
+录的信息。为了使文件与目录进行区分，我们使用了不同的图标file.png 和dir.png来表示
+它们，这两个图标放在了工程文件夹中。 
+（4）将构造函数的内容更改如下。 
+{ 
+    ui->setupUi(this); 
+    ui->progressBar->setValue(0); 
+    connect(ui->fileList,SIGNAL(itemActivated(QTreeWidgetItem*,int)), 
+            this,SLOT(processItem(QTreeWidgetItem*,int))); 
+    //鼠标双击列表中的目录时，我们进入该目录 
+} 
+这里我们只是让进度条的值为0，然后关联了Tree Widget的一个信号itemActivated()。当
+鼠标双击一个条目时，发射该信号，我们在槽函数中判断该条目是否为目录，如果是则进入该
+目录。 
+（5）processItem()函数的实现如下。 
+void Widget::processItem(QTreeWidgetItem* item,int)  //打开一个目录 
+{ 
+    QString name = item->text(0); 
+    if (isDirectory.value(name)) {  //如果这个文件是个目录，则打开 
+        ui->fileList->clear(); 
+        isDirectory.clear(); 
+        currentPath += ‘/’; 
+        currentPath += name; 
+        ftp->cd(name); 
+        ftp->list(); 
+        ui->cdToParentButton->setEnabled(true); 
+    } 
+} 
+（6）“返回上一级目录”按钮的单击事件槽函数如下。 
+void Widget::on_cdToParentButton_clicked()  //返回上级目录按钮 
+{ 
+    ui->fileList->clear(); 
+    isDirectory.clear(); 
+    currentPath = currentPath.left(currentPath.lastIndexOf(‘/’)); 
+    if (currentPath.isEmpty()) { 
+        ui->cdToParentButton->setEnabled(false); 
+        ftp->cd(“/”); 
+    } else { 
+        ftp->cd(currentPath); 
+    } 
+    ftp->list(); 
+} 
+在返回上一级目录时，我们取当前路径的最后一个“/”之前的部分，如果此时路径为空了，
+我们就让“返回上一级目录”按钮不可用。 
+（7）“下载”按钮单击事件槽函数如下。 
+void Widget::on_downloadButton_clicked()  //下载按钮 
+{ 
+    QString fileName = ui->fileList->currentItem()->text(0); 
+    QFile *file = new QFile(fileName); 
+    if (!file->open(QIODevice::WriteOnly)) 
+    { 
+        delete file; 
+        return; 
+    } 
+    ui->downloadButton->setEnabled(false); //下载按钮不可用，等下载完成后才可用 
+    ftp->get(ui->fileList->currentItem()->text(0), file); 
+} 
+在这里我们获取了当前项目的文件名，然后新建文件，使用get()命令下载服务器上的文件到
+我们新建的文件中。 
+（8）更新进度条函数内容如下。 
+void Widget::updateDataTransferProgress( //进度条 
+        qint64 readBytes,qint64 totalBytes) 
+{ 
+    ui->progressBar->setMaximum(totalBytes); 
+    ui->progressBar->setValue(readBytes); 
+} 
+   
+   
+   
+   
+   
+4.运行程序，效果如下。 
+开始界面如下。 
+   
+登录成功时界面如下。 
+   
+下载文件时界面如下。 
+   
+当一个目录为空时界面如下。 
+   
+4.流程说明。 
+整个程序的流程就和我们实现函数的顺序一样。用户在界面上输入服务器的相关信息 ，然后
+我们利用这些信息进行连接并登录服务器，等登录服务器成功时，我们列出服务器上所有的文
+件。对于一个目录，我们可以进入其中，并返回上一级目录，我们可以下载文件，并显示下载
+的进度。 
+    对于ftp的操作，全部由那些命令和信号来完成，我们只需要调用相应的命令，并在
+其发出信号时，进行对应的处理就可以了。而对于文件的显示，则是视图部分的知识了。 
+5.其他说明。 
+最后需要说明的是，因为为了更好的讲解知识，使得程序简单化，所以我们省去了很多细节上
+的处理，如果需要，你可以自己添加。比如断开连接和取消下载，你都可以使用 
+ftp->abort()函数。你也可以参考Qt自带的Ftp Example例子。对于其他操作，比如上传等，
+你可以根据需要添加。 
+      FTP的相关编程就讲到到这里。 
+（错误更改提示： ——-2010年08月19日 
+在程序中的QFile 应该使用全局变量，然后file = new QFile(fileName); 
+当下载完成后，我们要使用file->close();关闭文件，不然下载的小文件可能为空。 
+更改如下： 
+1. 在widget.h中的声明private对象 
+QFile *file; 
+2.在widget.cpp文件中： 
+（1）在void Widget::on_downloadButton_clicked()函数里将file的定义改为： 
+file = new QFile(fileName); 
+（2）然后在void Widget::ftpCommandFinished(int,bool error) //结束命令 
+函数中更改： 
+if (ftp->currentCommand() == QFtp::Get){ 
+         if(error) ui->label->setText(tr(“下载出现错
+误：%1″).arg(ftp->errorString())); 
+        else { 
+            ui->label->setText(tr(“已经完成下载”)); 
+            ui->downloadButton->setEnabled(true); 
+            file->close(); //添加这行代码 
+        } 
+    } 
+） 
+分类：Qt系列教程  作者：  yafeilinux 日期：  六月  22nd, 2010.    1,861 views 
+Tags: ftp, QFtp, Qt网络   
+ 
+   
+四十五、Qt网络（五）获取本机网络信息 
+本文章原创于 www.yafeilinux.com 转载请注明出处。 
+前面讲完了HTTP和FTP，下面本来该讲解UDP和TCP了。不过，在讲解它们之前，我们先在
+这一节里讲解一个以后要经常用到的名词，那就是IP地址。 
+对于IP地址，其实，会上网的人都应该听说过它。如果你实在很不了解它，那么我们简单的
+说：IP即Internet Protocol （网络之间互联的协议），协议就是规则，地球人都用一样的
+规则，所以我们可以访问全球任何的网站；而IP地址就是你联网时分配给你机子的一个地址。
+如果把网络比喻成地图，那IP地址就像地图上的经纬度一样，它确定了你的主机在网络中的
+位置。其实知道我们以后要用IP地址来代表网络中的一台计算机就够了。（^_^不一定科学但
+是很直白的表述） 
+下面我们就讲解如何获取自己电脑的IP地址以及其他网络信息。这一节中，我们会涉及到网
+络模块（QtNetwork Module）中的QHostInfo ，QHostAddress ，QNetworkInterface和
+QNetworkAddressEntry等几个类。下面是详细内容。 
+  
+我们新建Qt4 Gui Application 工程，工程名为myIP ，选中QtNetwork模块，Base class
+选择QWidget。 
+我们在widget.h文件中包含头文件：#include <QtNetwork> 
+1.使用QHostInfo获取主机名和IP地址。 
+（1）获取主机名。 
+我们在widget.cpp文件中的构造函数中添加代码： 
+QString localHostName = QHostInfo::localHostName(); 
+qDebug() <<”localHostName: “<<localHostName; 
+这里我们使用了QHostInfo类的localHostName类来获取本机的计算机名称。 
+运行程序，在下面的输出栏里的信息如下： 
+   
+可以看到，这里获取了计算机名。我们可以在桌面上“我的电脑”图标上点击鼠标右键，然后
+选择“属性”菜单，查看“计算机名”一项，和我们的输出结果是一样的，如下图。 
+   
+（2）获取本机的IP地址。 
+我们继续在构造函数中添加代码： 
+QHostInfo info = QHostInfo::fromName(localHostName); 
+qDebug() <<”IP Address: “<<info.addresses(); 
+我们应用QHostInfo类的fromName()函数，使用上面获得的主机名为参数，来获取本机的信
+息。然后再利用QHostInfo类的addresses()函数，获取本机的所有IP地址信息。运行程序，
+输出信息如下： 
+   
+在我这里只有一条IP地址。但是，在其他系统上，可能出现多条IP地址，其中可能包含了
+IPv4和IPv6的地址，一般我们需要使用IPv4的地址，所以我们可以只输出IPv4的地址。 
+我们继续添加代码： 
+foreach(QHostAddress address,info.addresses()) 
+{ 
+     if(address.protocol() == QAbstractSocket::IPv4Protocol)  
+         qDebug() << address.toString(); 
+} 
+因为IP地址由QHostAddress 类来管理，所以我们可以使用该类来获取一条IP地址，然后使
+用该类的protocol()函数来判断其是否为IPv4地址。如果是IPv6地址，可以使用
+QAbstractSocket::IPv6Protocol 来判断。最后我们将IP地址以QString类型输出。 
+     我们以后要使用的IP地址都是用这个方法获得的，所以这个一定要掌握。运行效果
+如下： 
+   
+（3）以主机名获取IP地址。 
+我们在上面讲述了用本机的计算机名获取本机的IP地址。其实QHostInfo类也可以用来获取
+任意主机名的IP地址，如一个网站的IP地址。在这里我们可以使用lookupHost()函数。它
+是基于信号和槽的，一旦查找到了IP地址，就会触发槽函数。具体用法如下。 
+我们在widget.h文件中添加一个私有槽函数： 
+private slots: 
+void lookedUp(const QHostInfo &host); 
+然后在widget.cpp中的构造函数中先将上面添加的代码全部删除，然后添加以下代码： 
+QHostInfo::lookupHost(“www.baidu.com”, 
+                          this,SLOT(lookedUp(QHostInfo))
+); 
+这里我们查询百度网站的IP地址，如果查找到，就会执行我们的lookedUp()函数。 
+在widget.cpp中添加lookedUp()函数的实现代码： 
+void Widget::lookedUp(const QHostInfo &host) 
+{ 
+    qDebug() << host.addresses().first().toString(); 
+} 
+这里我们只是简单地输出第一个IP地址。输出信息如下： 
+   
+其实，我们也可以使用lookupHost()函数，通过输入IP地址反向查找主机名，只需要将上面
+代码中的“www.baidu.com”换成一个IP地址就可以了，如果你有兴趣可以研究一下，不过返
+回的结果可能不是你想象中的那样。 
+小结：可以看到QHostInfo类的作用：通过主机名来查找IP地址，或者通过IP地址来反向查
+找主机名。 
+2.通过QNetworkInterface类来获取本机的IP地址和网络接口信息。 
+QNetworkInterface类提供了程序所运行时的主机的IP地址和网络接口信息的列表。在每一
+个网络接口信息中都包含了0个或多个IP地址，而每一个IP地址又包含了和它相关的子网掩
+码和广播地址，它们三者被封装在一个QNetworkAddressEntry对象中。网络接口信息中也提
+供了硬件地址信息。我们将widge.cpp构造函数中以前添加的代码删除，然后添加以下代码。 
+QList<QNetworkInterface> list = QNetworkInterface::allInterfaces(); 
+    //获取所有网络接口的列表 
+    foreach(QNetworkInterface interface,list) 
+    {  //遍历每一个网络接口 
+        qDebug() << “Device: “<<interface.name(); 
+        //设备名 
+        qDebug() << “HardwareAddress: “<<interface.hardwareAddress(); 
+        //硬件地址 
+        QList<QNetworkAddressEntry> entryList = interface.addressEntries(); 
+     //获取IP地址条目列表，每个条目中包含一个IP地址，一个子网掩码和一个广播
+地址 
+        foreach(QNetworkAddressEntry entry,entryList) 
+        {//遍历每一个IP地址条目 
+            qDebug()<<”IP Address: “<<entry.ip().toString(); 
+            //IP地址 
+            qDebug()<<”Netmask: “<<entry.netmask().toString(); 
+            //子网掩码 
+            qDebug()<<”Broadcast: “<<entry.broadcast().toString(); 
+            //广播地址 
+        } 
+} 
+这里我们获取了本机的网络设备的相关信息。运行程序，输出如下： 
+   
+其实，如果我们只想利用QNetworkInterface类来获取IP地址，那么就没必要像上面那样复
+杂，这个类提供了一个便捷的函数allAddresses()来获取IP地址，例如： 
+QString address = QNetworkInterface::allAddresses().first().toString(); 
+3.总结。 
+在这一节中我们学习了如何来查找本机网络设备的相关信息。其实，以后最常用的还是其中获
+取IP地址的方法。我们以后可以利用一个函数来获取IP地址： 
+QString Widget::getIP()  //获取ip地址 
+{ 
+    QList<QHostAddress> list = QNetworkInterface::allAddresses(); 
+    foreach (QHostAddress address, list) 
+    { 
+       if(address.protocol() == QAbstractSocket::IPv4Protocol) 
+//我们使用IPv4地址 
+            return address.toString(); 
+    } 
+       return 0; 
+} 
+这一节就讲到这里，在下面的几节中我们将利用IP地址进行UDP和TCP的编程。 
+分类：Qt系列教程  作者：  yafeilinux 日期：  六月  25th, 2010.    2,232 views 
+Tags: IPv4, IPv6, IP 地址, QHostAddress, QHostInfo, QNetworkAddressEntry, QNetworkInterface, Qt网络   
+   
+四十六、Qt网络（六）UDP 
+本文章原创于 www.yafeilinux.com 转载请注明出处。 
+这一节讲述UDP编程的知识。UDP（User Datagram Protocol即用户数据报协议）是一个轻量
+级的，不可靠的，面向数据报的无连接协议。对于UDP我们不再进行过多介绍，如果你对UDP
+不是很了解，而且不知道它有什么用，那么我们这里就举个简单的例子：我们现在几乎每个人
+都使用的腾讯QQ，其聊天时就是使用UDP协议进行消息发送的。就像QQ那样，当有很多用户，
+发送的大部分都是短消息，要求能及时响应，并且对安全性要求不是很高的情况下使用UDP
+协议。 
+       在Qt中提供了QUdpSocket 类来进行UDP数据报（datagrams）的发送和接收。
+这里我们还要了解一个名词Socket，也就是常说的“套接字”。 Socket简单地说，就是一个
+IP地址加一个port端口。因为我们要传输数据，就要知道往哪个机子上传送，而IP地址确
+定了一台主机，但是这台机子上可能运行着各种各样的网络程序，我们要往哪个程序中发送呢？
+这时就要使用一个端口来指定UDP程序。所以说，Socket指明了数据报传输的路径。 
+下面我们将编写两个程序，一个用来发送数据报，可以叫做客户端；另一个用来接收数据报，
+可以叫做服务器端，它们均应用UDP协议。这样也就构成了所谓的C/S（客户端/服务器）编
+程模型。我们会在编写程序的过程中讲解一些相关的网络知识。 
+（一）发送端（客户端） 
+1.我们新建Qt4 Gui Application，工程名为“udpSender”，选中QtNetwork模块，Base class
+选择QWidget。 
+2.我们在widget.ui文件中，往界面上添加一个Push Button，更改其显示文本为“开始广播”，
+然后进入其单击事件槽函数。 
+   
+3.我们在widget.h文件中更改。 
+添加头文件：#include <QtNetwork> 
+添加private私有对象：QUdpSocket *sender; 
+4.我们在widget.cpp中进行更改。 
+在构造函数中添加：sender = new QUdpSocket(this); 
+更改“开始广播”按钮的单击事件槽函数： 
+void Widget::on_pushButton_clicked()  //发送广播 
+{ 
+    QByteArray datagram = “hello world!”; 
+    sender->writeDatagram(datagram.data(),datagram.size(), 
+                          QHostAddress::Broadcast,45454)
+; 
+} 
+这里我们定义了一个QByteArray类型的数据报datagram，其内容为“hello world!”。然后
+我们使用QUdpSocket类的writeDatagram()函数来发送数据报，这个函数有四个参数，分别
+是数据报的内容，数据报的大小，主机地址和端口号。对于数据报的大小，它根据平台的不同
+而不同，但是这里建议不要超过512字节。这里我们使用了广播地址QHostAddress::Broadcast，
+这样就可以同时给网络中所有的主机发送数据报了。对于端口号，它是可以随意指定的，但是
+一般1024以下的端口号通常属于保留端口号，所以我们最好使用大于1024的端口，最大为
+65535。我们这里使用了45454这个端口号，一定要注意，在下面要讲的服务器程序中，也要
+使用相同的端口号。 
+5.发送端就这么简单，我们运行程序，效果如下。 
+   
+（二）接收端（服务器端） 
+1.我们新建Qt4 Gui Application，工程名为“udpReceiver”，选中QtNetwork模块，Base 
+class选择QWidget。此时工程文件列表中应包含两个工程，如下图。 
+   
+2.我们在udpReceiver工程中的widget.ui文件中，向界面上添加一个Label部件，更改其
+显示文本为“等待接收数据！”，效果如下。 
+   
+3.我们在udpReceiver工程中的widget.h文件中更改。 
+添加头文件：#include <QtNetwork> 
+添加private私有对象：QUdpSocket *receiver; 
+添加私有槽函数： 
+private slots: 
+void processPendingDatagram(); 
+4.我们在udpReceiver工程中的widget.cpp文件中更改。 
+在构造函数中： 
+receiver = new QUdpSocket(this); 
+receiver->bind(45454,QUdpSocket::ShareAddress); 
+connect(receiver,SIGNAL(readyRead()),this,SLOT(processPendingDatagram())); 
+我们在构造函数中将receiver绑定到45454端口，这个端口就是上面发送端设置的端口，二
+者必须一样才能保证接收到数据报。我们这里使用了绑定模式QUdpSocket::ShareAddress，
+它表明其他服务也可以绑定到这个端口上。因为当receiver发现有数据报到达时就会发出
+readyRead()信号，所以我们将其和我们的数据报处理函数相关联。 
+数据报处理槽函数实现如下： 
+void Widget::processPendingDatagram() //处理等待的数据报 
+{ 
+    while(receiver->hasPendingDatagrams())  //拥有等待的数据报 
+    { 
+        QByteArray datagram; //拥于存放接收的数据报 
+        datagram.resize(receiver->pendingDatagramSize()); 
+        //让datagram的大小为等待处理的数据报的大小，这样才能接收到完整的数
+据 
+        receiver->readDatagram(datagram.data(),datagram.size()); 
+        //接收数据报，将其存放到datagram中 
+        ui->label->setText(datagram); 
+        //将数据报内容显示出来 
+    } 
+} 
+5.我们在工程列表中udpReceiver工程上点击鼠标右键，在弹出的菜单上选择run菜单来运
+行该工程。 
+   
+6.第一次运行该程序时，系统可能会提示警告，我们选择“解除阻止”。 
+   
+如果是在linux下，你可能还需要关闭防火墙。 
+7.我们同时再运行udpSender程序。然后点击其上的“发送广播”按钮，这时会在udpReceiver
+上显示数据报的内容。效果如下。 
+   
+可以看到，UDP的应用是很简单的。我们只需要在发送端执行writeDatagram()函数进行数据
+报的发送，然后在接收端绑定端口，并关联readyRead()信号和数据报处理函数即可。 
+    下一节我们讲述TCP的应用。 
+分类：Qt系列教程  作者：  yafeilinux 日期：  六月  28th, 2010.    2,247 views 
+Tags: QtNetwork, Qt网络, QUdpSocket, UDP, 教程   
+   
+四十七、Qt网络（七）TCP(一） 
+本文章原创于 www.yafeilinux.com 转载请注明出处。 
+TCP即Transmission Control Protocol，传输控制协议。与UDP不同，它是面向连接和数据
+流的可靠传输协议。也就是说，它能使一台计算机上的数据无差错的发往网络上的其他计算机，
+所以当要传输大量数据时，我们选用TCP协议。 
+TCP协议的程序使用的是客户端/服务器模式，在Qt中提供了QTcpSocket类来编写客户端程
+序，使用QTcpServer类编写服务器端程序。我们在服务器端进行端口的监听，一旦发现客户
+端的连接请求，就会发出newConnection()信号，我们可以关联这个信号到我们自己的槽函数，
+进行数据的发送。而在客户端，一旦有数据到来就会发出readyRead()信号，我们可以关联此
+信号，进行数据的接收。其实，在程序中最难理解的地方就是程序的发送和接收了，为了让大
+家更好的理解，我们在这一节只是讲述一个传输简单的字符串的例子，在下一节再进行扩展，
+实现任意文件的传输。 
+一、服务器端。 
+在服务器端的程序中，我们监听本地主机的一个端口，这里使用6666，然后我们关联
+newConnection()信号与自己写的sendMessage()槽函数。就是说一旦有客户端的连接请求，
+就会执行sendMessage()函数，在这个函数里我们发送一个简单的字符串。 
+1.我们新建Qt4 Gui Application，工程名为“tcpServer”，选中QtNetwork模块，Base class
+选择QWidget。（说明：如果一些Qt Creator版本没有添加模块一项，我们就需要在工程文
+件tcpServer.pro中添加一行代码：QT += network） 
+2.我们在widget.ui的设计区添加一个Label，更改其objectName为statusLabel，用于显
+示一些状态信息。如下： 
+   
+3.在widget.h文件中做以下更改。 
+添加头文件：#include <QtNetWork> 
+添加private对象：QTcpServer *tcpServer; 
+添加私有槽函数： 
+private slots: 
+void sendMessage(); 
+4.在widget.cpp文件中进行更改。 
+在其构造函数中添加代码： 
+tcpServer = new QTcpServer(this); 
+    if(!tcpServer->listen(QHostAddress::LocalHost,6666)) 
+    {  //监听本地主机的6666端口，如果出错就输出错误信息，并关闭 
+        qDebug() << tcpServer->errorString(); 
+        close(); 
+    } 
+ connect(tcpServer,SIGNAL(newConnection()),this,SLOT(sendMessage())); 
+//连接信号和相应槽函数 
+我们在构造函数中使用tcpServer的listen()函数进行监听，然后关联了newConnection()
+和我们自己的sendMessage()函数。 
+下面我们实现sendMessage()函数。 
+void Widget::sendMessage() 
+{ 
+    QByteArray block; //用于暂存我们要发送的数据 
+    QDataStream out(&block,QIODevice::WriteOnly); 
+    //使用数据流写入数据 
+    out.setVersion(QDataStream::Qt_4_6); 
+    //设置数据流的版本，客户端和服务器端使用的版本要相同 
+    out<<(quint16) 0; 
+    out<<tr(“hello Tcp!!!”); 
+    out.device()->seek(0); 
+    out<<(quint16) (block.size() – sizeof(quint16)); 
+    QTcpSocket *clientConnection = tcpServer->nextPendingConnection(); 
+    //我们获取已经建立的连接的子套接字 
+    connect(clientConnection,SIGNAL(disconnected()),clientConnection, 
+            SLOT(deleteLater())); 
+    clientConnection->write(block); 
+    clientConnection->disconnectFromHost(); 
+    ui->statusLabel->setText(“send message successful!!!”); 
+    //发送数据成功后，显示提示 
+} 
+这个是数据发送函数，我们主要介绍两点： 
+（1）为了保证在客户端能接收到完整的文件，我们都在数据流的最开始写入完整文件的大小
+信息，这样客户端就可以根据大小信息来判断是否接受到了完整的文件。而在服务器端，我们
+在发送数据时就要首先发送实际文件的大小信息，但是，文件的大小一开始是无法预知的，所
+以我们先使用了out<<(quint16) 0;在block的开始添加了一个quint16大小的空间，也就是
+两字节的空间，它用于后面放置文件的大小信息。然后out<<tr(“hello Tcp!!!”);输入实
+际的文件，这里是字符串。当文件输入完成后我们在使用out.device()->seek(0);返回到
+block的开始，加入实际的文件大小信息，也就是后面的代码，它是实际文件的大小：
+out<<(quint16) (block.size() – sizeof(quint16)); 
+（2）在服务器端我们可以使用tcpServer的nextPendingConnection()函数来获取已经建立
+的连接的Tcp套接字，使用它来完成数据的发送和其它操作。比如这里，我们关联了
+disconnected()信号和deleteLater()槽函数，然后我们发送数据 
+clientConnection->write(block); 
+然后是clientConnection->disconnectFromHost();它表示当发送完成时就会断开连接，这时
+就会发出disconnected()信号，而最后调用deleteLater()函数保证在关闭连接后删除该套接
+字clientConnection。 
+5.这样服务器的程序就完成了，我们先运行一下程序。 
+   
+二、客户端。 
+我们在客户端程序中向服务器发送连接请求，当连接成功时接收服务器发送的数据。 
+1. .我们新建Qt4 Gui Application，工程名为“tcpClient”，选中QtNetwork模块，Base 
+class选择QWidget。 
+2，我们在widget.ui中添加几个标签Label和两个Line Edit以及一个按钮Push Button。 
+   
+其中“主机”后的Line Edit的objectName为hostLineEdit，“端口号”后的为portLineEdit。 
+“收到的信息”标签的objectName为messageLabel 。 
+3.在widget.h文件中做更改。 
+添加头文件：#include <QtNetwork> 
+添加private变量： 
+QTcpSocket *tcpSocket; 
+QString message;  //存放从服务器接收到的字符串 
+quint16 blockSize;  //存放文件的大小信息 
+添加私有槽函数： 
+private slots: 
+    void newConnect(); //连接服务器 
+    void readMessage();  //接收数据 
+void displayError(QAbstractSocket::SocketError);  //显示错误 
+4.在widget.cpp文件中做更改。 
+（1）在构造函数中添加代码： 
+tcpSocket = new QTcpSocket(this); 
+connect(tcpSocket,SIGNAL(readyRead()),this,SLOT(readMessage())); 
+connect(tcpSocket,SIGNAL(error(QAbstractSocket::SocketError)), 
+         this,SLOT(displayError(QAbstractSocket::SocketError))); 
+这里关联了tcpSocket的两个信号，当有数据到来时发出readyRead()信号，我们执行读取数
+据的readMessage()函数。当出现错误时发出error()信号，我们执行displayError()槽函数。 
+(2)实现newConnect()函数。 
+void Widget::newConnect() 
+{ 
+    blockSize = 0; //初始化其为0 
+    tcpSocket->abort(); //取消已有的连接 
+    tcpSocket->connectToHost(ui->hostLineEdit->text(), 
+                             ui->portLineEdit->text()
+.toInt()); 
+    //连接到主机，这里从界面获取主机地址和端口号 
+} 
+这个函数实现了连接到服务器，下面会在“连接”按钮的单击事件槽函数中调用这个函数。 
+（3）实现readMessage()函数。 
+void Widget::readMessage() 
+{ 
+    QDataStream in(tcpSocket); 
+    in.setVersion(QDataStream::Qt_4_6); 
+    //设置数据流版本，这里要和服务器端相同 
+    if(blockSize==0) //如果是刚开始接收数据 
+    { 
+        //判断接收的数据是否有两字节，也就是文件的大小信息 
+        //如果有则保存到blockSize变量中，没有则返回，继续接收数据 
+        if(tcpSocket->bytesAvailable() < (int)sizeof(quint16)) return; 
+        in >> blockSize; 
+    } 
+    if(tcpSocket->bytesAvailable() < blockSize) return; 
+    //如果没有得到全部的数据，则返回，继续接收数据 
+    in >> message; 
+    //将接收到的数据存放到变量中 
+    ui->messageLabel->setText(message); 
+    //显示接收到的数据 
+} 
+这个函数实现了数据的接收，它与服务器端的发送函数相对应。首先我们要获取文件的大小信
+息，然后根据文件的大小来判断是否接收到了完整的文件。 
+(4)实现displayError()函数。 
+void Widget::displayError(QAbstractSocket::SocketError) 
+{ 
+    qDebug() << tcpSocket->errorString(); //输出错误信息 
+} 
+这里简单的实现了错误信息的输出。 
+（5）我们在widget.ui中进入“连接”按钮的单击事件槽函数，然后更改如下。 
+void Widget::on_pushButton_clicked() //连接按钮 
+{ 
+    newConnect(); //请求连接 
+} 
+这里直接调用了newConnect()函数。 
+5.我们运行程序，同时运行服务器程序，然后在“主机”后填入“localhost”，在“端口号”
+后填入“6666”，点击“连接”按钮，效果如下。 
+   
+可以看到我们正确地接收到了数据。因为服务器端和客户端是在同一台机子上运行的，所以我
+这里填写了“主机”为“localhost”，如果你在不同的机子上运行，需要在“主机”后填写
+其正确的IP地址。 
+       到这里我们最简单的TCP应用程序就完成了，在下一节我们将会对它进行扩展，
+实现任意文件的传输。 
+分类：Qt系列教程  作者：  yafeilinux 日期：  七月  12th, 2010.    3,298 views 
+Tags: Qt Creator 2.0, Qt网络, TCP, yafeilinux,  教程   
+   
+四十八、Qt网络（八）TCP(二） 
+本文章原创于 www.yafeilinux.com 转载请注明出处。 
+在上一节里我们使用TCP服务器发送一个字符串，然后在TCP客户端进行接收。在这一节我们
+重新写一个客户端程序和一个服务器程序，这次我们让客户端进行文件的发送，服务器进行文
+件的接收。有了上一节的基础，这一节的内容就很好理解了，注意一下几个信号和槽的关联即
+可。当然，我们这次要更深入了解一下数据的发送和接收的处理方法。 
+一、客户端 
+这次我们先讲解客户端，在客户端里我们与服务器进行连接，一旦连接成功，就会发出
+connected()信号，这时我们就进行文件的发送。 
+在上一节我们已经看到，发送数据时我们先发送了数据的大小信息。这一次，我们要先发送文
+件的总大小，然后文件名长度，然后是文件名，这三部分我们合称为文件头结构，最后再发送
+文件数据。所以在发送函数里我们就要进行相应的处理，当然，在服务器的接收函数里我们也
+要进行相应的处理。对于文件大小，这次我们使用了qint64，它是64位的，可以表示一个很
+大的文件了。 
+1.同前一节，我们新建工程，将工程命名为“tcpSender”。注意添加network模块。 
+2.我们在widget.ui文件中将界面设计如下。 
+   
+这里“主机”后的Line Edit的objectName为hostLineEdit；“端口”后的Line Edit的
+objectName为portLineEdit；下面的Progress Bar的objectName为clientProgressBar，
+其value属性设为0；“状态”Label的objetName为clientStatusLabel；“打开”按钮的
+objectName为openButton；“发送”按钮的objectName为sendButton; 
+3.在widget.h 文件中进行更改。 
+（1）添加头文件#include <QtNetwork> 
+（2）添加private变量： 
+QTcpSocket *tcpClient; 
+    QFile *localFile;  //要发送的文件 
+    qint64 totalBytes;  //数据总大小 
+    qint64 bytesWritten;  //已经发送数据大小 
+    qint64 bytesToWrite;   //剩余数据大小 
+    qint64 loadSize;   //每次发送数据的大小 
+    QString fileName;  //保存文件路径 
+QByteArray outBlock;  //数据缓冲区，即存放每次要发送的数据 
+（3）添加私有槽函数： 
+private slots: 
+    void send();  //连接服务器 
+    void startTransfer();  //发送文件大小等信息 
+    void updateClientProgress(qint64); //发送数据，更新进度条 
+    void displayError(QAbstractSocket::SocketError); //显示错误 
+void openFile();  //打开文件 
+4.在widget.cpp文件中进行更改。 
+添加头文件：#include <QFileDialog> 
+（1）在构造函数中添加代码： 
+loadSize = 4*1024; 
+    totalBytes = 0; 
+    bytesWritten = 0; 
+    bytesToWrite = 0; 
+    tcpClient = new QTcpSocket(this); 
+    connect(tcpClient,SIGNAL(connected()),this,SLOT(startTransfer())); 
+    //当连接服务器成功时，发出connected()信号，我们开始传送文件 
+    connect(tcpClient,SIGNAL(bytesWritten(qint64)),this, 
+SLOT(updateClientProgress(qint64))); 
+    //当有数据发送成功时，我们更新进度条 
+    connect(tcpClient,SIGNAL(error(QAbstractSocket::SocketError)),this, 
+            SLOT(displayError(QAbstractSocket::SocketError))); 
+    ui->sendButton->setEnabled(false); 
+    //开始使”发送“按钮不可用 
+我们主要是进行了变量的初始化和几个信号和槽函数的关联。 
+（2）实现打开文件函数。 
+void Widget::openFile()   //打开文件 
+{ 
+    fileName = QFileDialog::getOpenFileName(this); 
+    if(!fileName.isEmpty()) 
+    { 
+        ui->sendButton->setEnabled(true); 
+        ui->clientStatusLabel->setText(tr(“打开文件 %1 成功！”) 
+                                       .arg
+(fileName)); 
+    } 
+} 
+该函数将在下面的“打开”按钮单击事件槽函数中调用。 
+（3）实现连接函数。 
+void Widget::send()   //连接到服务器，执行发送 
+{ 
+    ui->sendButton->setEnabled(false); 
+    bytesWritten = 0; 
+    //初始化已发送字节为0 
+    ui->clientStatusLabel->setText(tr(“连接中…”)); 
+    tcpClient->connectToHost(ui->hostLineEdit->text(), 
+                             ui->portLineEdit->text()
+.toInt());//连接 
+} 
+该函数将在“发送”按钮的单击事件槽函数中调用。 
+（4）实现文件头结构的发送。 
+void Widget::startTransfer()  //实现文件大小等信息的发送 
+{ 
+    localFile = new QFile(fileName); 
+    if(!localFile->open(QFile::ReadOnly)) 
+    { 
+        qDebug() << "open file error!"; 
+        return; 
+    } 
+    totalBytes = localFile->size(); 
+    //文件总大小 
+    QDataStream sendOut(&outBlock,QIODevice::WriteOnly); 
+    sendOut.setVersion(QDataStream::Qt_4_6); 
+    QString currentFileName = fileName.right(fileName.size() - 
+fileName.lastIndexOf('/')-1); 
+    sendOut << qint64(0) << qint64(0) << currentFileName; 
+    //依次写入总大小信息空间，文件名大小信息空间，文件名 
+    totalBytes += outBlock.size(); 
+    //这里的总大小是文件名大小等信息和实际文件大小的总和 
+    sendOut.device()->seek(0); 
+    sendOut<<totalBytes<<qint64((outBlock.size() - sizeof(qint64)*2)); 
+    //返回outBolock的开始，用实际的大小信息代替两个qint64(0)空间 
+    bytesToWrite = totalBytes - tcpClient->write(outBlock); 
+    //发送完头数据后剩余数据的大小 
+    ui->clientStatusLabel->setText(tr("已连接")); 
+    outBlock.resize(0); 
+} 
+（5）下面是更新进度条，也就是发送文件数据。 
+void Widget::updateClientProgress(qint64 numBytes) //更新进度条，实现文件的传送 
+{ 
+    bytesWritten += (int)numBytes; 
+    //已经发送数据的大小 
+    if(bytesToWrite > 0) //如果已经发送了数据 
+    { 
+        outBlock = localFile->read(qMin(bytesToWrite,loadSize)); 
+      //每次发送loadSize大小的数据，这里设置为4KB，如果剩余的数据不足4KB， 
+      //就发送剩余数据的大小 
+        bytesToWrite -= (int)tcpClient->write(outBlock); 
+       //发送完一次数据后还剩余数据的大小 
+        outBlock.resize(0); 
+        //清空发送缓冲区 
+    } 
+    else 
+    { 
+        localFile->close(); //如果没有发送任何数据，则关闭文件 
+    } 
+    ui->clientProgressBar->setMaximum(totalBytes); 
+    ui->clientProgressBar->setValue(bytesWritten); 
+    //更新进度条 
+    if(bytesWritten == totalBytes) //发送完毕 
+    { 
+        ui->clientStatusLabel->setText(tr(“传送文件 %1 成
+功”).arg(fileName)); 
+        localFile->close(); 
+        tcpClient->close(); 
+    } 
+} 
+（6）实现错误处理函数。 
+void Widget::displayError(QAbstractSocket::SocketError) //显示错误 
+{ 
+    qDebug() << tcpClient->errorString(); 
+    tcpClient->close(); 
+    ui->clientProgressBar->reset(); 
+    ui->clientStatusLabel->setText(tr(“客户端就绪”)); 
+    ui->sendButton->setEnabled(true); 
+} 
+（7）我们从widget.ui中分别进行“打开”按钮和“发送”按钮的单击事件槽函数，然后更
+改如下。 
+void Widget::on_openButton_clicked() //打开按钮 
+{ 
+    openFile(); 
+} 
+void Widget::on_sendButton_clicked() //发送按钮 
+{ 
+    send(); 
+} 
+5.我们为了使程序中的中文不显示乱码，在main.cpp文件中更改。 
+添加头文件：#include <QTextCodec> 
+在main函数中添加代码：QTextCodec::setCodecForTr(QTextCodec::codecForLocale()); 
+6.运行程序，效果如下。 
+   
+7.程序整体思路分析。 
+我们设计好界面，然后按下“打开”按钮，选择我们要发送的文件，这时调用了openFile()
+函数。然后我们点击“发送”按钮，调用send()函数，与服务器进行连接。当连接成功时就
+会发出connected()信号，这时就会执行startTransfer()函数，进行文件头结构的发送，当
+发送成功时就会发出bytesWritten(qint64)信号，这时我们执行
+updateClientProgress(qint64 numBytes)进行文件数据的传输和进度条的更新。这里使用了
+一个loadSize变量，我们在构造函数中将其初始化为4*1024即4字节，它的作用是，我们将
+整个大的文件分成很多小的部分进行发送，每部分为4字节。而当连接出现问题时就会发出
+error(QAbstractSocket::SocketError)信号，这时就会执行displayError()函数。对于程序
+中其他细节我们就不再分析，希望大家能自己编程研究一下。 
+二、服务器端。 
+我们在服务器端进行数据的接收。服务器端程序是很简单的，我们开始进行监听，一旦发现有
+连接请求就发出newConnection()信号，然后我们便接受连接，开始接收数据。 
+1.新建工程，名字为“tcpReceiver”。 
+2.我们更改widget.ui文件，设计界面如下。 
+其中“服务器端”Label的objectName为serverStatusLabel；进度条Progress Bar的
+objectName为serverProgressBar，设置其value属性为0；“开始监听”按钮的objectName
+为startButton。 
+效果如下。 
+   
+3.更改widget.h文件的内容。 
+（1）添加头文件：#include <QtNetwork> 
+（2）添加私有变量： 
+     QTcpServer tcpServer; 
+    QTcpSocket *tcpServerConnection; 
+    qint64 totalBytes;  //存放总大小信息 
+    qint64 bytesReceived;  //已收到数据的大小 
+    qint64 fileNameSize;  //文件名的大小信息 
+    QString fileName;   //存放文件名 
+    QFile *localFile;   //本地文件 
+QByteArray inBlock;   //数据缓冲区 
+（3）添加私有槽函数： 
+private slots: 
+    void on_startButton_clicked(); 
+    void start();   //开始监听 
+    void acceptConnection();  //建立连接 
+    void updateServerProgress();  //更新进度条，接收数据 
+void displayError(QAbstractSocket::SocketError socketError); 
+ //显示错误 
+4.更改widget.cpp文件。 
+（1）在构造函数中添加代码： 
+totalBytes = 0; 
+    bytesReceived = 0; 
+    fileNameSize = 0; 
+    connect(&tcpServer,SIGNAL(newConnection()),this, 
+SLOT(acceptConnection())); 
+//当发现新连接时发出newConnection()信号 
+（2）实现start()函数。 
+void Widget::start() //开始监听 
+{ 
+    ui->startButton->setEnabled(false); 
+    bytesReceived =0; 
+    if(!tcpServer.listen(QHostAddress::LocalHost,6666)) 
+    { 
+        qDebug() << tcpServer.errorString(); 
+        close(); 
+        return; 
+    } 
+    ui->serverStatusLabel->setText(tr(“监听”)); 
+} 
+（3）实现接受连接函数。 
+void Widget::acceptConnection()  //接受连接 
+{ 
+    tcpServerConnection = tcpServer.nextPendingConnection(); 
+connect(tcpServerConnection,SIGNAL(readyRead()),this, 
+SLOT(updateServerProgress())); 
+    connect(tcpServerConnection, 
+SIGNAL(error(QAbstractSocket::SocketError)),this, 
+            SLOT(displayError(QAbstractSocket::SocketError))); 
+    ui->serverStatusLabel->setText(tr(“接受连接”)); 
+    tcpServer.close(); 
+} 
+（4）实现更新进度条函数。 
+void Widget::updateServerProgress()  //更新进度条，接收数据 
+{ 
+   QDataStream in(tcpServerConnection); 
+   in.setVersion(QDataStream::Qt_4_6); 
+   if(bytesReceived <= sizeof(qint64)*2) 
+   { //如果接收到的数据小于16个字节，那么是刚开始接收数据，我们保存到//来的头文
+件信息 
+        if((tcpServerConnection->bytesAvailable() >= sizeof(qint64)*2) 
+            && (fileNameSize == 0)) 
+        { //接收数据总大小信息和文件名大小信息 
+            in >> totalBytes >> fileNameSize; 
+            bytesReceived += sizeof(qint64) * 2; 
+        } 
+        if((tcpServerConnection->bytesAvailable() >= fileNameSize) 
+            && (fileNameSize != 0)) 
+        {  //接收文件名，并建立文件 
+            in >> fileName; 
+            ui->serverStatusLabel->setText(tr(“接收文件 %1 …”) 
+                                        
+   .arg(fileName)); 
+            bytesReceived += fileNameSize; 
+            localFile = new QFile(fileName); 
+            if(!localFile->open(QFile::WriteOnly)) 
+            { 
+                qDebug() << “open file error!”; 
+                return; 
+            } 
+        } 
+        else return; 
+   } 
+   if(bytesReceived < totalBytes) 
+   {  //如果接收的数据小于总数据，那么写入文件 
+       bytesReceived += tcpServerConnection->bytesAvailable(); 
+       inBlock = tcpServerConnection->readAll(); 
+       localFile->write(inBlock); 
+       inBlock.resize(0); 
+   } 
+   ui->serverProgressBar->setMaximum(totalBytes); 
+   ui->serverProgressBar->setValue(bytesReceived); 
+   //更新进度条 
+   if(bytesReceived == totalBytes) 
+   { //接收数据完成时 
+    tcpServerConnection->close(); 
+    localFile->close(); 
+    ui->startButton->setEnabled(true); 
+ui->serverStatusLabel->setText(tr(“接收文件 %1 成功！”) 
+.arg(fileName)); 
+   } 
+} 
+（5）错误处理函数。 
+void Widget::displayError(QAbstractSocket::SocketError) //错误处理 
+{ 
+    qDebug() << tcpServerConnection->errorString(); 
+    tcpServerConnection->close(); 
+    ui->serverProgressBar->reset(); 
+    ui->serverStatusLabel->setText(tr(“服务端就绪”)); 
+    ui->startButton->setEnabled(true); 
+} 
+（6）我们在widget.ui中进入“开始监听”按钮的单击事件槽函数，更改如下。 
+void Widget::on_startButton_clicked() //开始监听按钮 
+{ 
+    start(); 
+} 
+5.我们为了使程序中的中文不显示乱码，在main.cpp文件中更改。 
+添加头文件：#include <QTextCodec> 
+在main函数中添加代码：QTextCodec::setCodecForTr(QTextCodec::codecForLocale()); 
+6.运行程序，并同时运行tcpSender程序，效果如下。 
+   
+我们先在服务器端按下“开始监听”按钮，然后在客户端输入主机地址和端口号，然后打开要
+发送的文件，点击“发送”按钮进行发送。 
+    在这两节里我们介绍了TCP的应用，可以看到服务器端和客户度端都可以当做发送端
+或者接收端，而且数据的发送与接收只要使用相对应的协议即可，它是可以根据用户的需要来
+进行编程的，没有固定的格式。 
+分类：Qt系列教程  作者：  yafeilinux 日期：  七月  12th, 2010.    2,622 views 
+Tags: qt, Qt网络, TCP, yafeilinux,  教程   
+ 

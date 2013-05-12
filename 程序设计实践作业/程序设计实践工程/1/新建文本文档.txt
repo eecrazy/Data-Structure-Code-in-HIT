@@ -1,0 +1,172 @@
+#include<iostream.h>
+class Term
+{
+public:
+    Term(int c,int e);
+    Term(int c,int e,Term* nxt);
+    Term* InsertAfter(int c,int e);
+private:
+    int  coef;
+    int  exp;
+    Term *link;
+    friend   ostream   &operator<<(ostream&,const   Term&);
+    friend   class   Polynominal;
+};
+
+Term::Term(int c,int e):coef(c),exp(e)
+{
+    link=0;
+}
+
+Term::Term(int c,int e,Term* nxt):coef(c),exp(e)
+{
+    link=nxt;
+}
+
+Term *Term::InsertAfter(int c,int e)
+{
+    link=new Term(c,e,link);
+    return link;
+}
+
+ostream &operator<<(ostream& out,const Term& val)
+{
+    if(val.coef==0)return out;
+    out<<val.coef;
+    switch(val.exp)
+    {
+    case   0:
+        break;
+    case   1:
+        out<<"X";
+        break;
+    default:
+        out<<"X~"<<val.exp;
+        break;
+    }
+    return out;
+}
+
+class Polynominal
+{
+public:
+    Polynominal();
+    void   AddTerm(istream & in);
+    void   Output(ostream & out)const;
+    void   PolyAdd(Polynominal& r);
+    void   PolyMul(Polynominal& r);
+private:
+    Term * theList;
+    friend   ostream &operator<<(ostream &,const Polynominal &);
+    friend   istream &operator>>(istream   &,Polynominal &);
+    friend   Polynominal operator+(Polynominal &,Polynominal &);
+    friend   Polynominal operator*(Polynominal &,Polynominal &);
+};
+
+Polynominal::Polynominal()
+{
+    theList=new Term(0,-1);
+    theList->link=theList;
+
+}
+void  Polynominal::AddTerm(istream &in)
+{
+    Term *q=theList;
+    int   c,e;
+    for(;;)
+    {
+        cout<<"Input a term(coef,exp):\n"<<endl;
+        in>>c>>e;
+        if(e<0)break;
+        q=q->InsertAfter(c,e);
+    }
+}
+void   Polynominal::Output(ostream &out)const
+{
+    int   first=1;
+    Term   *p=theList->link;
+    cout<<"The   Polynominal   is:\n"<<endl;
+    for(; p!=theList; p=p->link)
+    {
+        if(!first&&(p->coef>0))out<<'+';
+        first=0;
+        out<<*p;
+    }
+    cout<<"\n"<<endl;
+}
+
+void   Polynominal::PolyAdd(Polynominal &r)
+{
+    Term *q,*q1=theList,*q2,*p;
+    p=r.theList;
+    q=q1->link;
+    p=p->link;
+    while(p->exp>=0)
+    {
+        while(p->exp<q->exp)
+        {
+            q1=q;
+            q=q->link;
+        }
+        if(p->exp==q->exp)
+        {
+            q->coef=q->coef+p->coef;
+            if(q->coef==0)
+            {
+                q2=q;
+                q1->link=q->link;
+                q=q->link;
+                delete(q2);
+                p=p->link;
+            }
+            else
+            {
+                q1=q;
+                q=q->link;
+                p=p->link;
+            }
+        }
+        else
+        {
+            q1=q->InsertAfter(p->coef,p->exp);
+            p=p->link;
+        }
+    }
+}
+
+void   Polynominal::PolyAdd(Polynominal &r)
+{
+
+}
+ostream&operator<<(ostream  &out,const Polynominal &x)
+{
+    x.Output(out);
+    return   out;
+}
+
+istream&operator>>(istream  &in, Polynominal &x)
+{
+    x.AddTerm(in);
+    return in;
+}
+
+Polynominal  operator +(Polynominal  &a,Polynominal  &b)
+{
+    a.PolyAdd(b);
+    return   a;
+}
+Polynominal  operator *(Polynominal  &a,Polynominal  &b)
+{
+    a.PolyMul(b);
+    return a;
+}
+int main()
+{
+    Polynominal  p,q;
+    cin>>p;
+    cout<<p;
+    cin>>q;
+    cout<<q;
+    q=q+p;
+    cout<<q;
+}

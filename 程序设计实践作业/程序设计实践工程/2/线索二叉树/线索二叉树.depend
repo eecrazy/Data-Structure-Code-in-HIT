@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1364287280 source:c:\users\li zhongyang\desktop\程序设计实践\2\线索二叉树\main.cpp
+	<iostream>
+	<stack>
+	<cstdio>
+
