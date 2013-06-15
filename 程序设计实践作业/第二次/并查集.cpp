@@ -1,4 +1,4 @@
-// 并查集的表示与等价分类
+// 并查集的表示与等价分类，用并查集实现最小生成树算法
 #include<iostream>
 #include<algorithm>
 using namespace std;

@@ -3,30 +3,24 @@
 #include <stdlib.h>
 #include <iostream>
 using namespace std;
-
 //多项式结点
-typedef struct polynode
+struct node
 {
     float coef;
     int   power;
-}PolyNode;
+};
 
-//多项式链表表示存储结构: f(x)=an*x^n+an-1*x^n-1+...+a3*x^3+a2*x^2+a1*x^1+a0*x^0
 typedef struct polynomial
 {
-    PolyNode info;
+    node info;
     polynomial *next;
 }PolyNomial;
 
-
-/************************************************************************/
-/*                     在多项式上增加一个结点                             */
-/************************************************************************/
-PolyNomial *AddNewItem(PolyNomial *polynomialExpress,polynode item)
-{    
+PolyNomial *AddNewItem(PolyNomial *polynomialExpress,node item)
+{
     PolyNomial *p=polynomialExpress;
     if(p==NULL)
-    {   
+    {
         p=(PolyNomial*)malloc(sizeof(polynomial));
         p->info=item;
         p->next=NULL;
@@ -34,11 +28,11 @@ PolyNomial *AddNewItem(PolyNomial *polynomialExpress,polynode item)
     }
     else
     {
-        int flag=0; //标记item是否在多项式中存在 
+        int flag=0;//标记item是否在多项式中存在
         for (PolyNomial *temp=p; temp!=NULL;temp=temp->next)
         {
             if(temp->info.power==item.power)   //如果指数相同，增item与polynomialExpress相加
-            { 
+            {
                 flag=1;
                 temp->info.coef+=item.coef;
                 return polynomialExpress;
@@ -54,22 +48,17 @@ PolyNomial *AddNewItem(PolyNomial *polynomialExpress,polynode item)
     }
 }
 
-/************************************************************************/
-/*                      两个多项式相加或相减                             */
-/************************************************************************/  
 PolyNomial *AddorSubPoly(polynomial first,polynomial second)
 {
 
-     for ( polynomial *temp=&second;temp!=NULL;temp=temp->next)
+     for(polynomial *temp=&second;temp!=NULL;temp=temp->next)
      {
          first=*AddNewItem(&first,temp->info);
      }
      return &first;
 }
+/* 两多项式相乘*/
 
-/************************************************************************/
-/*                      两多项式相乘                                     */
-/************************************************************************/
 PolyNomial  *MultiplyPoly(polynomial first,polynomial seconds)
 {
      polynomial *result=NULL;
@@ -77,7 +66,7 @@ PolyNomial  *MultiplyPoly(polynomial first,polynomial seconds)
      {
          for (polynomial *ts=&seconds;ts!=NULL;ts=ts->next)
          {
-             PolyNode *node=(PolyNode *)malloc(sizeof(PolyNode));
+             node *node=(node *)malloc(sizeof(node));
              node->power=tf->info.power+ts->info.power;
              node->coef=tf->info.coef*ts->info.coef;
              result=AddNewItem(result,*node);
@@ -85,42 +74,6 @@ PolyNomial  *MultiplyPoly(polynomial first,polynomial seconds)
      }
     return result;
 }
-
-/************************************************************************/
-/*                       求多项式的微分                                  */
-/************************************************************************/
-PolyNomial  *DiffPoly(PolyNomial poly)
-{
-    PolyNomial *result=NULL;
-    for (PolyNomial *temp=&poly;temp!=NULL;temp=temp->next)
-    {
-        PolyNode *node=(PolyNode *)malloc(sizeof(polynode));
-        node->coef=temp->info.power*temp->info.coef;
-        node->power=temp->info.power-1;
-        result=AddNewItem(result,*node);
-    }
-    return result;
-}
-
-/************************************************************************/
-/*                       求多项式的积分                                  */
-/************************************************************************/
-PolyNomial  *IntPoly(polynomial poly)
-{
-    polynomial *result=NULL;
-    for (polynomial *temp=&poly;temp!=NULL;temp=temp->next)
-    {
-        PolyNode *node=(PolyNode *)malloc(sizeof(PolyNode));
-        node->coef=temp->info.coef/(temp->info.power+1);
-        node->power=temp->info.power+1;
-        result=AddNewItem(result,*node);
-    }
-    return result;
-}
-
-/************************************************************************/
-/*                       计算给定值Value的多项式值f(Value)               */
-/************************************************************************/
 double EvaluatePoly(polynomial poly,double  value)
 {
     double result=0;
@@ -130,44 +83,17 @@ double EvaluatePoly(polynomial poly,double  value)
     }
     return result;
 }
-
-/************************************************************************/
-/*                       计算给定值的定积分的值                          */
-/************************************************************************/
-double DefIntPoly(polynomial poly,double lowwerBound,double UpperBound)
-{
-    double result;
-    polynomial *intPoly=IntPoly(poly);
-    result=EvaluatePoly(*intPoly,UpperBound)-EvaluatePoly(*intPoly,lowwerBound);
-    return result;
-}
-
-
-/************************************************************************/
-/*                       复合函数的值                                    */
-/************************************************************************/
-double CompositeFun(polynomial f,polynomial g,double Vaule)
-{
-    double result;
-    result=EvaluatePoly(f,EvaluatePoly(g,Vaule));
-    return result;
-}
-
-/************************************************************************/
-/*                       创建多项式                                      */
-/************************************************************************/
 PolyNomial *CreatePoly()
-{    
+{
      PolyNomial *polynomialExpress=NULL;
      printf("Input 0 will end the input!\n");
      while(1)
      {
-         printf("InputPolynode:\n");
-         //PolyNode *node=(PolyNode*)malloc(sizeof(PolyNode));
-         PolyNode node;
-         std::cin>>node.coef;
-         std::cin>>node.power;
-         if(node.coef==0) break;
+         printf("Inputnode:\n");
+         node node;
+         cin>>node.coef;
+         cin>>node.power;
+         if(node.power<0) break;
          else
          {
             polynomialExpress=AddNewItem(polynomialExpress,node);
@@ -176,51 +102,39 @@ PolyNomial *CreatePoly()
      return polynomialExpress;
 }
 
-/************************************************************************/
-/*                       显示多项式                                      */
-/************************************************************************/
 void Display(PolyNomial polynomialExpress)
 {
     printf("PloymialExpress IS:");
-    for (polynomial *temp=&polynomialExpress; temp!=NULL; temp=temp->next)
-    {   
+    polynomial *temp=&polynomialExpress;
+    if(temp->info.coef>=0)
+        {
+            cout<<temp->info.coef<<"*x^"<<temp->info.power;
+        }
+        else
+        {
+            cout<<"-"<<temp->info.coef<<"*x^"<<temp->info.power;
+        }
+    temp=temp->next;
+    for (temp; temp!=NULL; temp=temp->next)
+    {
         if(temp->info.coef>=0)
         {
-            std::cout<<"+"<<temp->info.coef<<"*x^"<<temp->info.power;
-        }else
+            cout<<"+"<<temp->info.coef<<"*x^"<<temp->info.power;
+        }
+        else
         {
-            std::cout<<"-"<<temp->info.coef<<"*x^"<<temp->info.power;
+            cout<<"-"<<temp->info.coef<<"*x^"<<temp->info.power;
         }
     }
-    std::cout<<endl;
+    cout<<endl;
 }
-int _tmain(int argc, _TCHAR* argv[])
+int main()
 {
     PolyNomial *polynomialExpressA=CreatePoly();
-
     Display(*polynomialExpressA);
-
-    //计算f(3)
-    //std::cout<<EvaluatePoly(*polynomialExpress,3);
-    //计算复合函数 
-    /*PolyNomial *polynomialExpressB=CreatePoly();
-    Display(*polynomialExpressB);
-    std::cout<<CompositeFun(*polynomialExpressA,*polynomialExpressB,3);*/
-    //微分f(x)'
-    //Display(*DiffPoly(*polynomialExpressA));
-    //多项式积分求解 
-    //Display(*IntPoly(*polynomialExpressA));\
-    //定积分求解
-    //std::cout<<DefIntPoly(*polynomialExpressA,1,3);
-    //计算f(x)+g(x)
-    /*PolyNomial *polynomialExpressB=CreatePoly();
-    Display(*polynomialExpressB);
-    PolyNomial *result=AddorSubPoly(*polynomialExpressA,*polynomialExpressB);
-    PolyNomial *p=result;
-    Display(*result);*/
     //两个多项式相乘
-    PolyNomial *polynomialExpressB=CreatePoly();
-    Display(*MultiplyPoly(*polynomialExpressA,*polynomialExpressB));
-    system("pause");
+    PolyNomial *polynomialExpressC=CreatePoly();
+    Display(*polynomialExpressC);
+    Display (*MultiplyPoly(*polynomialExpressA,*polynomialExpressC));
     return 0;
 }

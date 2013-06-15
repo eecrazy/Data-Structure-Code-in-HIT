@@ -1,94 +1,100 @@
 #include<iostream>
+#include<iomanip>
 using namespace std;
-
-#define MAX_MATRIXSIZE 20
-#define ElemType int
-
-class Triple//三元组类
+#define MAXSIZE 12500
+typedef struct
 {
-public:
-	int i,j;//行列号
-	ElemType e;//元素值
-};
+    int i,j;//该非零元的行下标和列下标
+    int e;
 
-class TSMatrix//矩阵类
+} Triple;
+typedef struct
 {
-public:
-	TSMatrix();
-	Triple matrix[MAX_MATRIXSIZE];//三元组集合 
-	int mu,nu,tu;//行数，列数，非零元个数
-};
+    Triple data[MAXSIZE+1];//非零元三元组表，data[0]未用
+    int mu,nu,tu;//矩阵的行数，列数和非零元个数
 
-TSMatrix::TSMatrix()
+} TSMatrix;
+void initTS(TSMatrix &X)
 {
-	mu=nu=tu=0;
+    cout<<"请输入矩阵的行数、列数和非零元个数："<<endl;
+    cin>>X.mu>>X.nu>>X.tu;
+    cout<<"请输入矩阵元素："<<endl;
+    for(int p=1; p<=X.tu; p++)
+    {
+        cout<<"请输入第 "<<p<<"个非零元素的行数、列数、与数值:";
+        cin>>X.data[p].i;
+        cin>>X.data[p].j;
+        cin>>X.data[p].e;
+        cout<<endl;
+    }
+}
+void print(TSMatrix X)
+{
+    cout<<"现在的矩阵为："<<endl;
+    for(int k=1; k<=X.tu; k++)
+    {
+        cout<<X.data[k].i<<" "<<X.data[k].j<<" "<<X.data[k].e<<endl;
+    }
+}
+void TransposeSM(TSMatrix X,TSMatrix &T)//一般转置算法
+{
+    cout<<"正在对矩阵进行转置！"<<endl;
+    T.mu=X.nu;
+    T.nu=X.mu;
+    T.tu=X.tu;
+    if(T.tu)
+    {
+        int q=1;
+        for(int col=1; col<=X.nu; ++col) //注意不忘了等于
+            for(int p=1; p<=X.tu; ++p)
+                if(X.data[p].j==col)
+                {
+                    T.data[q].i=X.data[p].j;
+                    T.data[q].j=X.data[p].i;
+                    T.data[q].e=X.data[p].e;
+                    ++q;
+                }
+    }
+}
+//采用此算法时引用两个辅助数组num[],cpot[],
+//num[col]表示矩阵M中第col列中非零元的个数，
+//cpot[col]指示M中第col列的第一个非零元在b.data中的恰当位置。
+//（即指M中每一列的第一个非零元在B中表示为第几个非零元）
+void FastTransposeSMatrix(TSMatrix M,TSMatrix &T)   //快速转置算法
+{
+    int p,q,t,col,*num,*cpot;
+    num=(int*)malloc((M.nu+1)*sizeof(int));
+    cpot=(int*)malloc((M.nu+1)*sizeof(int));
+    T.mu=M.nu;T.nu=M.mu;T.tu=M.tu;
+    if(T.tu)
+    {
+        for(col=1;col<=M.nu;++col)
+            num[col]=0;
+        for(t=1;t<=M.tu;++t)
+            ++num[M.data[t].j];
+        cpot[1]=1;
+        for(col=2;col<=M.nu;++col)
+            cpot[col]=cpot[col-1]+num[col-1];
+                for(p=1;p<=M.tu;++p)
+                {
+                    col=M.data[p].j;
+                    q=cpot[col];
+                    T.data[q].i=M.data[p].j;
+                    T.data[q].j=M.data[p].i;
+                    T.data[q].e=M.data[p].e;
+                    ++cpot[col];
+                }
+    }
+    free(num);free(cpot);
 }
 
-class Matrix//矩阵类封装了有关矩阵的各种操作
+int main()
 {
-public:
-	void GetMatrix();//得到矩阵的三元组
-	void TransposeSMatrix();//矩阵转置
-	void PrintMatrix();//打印矩阵
-private:
-	void PrintMatrix(Triple[]);//重载函数用于打印转置矩阵
-	void GetCpot(int[]);//求转置矩阵时用于求得辅助数组Cpot的值
-	TSMatrix m;//实例化一个矩阵类的对象
-};
-
-void Matrix::GetMatrix()//得到矩阵的三元组
-{
-	cout<<"Please Input The Size Of The Matrix(m*n)"<<endl;
-	cin>>m.mu>>m.nu;
-	cout<<"Please Input Matrix With Increasing Order Of RowNumber"<<endl
-		<<"rownum columnnum element"<<endl<<endl;
-	int i,j;
-	ElemType e;
-	while(cin>>i>>j>>e)
-	{
-		m.matrix[m.tu].i=i;
-		m.matrix[m.tu].j=j;
-		m.matrix[m.tu].e=e;
-		m.tu++;
-	}
-	cin.clear();
-}
-
-void Matrix::GetCpot(int Cpot[])//求转置矩阵时用于求得辅助数组Cpot的值
-{
-	int num[MAX_MATRIXSIZE];
-	memset(num,0,sizeof(num));
-	for(int i=0;i<m.tu;i++)
-		num[m.matrix[i].j]++;
-	Cpot[1]=1;
-	for(int i=2;i<m.nu;i++)
-		Cpot[i]=Cpot[i-1]+num[i-1];
-}
-
-void Matrix::TransposeSMatrix()//矩阵转置
-{
-	int Cpot[MAX_MATRIXSIZE];
-	GetCpot(Cpot);
-	Triple temp[MAX_MATRIXSIZE];
-	for(int i=0;i<m.tu;i++)
-	{
-		temp[Cpot[m.matrix[i].j]-1].i=m.matrix[i].j;
-		temp[Cpot[m.matrix[i].j]-1].j=m.matrix[i].i;
-		temp[Cpot[m.matrix[i].j]-1].e=m.matrix[i].e;
-		Cpot[m.matrix[i].j]++;
-	}
-	cout<<endl;
-	PrintMatrix(temp);
-}
-
-void Matrix::PrintMatrix()//打印矩阵
-{
-	for(int i=0;i<m.tu;i++)
-		cout<<m.matrix[i].i<<" "<<m.matrix[i].j<<" "<<m.matrix[i].e<<endl;
-}
-
-void Matrix::PrintMatrix(Triple t[])//重载函数用于打印转置矩阵
-{
-	for(int i=0;i<m.tu;i++)
-		cout<<t[i].i<<" "<<t[i].j<<" "<<t[i].e<<endl;
+    TSMatrix X,T;
+    initTS(X);
+    print(X);
+    TransposeSM(X,T);
+    cout<<"矩阵X的转置矩阵为："<<endl;
+    print(T);
+    return 0;
 }

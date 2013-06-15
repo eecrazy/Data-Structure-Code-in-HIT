@@ -84,7 +84,7 @@ private:
             }
         }
     }
-    void insert(node  * & p, T dat)
+    void insert(node *& p, T dat)
     {
         if(!p)
         {
@@ -144,20 +144,20 @@ private:
     }
 public:
     AVL() : root(0) {};
-    void insert(T dat)
+    void insert(T dat)//插入
     {
         insert(root, dat);
     }
-    void erase(T dat)
+    void erase(T dat)//删除
     {
         erase(root, dat);
     }
-    T findk(int k)
+    T findk(int k)//查找
     {
         if( k <= 0) return -1;
         return findk(root, k);
     }
-    void clear(node * p)
+    void clear(node * p)//清空
     {
         if(!p)
             return;
@@ -165,19 +165,19 @@ public:
         clear(p->r);
         delete p;
     }
-    bool empty()
+    bool empty()//判空
     {
         return (root->getsize() == 0);
     }
-    int size()
+    int size()//元素个数
     {
         return root->getsize();
     }
-    node* getroot()
+    node* getroot()//获取根元素
     {
         return root;
     }
-    /* void print()
+    void print()//打印节点
      {
          queue <node *> Q;
          Q.push(root);
@@ -189,50 +189,16 @@ public:
              if(t->l) Q.push(t->l);
              if(t->r) Q.push(t->r);
          }
-     }*/
+     }
 };
-
 int main()
 {
-    int n,mindat,dat,delta,cnt;
-    char cmd;
-    while(scanf("%d %d",&n,&mindat) == 2)
-    {
-        AVL <int> avl;
-        cnt = 0 ,delta = 0;
-        while(n--)
-        {
-            scanf(" %c %d",&cmd,&dat);
-            if(cmd == 'I')
-            {
-                if(dat < mindat)
-                    continue;
-                avl.insert(dat - delta);
-            }
-            else if(cmd == 'F')
-            {
-                int tmp = avl.findk(avl.size() - dat + 1);
-                printf("%d\n", tmp == -1 ? -1 : tmp + delta);
-            }
-            else if(cmd == 'A')
-                delta += dat;
-            else if(cmd == 'S')
-            {
-                delta -= dat;
-                while(!avl.empty())
-                {
-                    int tmp = avl.findk(1);
-                    if(tmp + delta < mindat)
-                    {
-                        avl.erase(tmp);
-                        cnt++;
-                    }
-                    else break;
-                }
-            }
-        }
-        printf("%d\n",cnt);
-        avl.clear(avl.getroot());
-    }
+    int n,x;
+    AVL <int> avl;
+    cout<<"input the number of elements:";
+    cin>>n;
+    for(int i=0;i<n;i++)
+    cin>>x,avl.insert(x);
+    avl.print();
     return 0;
 }

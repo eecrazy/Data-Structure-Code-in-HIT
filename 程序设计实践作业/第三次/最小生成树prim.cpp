@@ -1,9 +1,17 @@
+#include <iostream>
+using namespace std;
+#include <cstdio>
 //Prim
 #define INF 99999999
 const int maxn =101;
+int n,ans;
+int dist[maxn];
+int map[maxn][maxn];
+int pre[maxn];
 //n个点，dist[i]表示向外延伸的最短边长，map记录图信息，pre记录前去节点;
-void prim(int n,int dist[maxn],int map[maxn][maxn],int pre[maxn])
+void prim()
 {
+    ans=0;
 	int i,j,k;
 	int min;
 	bool p[maxn];////记录该点是否属于v[A],否则属于v[B];
@@ -15,6 +23,7 @@ void prim(int n,int dist[maxn],int map[maxn][maxn],int pre[maxn])
 		pre[i]=1;
 	}
 	dist[1]=0;
+	cout<<"1"<<" ";
 	p[1]=true;
 	//循环n-1次，每次加入一个点
 	for(i=1;i<=n-1;i++)
@@ -29,6 +38,8 @@ void prim(int n,int dist[maxn],int map[maxn][maxn],int pre[maxn])
 				k=j;
 			}
 		}
+        ans+=min;
+		cout<<k<<" ";
 		if(k==0)return ;//如果没有点可以扩展，即图不联通，返回
 		p[k]=true;//将k从v[b]中除去，加入v[a];
 		for(j=1;j<=n;j++)
@@ -41,4 +52,21 @@ void prim(int n,int dist[maxn],int map[maxn][maxn],int pre[maxn])
 			}
 		}
 	}
+}
+int main()
+{
+    cout<<"请输入顶点个数:";
+    cin>>n;
+    cout<<"请输入距离矩阵:"<<endl;
+    int num;
+    for(int i=1;i<=n;i++)
+    for(int j=1;j<=n;j++)
+    {
+        cin>>num;
+        if(num==-1)num=INF;
+        map[i][j]=num;
+    }
+    prim();
+    cout<<ans;
+
 }
